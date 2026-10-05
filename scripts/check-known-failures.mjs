@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 const root = fileURLToPath(new URL('../', import.meta.url))
 const fixtures = [
-  { id: 'K001', app: 'k001-relative-links', claims: ['C198', 'X002'], audit: 'E-A004', errors: ['Public Markdown AST is not render-safe.', '[404] Page not found: /other/y'], sources: ['checks/expectations.json', 'docs/content/docs/7.resources/2.deployment.md:21'] },
+  { id: 'K001', app: 'k001-relative-links', claims: ['C198', 'X002'], audit: 'E-A004', errors: ['Public Markdown AST is not render-safe.', '[404] Page not found: /section/y'], sources: ['checks/expectations.json', 'docs/content/docs/7.resources/2.deployment.md:21'] },
   { id: 'K002', app: 'k002-security-boolean', claims: ['C057', 'C062'], errors: ['Required component property "enabled" is missing.'], sources: ['docs/content/docs/5.reference/3.module-options.md:91', 'docs/content/docs/4.guides/2.mdc-components.md:85'] }
 ]
 mkdirSync(`${root}/results/evidence`, { recursive: true })

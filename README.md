@@ -200,7 +200,7 @@ corepack pnpm check:known-failures
 ```
 
 - K001 (C198, X002; audit E-A004): same-folder `./x.md` becomes an unsafe bare
-  URL, and `../other/y.md` loses the `/docs` mount and prerenders a 404.
+  URL, and `../section/y.md` loses the `/docs` mount and prerenders a 404.
 - K002 (C057, C062): the security plugin removes the required false boolean
   prop and rendering rejects the missing prop.
 
