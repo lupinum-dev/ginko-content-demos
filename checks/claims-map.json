@@ -990,19 +990,19 @@
   {
     "id": "C189",
     "demo": "docs-site",
-    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "check": "C189 sitemap contains normalized canonical content routes",
     "slice": "2a"
   },
   {
     "id": "C190",
     "demo": "docs-site",
-    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "check": "C190 sitemap excludes collection and document opt-outs",
     "slice": "2a"
   },
   {
     "id": "C191",
     "demo": "docs-site",
-    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "check": "C191 sitemap excludes data drafts and partials",
     "slice": "2a"
   },
   {
@@ -1044,7 +1044,7 @@
   {
     "id": "C199",
     "demo": "docs-site",
-    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "check": "C199 sitemap opt-out pages remain prerendered while absent from XML",
     "slice": "2a"
   },
   {

@@ -224,21 +224,39 @@ test('C146 C147 C148 C149 C150 framework-free helpers walk find contain normaliz
   expect(facts.pruned).toEqual(['/docs/start','/docs/guides','/docs/reference'])
 })
 
-test('C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials', async ({ page, baseURL }, info) => {
-  test.skip(process.env.CHECK_ENV === 'development', 'Sitemap production visibility and canonical origin require the production build')
-  const response = await fetch(new URL('/sitemap.xml',baseURL))
+async function sitemap(baseURL, info) {
+  const response = await fetch(new URL('/sitemap.xml', baseURL))
   const xml = await response.text()
   const evidence = info.outputPath('sitemap.xml')
-  await writeFile(evidence,xml)
-  await info.attach('Sitemap XML',{path:evidence,contentType:'application/xml'})
+  await writeFile(evidence, xml)
+  await info.attach('Sitemap XML', { path: evidence, contentType: 'application/xml' })
   expect(response.status).toBe(200)
-  for(const path of routes.filter(p=>p!=='/docs/reference/limits')) expect(xml).toContain(`${baseURL}${path}</loc>`)
-  for(const path of ['/internal','/docs/reference/limits','/docs/reference/draft','/docs/reference/_shared','/settings/site']) expect(xml).not.toContain(`${baseURL}${path}</loc>`)
+  return xml
+}
+
+test('C189 sitemap contains normalized canonical content routes', async ({ baseURL }, info) => {
+  const xml = await sitemap(baseURL, info)
+  for (const path of routes.filter(p => p !== '/docs/reference/limits')) expect(xml).toContain(`${baseURL}${path}</loc>`)
   expect(xml).not.toMatch(/\d+\.(?:start|guides|reference)/)
-  await open(page,'/docs/reference/limits',info)
+})
+
+test('C190 sitemap excludes collection and document opt-outs', async ({ baseURL }, info) => {
+  const xml = await sitemap(baseURL, info)
+  for (const path of ['/internal', '/docs/reference/limits']) expect(xml).not.toContain(`${baseURL}${path}</loc>`)
+})
+
+test('C191 sitemap excludes data drafts and partials', async ({ baseURL }, info) => {
+  const xml = await sitemap(baseURL, info)
+  for (const path of ['/docs/reference/draft', '/docs/reference/_shared', '/settings/site']) expect(xml).not.toContain(`${baseURL}${path}</loc>`)
+})
+
+test('C199 sitemap opt-out pages remain prerendered while absent from XML', async ({ page, baseURL }, info) => {
+  await open(page, '/docs/reference/limits', info)
   await expect(page.getByTestId('document').locator('h1')).toHaveText('Limits')
   await page.goto('/internal')
   await expect(page.locator('main h1')).toHaveText('Internal reference')
+  const xml = await sitemap(baseURL, info)
+  for (const path of ['/internal', '/docs/reference/limits']) expect(xml).not.toContain(`${baseURL}${path}</loc>`)
 })
 
 test('C198 static HTML exists on direct loads for every public document', async ({ baseURL }, info) => {
