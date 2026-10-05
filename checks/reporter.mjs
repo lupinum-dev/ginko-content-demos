@@ -10,7 +10,7 @@ export default class ClaimReporter {
   records = []
   onTestEnd(test, result) {
     const claims = test.title.match(/[CX]\d{3}/g) ?? []
-    for (const claim of claims) this.records.push({ claim, status: result.status === 'passed' ? 'pass' : ['skipped', 'interrupted'].includes(result.status) ? 'blocked' : 'fail', check: test.title, viewport: test.parent.project()?.name, evidence: result.attachments.map(attachment => ({ name: attachment.name, path: attachment.path ? relative(root, attachment.path) : undefined, text: attachment.body?.toString() })), errors: result.errors.map(error => error.message) })
+    for (const claim of claims) this.records.push({ claim, observedStatus: result.status, infrastructureIssue: process.env.PRODUCTION_UNAVAILABLE || undefined, status: process.env.PRODUCTION_UNAVAILABLE ? 'blocked' : result.status === 'passed' ? 'pass' : ['skipped', 'interrupted'].includes(result.status) ? 'blocked' : 'fail', check: test.title, viewport: test.parent.project()?.name, evidence: result.attachments.map(attachment => ({ name: attachment.name, path: attachment.path ? relative(root, attachment.path) : undefined, text: attachment.body?.toString() })), errors: result.errors.map(error => error.message) })
   }
   onEnd() {
     const demo = process.env.DEMO ?? 'quickstart'

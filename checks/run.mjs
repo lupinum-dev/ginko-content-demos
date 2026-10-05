@@ -12,8 +12,11 @@ const url = process.env.BASE_URL ?? targets[demo].BASE_URL
 if (!url) throw new Error(`No production BASE_URL configured for ${demo}`)
 const root = new URL('../', import.meta.url)
 await mkdir(new URL('results/evidence/', root), { recursive: true })
+const probe = await fetch(url)
+const unavailable = probe.headers.get('x-vercel-error') === 'DEPLOYMENT_NOT_FOUND' ? 'Vercel DEPLOYMENT_NOT_FOUND: no successful production deployment exists' : ''
+if (unavailable) await writeFile(new URL(`results/evidence/${demo}-production-unavailable.txt`, root), `${probe.status} ${unavailable}\n${await probe.text()}`)
 const code = await new Promise((resolve, reject) => {
-  const child = spawn('corepack', ['pnpm', 'exec', 'playwright', 'test'], { cwd: new URL('.', import.meta.url), env: { ...process.env, DEMO: demo, BASE_URL: url }, stdio: 'inherit' })
+  const child = spawn('corepack', ['pnpm', 'exec', 'playwright', 'test'], { cwd: new URL('.', import.meta.url), env: { ...process.env, DEMO: demo, BASE_URL: url, PRODUCTION_UNAVAILABLE: unavailable }, stdio: 'inherit' })
   child.on('error', reject)
   child.on('exit', code => resolve(code ?? 1))
 })
@@ -21,6 +24,8 @@ const date = new Date().toISOString().slice(0, 10)
 const resultPath = new URL(`results/${date}-${demo}.json`, root)
 const results = JSON.parse(await readFile(resultPath, 'utf8'))
 const budgets = { clientJsGzipBytes: null, lighthouseMobilePerformance: null, buildSeconds: null, issues: [] }
+if (unavailable) budgets.issues.push(unavailable)
+else {
 let browser
 try {
   browser = await chromium.launch()
@@ -51,6 +56,7 @@ try {
   budgets.lighthouseEvidence = path
 } catch (error) { budgets.issues.push(`Lighthouse measurement blocked: ${error.message}`) }
 finally { await chrome?.kill() }
+}
 try { budgets.buildSeconds = JSON.parse(await readFile(new URL(`results/evidence/build-${demo}.json`, root), 'utf8')).seconds }
 catch { budgets.issues.push('No local build timing found; run pnpm build to record it.') }
 results[0].budgets = budgets
