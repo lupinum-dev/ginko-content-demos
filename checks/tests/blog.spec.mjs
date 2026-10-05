@@ -257,19 +257,19 @@ test('C359 public runtime config excludes schemas sources cache modules and secr
  expect(config).toBeDefined()
  expect(config).not.toMatch(/providers|source|schema|cms|token|revalidate/i)
 })
-test('X003 blog guide source glob yields the documented mount-relative slug',async({request})=>{
+test('X201 blog guide source glob yields the documented mount-relative slug',async({request})=>{
  const response=await request.get('/blog/note-01')
  expect(response.status()).toBe(200)
 })
-test('X004 dotted projection returns selected nested authored value',async({request},info)=>{
+test('X202 dotted projection returns selected nested authored value',async({request},info)=>{
  const doc=await read(request,info,'one',{by:{ref:'post:01'},select:['details.note']})
  expect(doc.details).toEqual({note:'Nested 01'})
 })
-test('X005 query results do not mutate the sealed provider cache',async({request},info)=>{
+test('X203 query results do not mutate the sealed provider cache',async({request},info)=>{
  const response=await request.get('/api/alias');const body=await response.json();await info.attach('Mutation probe',{body:JSON.stringify(body),contentType:'application/json'})
  expect(body.note).toBe('Nested 01')
 })
-test('X006 aggregate ETag represents both query dependencies',async({request},info)=>{
+test('X204 aggregate ETag represents both query dependencies',async({request},info)=>{
  const response=await request.get('/api/cache');const body=await response.json();await info.attach('Cache hint merge',{body:JSON.stringify(body),contentType:'application/json'})
  expect(body.hint).toMatchObject({maxAge:60,swr:30,tags:['first','second']})
  expect(body.hint.etag).not.toBe('"second"')
@@ -279,7 +279,7 @@ async function localSupport(info) {
  await info.attach('Local build support, separate from production HTTP evidence',{body:JSON.stringify(data),contentType:'application/json'})
  return data
 }
-test('C014 K001 documented cross-collection reference prepares without a target',async({},info)=>{
+test('C014 K201 documented cross-collection reference prepares without a target',async({},info)=>{
  const result=(await localSupport(info)).crossReference
  expect(result.exitCode,'See '+result.evidence+'; documented reference() without a target should prepare').toBe(0)
 })
@@ -297,7 +297,7 @@ test('C208 C200 local output has no prerendered HTML and retains generated query
 test('C289 local no-token build omits the revalidation endpoint',async({},info)=>{
  expect((await localSupport(info)).withoutToken.registeredRevalidation).toBe(false)
 })
-test('X007 K002 malformed JSON is rejected by isolated production-built filesystem parser',async({},info)=>{
+test('X205 K202 malformed JSON is rejected by isolated production-built filesystem parser',async({},info)=>{
  const result=(await localSupport(info)).malformed
  expect(result.exitCode).toBe(0)
  expect(result.httpStatus,'Malformed JSON must not become an empty document; '+result.responseEvidence).toBeGreaterThanOrEqual(400)
@@ -309,7 +309,7 @@ test('C157 isolated content mount without a Vue handler fails discovery with 404
  await info.attach('Expected missing Vue handler build failure',{body:log,contentType:'text/plain'})
 })
 
-test('C200 C208 K003 Vercel runtime delivery leaves no HTML files in platform static output',async({},info)=>{
+test('C200 C208 K203 Vercel runtime delivery leaves no HTML files in platform static output',async({},info)=>{
  const artifacts=(await localSupport(info)).vercelArtifacts
  expect(artifacts.pageHtml, 'Runtime delivery must not retain public HTML in Vercel static output').toEqual([])
 })

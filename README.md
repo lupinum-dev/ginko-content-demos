@@ -255,7 +255,7 @@ corepack pnpm check:map
 
 `content.agent.delivery: 'runtime'` requests runtime delivery. The local build
 inspection compares ordinary output with the Vercel static output.
-K003 currently finds 32 retained page HTML files in the Vercel output; this means
+K203 currently finds 32 retained page HTML files in the Vercel output; this means
 the public HTML pages are static despite the configured runtime delivery. Production HTTP and Chromium checks run at
 1440×900 and 390×844. Public Nitro examples under `server/api` call the documented
 server helpers; the custom built-in query base is `/api/blog-content`.
@@ -265,14 +265,14 @@ must reach `501 revalidation_not_supported`; this demo has no purge backend.
 Authentication and input-limit checks do not claim that a platform cache purge
 occurred. The no-token route variant, CSV row-array option, missing Vue handler,
 and app-wide failure fixtures are tested in isolated local production builds,
-with their scope stated in each result. `known-failures/README.md` records K001
-(targetless reference setup), K002 (malformed JSON ingestion), and K003
+with their scope stated in each result. `known-failures/README.md` records K201
+(targetless reference setup), K202 (malformed JSON ingestion), and K203
 (Vercel retains static HTML).
 
 Projection uses public `select`. The installed docs do not expose `only` or
-`without` as public query options; X004 checks dotted `select` instead. X003 checks
-the blog guide's mount-relative slug, X005 checks nested query-result aliasing,
-X006 checks aggregate ETags, and X007 checks malformed JSON. Expected library
+`without` as public query options; X202 checks dotted `select` instead. X201 checks
+the blog guide's mount-relative slug, X203 checks nested query-result aliasing,
+X204 checks aggregate ETags, and X205 checks malformed JSON. Expected library
 failures remain ordinary failing assertions. Run summaries are committed;
 responses, screenshots, traces, documentation rereads, build/support logs, and
 latency samples stay in ignored `results/evidence/blog/` or the harness's

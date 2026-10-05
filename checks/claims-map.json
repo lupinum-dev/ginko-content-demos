@@ -68,7 +68,7 @@
   {
     "id": "C014",
     "demo": "blog",
-    "check": "C014 constrained references from Markdown and YAML records; C014 K001 documented cross-collection reference prepares without a target"
+    "check": "C014 constrained references from Markdown and YAML records; C014 K201 documented cross-collection reference prepares without a target"
   },
   {
     "id": "C015",
@@ -1049,7 +1049,7 @@
   {
     "id": "C200",
     "demo": "blog",
-    "check": "C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K003 Vercel runtime delivery leaves no HTML files in platform static output"
+    "check": "C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K203 Vercel runtime delivery leaves no HTML files in platform static output"
   },
   {
     "id": "C201",
@@ -1094,7 +1094,7 @@
   {
     "id": "C208",
     "demo": "blog",
-    "check": "C208 C212 runtime HTML and negotiated Markdown at same URL; C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K003 Vercel runtime delivery leaves no HTML files in platform static output"
+    "check": "C208 C212 runtime HTML and negotiated Markdown at same URL; C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K203 Vercel runtime delivery leaves no HTML files in platform static output"
   },
   {
     "id": "C209",

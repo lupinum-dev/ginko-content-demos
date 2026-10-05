@@ -8,7 +8,7 @@ const run=(name,args)=>{
  writeFileSync(resolve(evidence,`${name}.log`),result.stdout+result.stderr)
  return {exitCode:result.status,evidence:`results/evidence/blog/${name}.log`}
 }
-const output={crossReference:run('K001-cross-reference',['prepare','known-failures/cross-reference'])}
+const output={crossReference:run('K201-cross-reference',['prepare','known-failures/cross-reference'])}
 async function fixture(name,dir,port){
  const built=run(`${name}-build`,['build',dir]);if(built.exitCode)return {...built,status:'blocked'}
  const child=spawn(process.execPath,[resolve(app,dir,'.output/server/index.mjs')],{cwd:app,env:{...process.env,PORT:String(port)},stdio:'ignore'})
@@ -25,7 +25,7 @@ async function fixture(name,dir,port){
 }
 output.missingHandler=await fixture('missing-handler','fixtures/missing-handler',3218)
 output.csvRows=await fixture('csv-rows','fixtures/csv-rows',3216)
-output.malformed=await fixture('K002-malformed-json','known-failures/malformed-json',3217)
+output.malformed=await fixture('K202-malformed-json','known-failures/malformed-json',3217)
 const walk=path=>readdirSync(path,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(resolve(path,entry.name)):[resolve(path,entry.name)])
 const files=walk(resolve(app,'.output/public'))
 output.runtimeArtifacts={html:files.filter(p=>p.endsWith('.html')).map(p=>p.slice(root.length+1)),queryDependencies:files.filter(p=>p.includes('/api/blog-content/')).length,rawMarkdown:files.filter(p=>p.includes('/raw/')&&p.endsWith('.md')).length}
