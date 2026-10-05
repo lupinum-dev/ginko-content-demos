@@ -17,24 +17,24 @@
     "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages."
   },
   {
-    "id": "X003",
-    "check": "X003 negation cannot escape requested locale",
+    "id": "X101",
+    "check": "X101 negation cannot escape requested locale",
     "demos": [
       "multilingual"
     ],
     "rationale": "An exact-locale query with $not: { locale } must return no rows, never other locales (E-A009)."
   },
   {
-    "id": "X004",
-    "check": "X004 singleton localized sitemap keeps hreflang and x-default",
+    "id": "X102",
+    "check": "X102 singleton localized sitemap keeps hreflang and x-default",
     "demos": [
       "multilingual"
     ],
     "rationale": "A single available variant still has a real language and a default URL (E-X1)."
   },
   {
-    "id": "X005",
-    "check": "X005 Japanese search finds Japanese content",
+    "id": "X103",
+    "check": "X103 Japanese search finds Japanese content",
     "demos": [
       "multilingual"
     ],

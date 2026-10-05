@@ -140,7 +140,7 @@ test('C303 collection-local path slug and prefix options reject inherited policy
   expect(data.paths.inheritedError).toMatch(/locale|i18n|policy/i)
 })
 
-test('X003 negation cannot escape requested locale', async ({ page }, info) => {
+test('X101 negation cannot escape requested locale', async ({ page }, info) => {
   const data = await facts(page)
   await info.attach('negated locale result E-A009', { body: JSON.stringify(data.notLocale), contentType: 'application/json' })
   expect(data.notLocale).toEqual([])
@@ -169,7 +169,7 @@ test('C179 C188 generated Pagefind shards return only active-locale results and 
   await expect.poll(() => page.getByTestId('results').locator('a').evaluateAll(a => a.map(x => x.getAttribute('href')).sort())).toEqual(['/ja/docs/intro', '/ja/gaido/hajimeni'])
 })
 
-test('X005 Japanese search finds Japanese content', async ({ page }) => {
+test('X103 Japanese search finds Japanese content', async ({ page }) => {
   await page.goto('/ja/search')
   await page.waitForLoadState('networkidle')
   await page.getByTestId('search').fill('生物多様性')
@@ -215,7 +215,7 @@ test('C192 C195 sitemap index contains reciprocal real translated alternates and
   }
 })
 
-test('X004 singleton localized sitemap keeps hreflang and x-default', async ({ baseURL }, info) => {
+test('X102 singleton localized sitemap keeps hreflang and x-default', async ({ baseURL }, info) => {
   const { bodies } = await sitemap(baseURL, info)
   const entry = bodies.flatMap(body => body.match(/<url>[\s\S]*?<\/url>/g) ?? []).find(x => x.includes(`<loc>${baseURL}/docs/english-only</loc>`))
   expect(entry).toBeTruthy()

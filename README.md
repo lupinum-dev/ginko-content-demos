@@ -268,11 +268,11 @@ pending/error/stale state; C173 covers the application callback for known locale
 not runtime unknown-locale input. C195 verifies this deployment's multi-sitemap
 index; the standalone fixture also produces a single sitemap.
 
-Expectations X003 (negated locale isolation), X004 (singleton with configured
-fallback retains language/default alternates), and X005 (Japanese search) run on
+Expectations X101 (negated locale isolation), X102 (singleton with configured
+fallback retains language/default alternates), and X103 (Japanese search) run on
 production. E-A009 did not reproduce for an exact German negation query.
-The no-fallback singleton case reproduces E-X1 locally as K003: neither language
-nor `x-default` alternates appear. K002 reproduces E-A013: `紹介.md` and `index.md`
+The no-fallback singleton case reproduces E-X1 locally as K102: neither language
+nor `x-default` alternates appear. K101 reproduces E-A013: `紹介.md` and `index.md`
 collide at canonical ID `/`, failing generation. These fixtures remain unchanged
 and their failures stay failures; `checks/known-failures-multilingual.json`
 records the source and rationale. They are not production claim failures.

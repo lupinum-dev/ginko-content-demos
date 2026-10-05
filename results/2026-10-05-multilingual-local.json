@@ -1,6 +1,6 @@
 [
   {
-    "check": "K003 E-X1 singleton without fallback keeps hreflang and x-default",
+    "check": "K102 E-X1 singleton without fallback keeps hreflang and x-default",
     "status": "fail",
     "observed": [
       "<url>\n        <loc>https://ginko-demo-multilingual.vercel.app/docs/single</loc>\n    </url>",
@@ -51,7 +51,7 @@
     "productionVerified": false
   },
   {
-    "check": "K002 E-A013 Unicode filenames keep a distinct public route",
+    "check": "K101 E-A013 Unicode filenames keep a distinct public route",
     "status": "fail",
     "exitCode": 1,
     "evidence": "results/evidence/multilingual-unicode-build.log",

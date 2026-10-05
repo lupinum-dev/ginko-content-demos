@@ -1404,7 +1404,7 @@
     ]
   },
   {
-    "claim": "X003",
+    "claim": "X101",
     "sources": [
       "checks/expectations.json"
     ],
@@ -1413,10 +1413,10 @@
     "url": "https://ginko-demo-multilingual.vercel.app",
     "evidence": [
       {
-        "claim": "X003",
+        "claim": "X101",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X003 negation cannot escape requested locale",
+        "check": "X101 negation cannot escape requested locale",
         "viewport": "desktop",
         "evidence": [
           {
@@ -1425,16 +1425,16 @@
           },
           {
             "name": "screenshot",
-            "path": "results/evidence/multilingual-playwright/multilingual-X003-negation-cannot-escape-requested-locale-desktop/test-finished-1.png"
+            "path": "results/evidence/multilingual-playwright/multilingual-X101-negation-cannot-escape-requested-locale-desktop/test-finished-1.png"
           }
         ],
         "errors": []
       },
       {
-        "claim": "X003",
+        "claim": "X101",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X003 negation cannot escape requested locale",
+        "check": "X101 negation cannot escape requested locale",
         "viewport": "mobile",
         "evidence": [
           {
@@ -1443,7 +1443,7 @@
           },
           {
             "name": "screenshot",
-            "path": "results/evidence/multilingual-playwright/multilingual-X003-negation-cannot-escape-requested-locale-mobile/test-finished-1.png"
+            "path": "results/evidence/multilingual-playwright/multilingual-X101-negation-cannot-escape-requested-locale-mobile/test-finished-1.png"
           }
         ],
         "errors": []
@@ -1451,7 +1451,7 @@
     ]
   },
   {
-    "claim": "X004",
+    "claim": "X102",
     "sources": [
       "checks/expectations.json"
     ],
@@ -1460,53 +1460,53 @@
     "url": "https://ginko-demo-multilingual.vercel.app",
     "evidence": [
       {
-        "claim": "X004",
+        "claim": "X102",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X004 singleton localized sitemap keeps hreflang and x-default",
+        "check": "X102 singleton localized sitemap keeps hreflang and x-default",
         "viewport": "desktop",
         "evidence": [
           {
             "name": "sitemap-index.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-index-xml-fd292a81e49c41eeba7d6716bb87933d379c0751.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-index-xml-fd292a81e49c41eeba7d6716bb87933d379c0751.xml"
           },
           {
             "name": "sitemap-0.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-0-xml-b1ebae8396c5fbd4a58127b78c18db14603cacbb.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-0-xml-b1ebae8396c5fbd4a58127b78c18db14603cacbb.xml"
           },
           {
             "name": "sitemap-1.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-1-xml-7d4cf379717070f08dcd24326019d470e4597200.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-1-xml-7d4cf379717070f08dcd24326019d470e4597200.xml"
           },
           {
             "name": "sitemap-2.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-2-xml-72dc9b1667c2fe15870ed9c1ecc50817fbe77ec0.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-2-xml-72dc9b1667c2fe15870ed9c1ecc50817fbe77ec0.xml"
           }
         ],
         "errors": []
       },
       {
-        "claim": "X004",
+        "claim": "X102",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X004 singleton localized sitemap keeps hreflang and x-default",
+        "check": "X102 singleton localized sitemap keeps hreflang and x-default",
         "viewport": "mobile",
         "evidence": [
           {
             "name": "sitemap-index.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-index-xml-f465cd874e04abf726cfd1e47a1c92dbedd3bf90.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-index-xml-f465cd874e04abf726cfd1e47a1c92dbedd3bf90.xml"
           },
           {
             "name": "sitemap-0.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-0-xml-747cac31b26a82e7a5dbe3b213002731e93b6aca.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-0-xml-747cac31b26a82e7a5dbe3b213002731e93b6aca.xml"
           },
           {
             "name": "sitemap-1.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-1-xml-2900891c5c7138d9565a3c4a624d205bc87afd84.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-1-xml-2900891c5c7138d9565a3c4a624d205bc87afd84.xml"
           },
           {
             "name": "sitemap-2.xml",
-            "path": "results/evidence/multilingual-playwright/multilingual-X004-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-2-xml-49c17f805f366362f785806f6a088145ccb675cf.xml"
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-2-xml-49c17f805f366362f785806f6a088145ccb675cf.xml"
           }
         ],
         "errors": []
@@ -1514,7 +1514,7 @@
     ]
   },
   {
-    "claim": "X005",
+    "claim": "X103",
     "sources": [
       "checks/expectations.json"
     ],
@@ -1523,29 +1523,29 @@
     "url": "https://ginko-demo-multilingual.vercel.app",
     "evidence": [
       {
-        "claim": "X005",
+        "claim": "X103",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X005 Japanese search finds Japanese content",
+        "check": "X103 Japanese search finds Japanese content",
         "viewport": "desktop",
         "evidence": [
           {
             "name": "screenshot",
-            "path": "results/evidence/multilingual-playwright/multilingual-X005-Japanese-search-finds-Japanese-content-desktop/test-finished-1.png"
+            "path": "results/evidence/multilingual-playwright/multilingual-X103-Japanese-search-finds-Japanese-content-desktop/test-finished-1.png"
           }
         ],
         "errors": []
       },
       {
-        "claim": "X005",
+        "claim": "X103",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X005 Japanese search finds Japanese content",
+        "check": "X103 Japanese search finds Japanese content",
         "viewport": "mobile",
         "evidence": [
           {
             "name": "screenshot",
-            "path": "results/evidence/multilingual-playwright/multilingual-X005-Japanese-search-finds-Japanese-content-mobile/test-finished-1.png"
+            "path": "results/evidence/multilingual-playwright/multilingual-X103-Japanese-search-finds-Japanese-content-mobile/test-finished-1.png"
           }
         ],
         "errors": []
