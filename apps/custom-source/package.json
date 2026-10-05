@@ -1,0 +1,26 @@
+{
+  "name": "@ginko-demo/custom-source",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "prepare": "nuxt prepare",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run test/source.test.ts --reporter=json --outputFile=../../results/evidence/custom-source/conformance.json",
+    "check:scripts": "nuxt prepare test/fixtures/unlocalized && node scripts/check.mjs",
+    "publish:store": "node scripts/publish-store.mjs"
+  },
+  "dependencies": {
+    "@lupinum/ginko-content": "file:../../vendor/lupinum-ginko-content-1.0.0-beta.10-a3e8ef1.tgz",
+    "nuxt": "4.5.2",
+    "vue": "3.5.40",
+    "zod": "4.4.3",
+    "h3": "1.15.11"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vue-tsc": "3.2.6",
+    "vitest": "4.1.6"
+  }
+}

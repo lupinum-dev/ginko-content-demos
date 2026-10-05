@@ -1,0 +1,4218 @@
+[
+  {
+    "claim": "C003",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:42"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C003",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Load content from an additional configured storage mount",
+        "errors": [
+          "Not-live: filesystem storage-driver mounts are a separate source mechanism; this provider-backed JSON fixture does not exercise an additional filesystem mount."
+        ],
+        "evidence": []
+      }
+    ],
+    "budgets": {
+      "clientJsGzipBytes": 234938,
+      "lighthouseMobilePerformance": 100,
+      "buildSeconds": 15.621386375,
+      "issues": [],
+      "clientJsEvidence": "results/evidence/2026-10-05-custom-source-client-js.json",
+      "lighthouseEvidence": "results/evidence/2026-10-05-custom-source-lighthouse.json",
+      "latency": {
+        "p50": 158.4310000000005,
+        "p95": 232.5148330000011,
+        "evidence": "results/evidence/2026-10-05-custom-source-latency.json"
+      }
+    },
+    "deployment": {
+      "projectId": "prj_Sk21Huih4USEH1pWUD2UvMNBF6wr",
+      "id": "dpl_6S6F86HBgUnLgZy7S4uUED2Zsgs2",
+      "url": "https://ginko-demo-custom-source-e3d7dnm3k-lupinum.vercel.app",
+      "protection": "disabled"
+    },
+    "artifact": {
+      "storeSha256": "fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124",
+      "sourceLines": 118
+    }
+  },
+  {
+    "claim": "C013",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:103"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C013",
+        "status": "fail",
+        "check": "C013 explicit CMS label structure and routing survive resolution",
+        "mode": "build-only",
+        "errors": [
+          "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'Catalog documentation'\n\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:27:10\n    at check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:15)\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:25:7"
+        ],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C015",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:275"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C015",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C035",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:140"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C035",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C036",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:185"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C036",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C037",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:186"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C037",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C038",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:187"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C038",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C039",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:188"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C039",
+        "status": "pass",
+        "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C069",
+    "sources": [
+      "CHANGELOG.md:25"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C069",
+        "status": "pass",
+        "check": "C069 round-trip literal MDC-looking text and ordinary colons",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C070",
+    "sources": [
+      "CHANGELOG.md:28"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C070",
+        "status": "pass",
+        "check": "C070 C343 heading helpers match duplicates and preserve custom IDs",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C071",
+    "sources": [
+      "CHANGELOG.md:30"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C071",
+        "status": "pass",
+        "check": "C071 round-trip nested code and inline code",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C072",
+    "sources": [
+      "CHANGELOG.md:32"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C072",
+        "status": "pass",
+        "check": "C072 round-trip list-leading code quote and table",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C073",
+    "sources": [
+      "CHANGELOG.md:34"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C073",
+        "status": "pass",
+        "check": "C073 round-trip adjacent lists strike and hard break",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C074",
+    "sources": [
+      "CHANGELOG.md:36"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C074",
+        "status": "pass",
+        "check": "C074 round-trip fence containing component terminators",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C076",
+    "sources": [
+      "CHANGELOG.md:40"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C076",
+        "status": "pass",
+        "check": "C076 C248 fixed portable parser does not autolink or run site math plugin",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C077",
+    "sources": [
+      "CHANGELOG.md:44"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C077",
+        "status": "pass",
+        "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C078",
+    "sources": [
+      "CHANGELOG.md:46"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C078",
+        "status": "pass",
+        "check": "C078 round-trip hostile typed props",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      },
+      {
+        "claim": "C078",
+        "status": "pass",
+        "check": "C078 C088 typed props preserve multiline strings and omit undefined values",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C079",
+    "sources": [
+      "CHANGELOG.md:49"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C079",
+        "status": "pass",
+        "check": "C079 round-trip spaces and alt text",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C080",
+    "sources": [
+      "CHANGELOG.md:51"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C080",
+        "status": "pass",
+        "check": "C080 C090 preview closes unfinished syntax but ingestion rejects it",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C083",
+    "sources": [
+      "CHANGELOG.md:56"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C083",
+        "status": "pass",
+        "check": "C083 round-trip multiline props nested in quote and list",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C084",
+    "sources": [
+      "CHANGELOG.md:58"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C084",
+        "status": "pass",
+        "check": "C084 round-trip link titles are strings",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C085",
+    "sources": [
+      "CHANGELOG.md:60"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C085",
+        "status": "pass",
+        "check": "C085 C089 unrepresentable native attributes and alt text throw typed errors",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C088",
+    "sources": [
+      "CHANGELOG.md:77"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C088",
+        "status": "pass",
+        "check": "C088 round-trip JSON-like prop strings and arrays",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      },
+      {
+        "claim": "C088",
+        "status": "pass",
+        "check": "C078 C088 typed props preserve multiline strings and omit undefined values",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C089",
+    "sources": [
+      "CHANGELOG.md:88"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C089",
+        "status": "pass",
+        "check": "C085 C089 unrepresentable native attributes and alt text throw typed errors",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      },
+      {
+        "claim": "C089",
+        "status": "pass",
+        "check": "C089 invalid angle property names throw typed serialization errors",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C090",
+    "sources": [
+      "CHANGELOG.md:129"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C090",
+        "status": "pass",
+        "check": "C080 C090 preview closes unfinished syntax but ingestion rejects it",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C110",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:284"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C110",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Use 1001 refs to require rejection and instrument concurrency ceiling",
+        "errors": [
+          "Not-live: the JSON catalog has no 1001-reference population fixture or instrumented eight-read ceiling. Population limits are not verified here."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C111",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:284"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C111",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Instrument repeated-target reads and require one lookup per unique target",
+        "errors": [
+          "Not-live: no repeated-reference population graph is present. Unique-target lookup deduplication is not verified here."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C114",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:305"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C114",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C114",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C180",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:61"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C180",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C180 provider search has the standard collection/path/excerpt shape",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "provider-search",
+            "text": "[\n  {\n    \"title\": \"Seed kit\",\n    \"excerpt\": \"Seed kit from JSON\",\n    \"score\": 1,\n    \"collection\": \"products\",\n    \"path\": \"/products/seed-kit\",\n    \"locale\": \"en\"\n  }\n]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C180-provide-852d5-llection-path-excerpt-shape-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C180",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C180 provider search has the standard collection/path/excerpt shape",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "provider-search",
+            "text": "[\n  {\n    \"title\": \"Seed kit\",\n    \"excerpt\": \"Seed kit from JSON\",\n    \"score\": 1,\n    \"collection\": \"products\",\n    \"path\": \"/products/seed-kit\",\n    \"locale\": \"en\"\n  }\n]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C180-provide-852d5-llection-path-excerpt-shape-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C180",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "C180 provider search has the standard collection/path/excerpt shape",
+        "errors": [
+          "Partial live check: provider search shape is verified; equivalent queries against MiniSearch and Pagefind were not run in this worktree."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C225",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:15",
+      "README.md:45",
+      "docs/content/docs/4.guides/10.providers.md:23"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C225",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C225",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised operator $eq",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural and filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural or filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural not filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes ordered queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes first terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes count terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised offset pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised cursor pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C225",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider returns validated raw route records",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C226",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:31"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised operator $eq",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural and filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural or filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural not filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes ordered queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes first terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes count terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised offset pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised cursor pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C226",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider returns validated raw route records",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C227",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:77"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised operator $eq",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural and filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural or filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural not filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes ordered queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes first terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes count terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised offset pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised cursor pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C227",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider returns validated raw route records",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C228",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:185"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised operator $eq",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural and filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural or filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural not filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes ordered queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes first terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes count terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised offset pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised cursor pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C228",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider returns validated raw route records",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C229",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:202"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C229",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C229",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C229",
+        "status": "pass",
+        "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C230",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:227"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C230",
+        "status": "pass",
+        "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C231",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:166"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C231",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C231",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C225 C229 C231 catalog and stored MDC render with public API and correct routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/custom-source-playwright/custom-source-C225-C229-C2-6c5cc-blic-API-and-correct-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C231",
+        "status": "pass",
+        "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C232",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:245"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C232",
+        "status": "pass",
+        "check": "C232 C243 optional route sitemap facts reject invalid images and dates",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C233",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:270"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C233",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C233",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C233",
+        "status": "pass",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C234",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:272"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C234",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C234",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C235",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:295"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C235",
+        "status": "pass",
+        "check": "C235 C244 stable typed unsupported backend and cursor HTTP errors",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C236",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:7"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a found first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns undefined for a missing provider-level first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a canonical list result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies count when offset pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies cursor continuation when cursor pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C236",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes stable route enumeration",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C237",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:8"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a found first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns undefined for a missing provider-level first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a canonical list result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies count when offset pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies cursor continuation when cursor pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C237",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes stable route enumeration",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C238",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:44"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a found first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns undefined for a missing provider-level first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a canonical list result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies count when offset pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies cursor continuation when cursor pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes stable route enumeration",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C238",
+        "status": "fail",
+        "check": "C238 binder rejects non-JSON provider fields",
+        "mode": "conformance",
+        "errors": [
+          "Error: promise resolved \"{ data: { result: { …(6) } }, …(1), …(1) }\" instead of rejecting\n    at _Assertion.__VITEST_REJECTS__ (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+expect@4.1.6/node_modules/@vitest/expect/dist/index.js:1747:17)\n    at _Assertion.propertyGetter (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1607:27)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1696:22)\n    at /Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/test/source.test.ts:134:45\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)"
+        ],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C239",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:44"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C239",
+        "status": "pass",
+        "check": "C239 backend receives usable cancellation and deadline controls",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C240",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:33"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C240",
+        "status": "pass",
+        "check": "C240 cache hint constructor rejects limits and credential-bearing tags",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C241",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:244"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a found first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns undefined for a missing provider-level first result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source returns a canonical list result",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies count when offset pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source certifies cursor continuation when cursor pagination is advertised",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C236 C237 C238 C241 catalog source executes stable route enumeration",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C241",
+        "status": "pass",
+        "check": "C241 C244 cursor from a different ordering is rejected as scope-invalid",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C242",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:248"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C242",
+        "status": "pass",
+        "check": "C242 binder rejects repeated route cursors and changing snapshots",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C243",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:252"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C243",
+        "status": "pass",
+        "check": "C232 C243 optional route sitemap facts reject invalid images and dates",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C243",
+        "status": "pass",
+        "check": "C243 route count record-byte and aggregate-byte ceilings reject first invalid enumeration",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C244",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:261"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C244",
+        "status": "pass",
+        "check": "C244 invalid cursor maps to HTTP 400",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C244",
+        "status": "pass",
+        "check": "C235 C244 stable typed unsupported backend and cursor HTTP errors",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C244",
+        "status": "pass",
+        "check": "C244 binder deadline failure maps to HTTP 504",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C244",
+        "status": "pass",
+        "check": "C241 C244 cursor from a different ordering is rejected as scope-invalid",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C245",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:60"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C245",
+        "status": "pass",
+        "check": "C245 separate CMS wire protocol must agree before result parsing",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C246",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:14"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C246",
+        "status": "pass",
+        "check": "C246 C247 read canonical prepared contract and verify canonical hash",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C247",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:27"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C247",
+        "status": "pass",
+        "check": "C246 C247 read canonical prepared contract and verify canonical hash",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      },
+      {
+        "claim": "C247",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "C246 C247 read canonical prepared contract and verify canonical hash",
+        "errors": [
+          "Partial build-only check: canonical contract/hash read is verified; an expected-input-hash mismatch export cannot be exercised because the unchanged docs-site fails assessment first."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C248",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:185"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C248",
+        "status": "pass",
+        "check": "C076 C248 fixed portable parser does not autolink or run site math plugin",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C249",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:221"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C249",
+        "status": "pass",
+        "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C250",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:225"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C250",
+        "status": "pass",
+        "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C251",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:226"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C251",
+        "status": "pass",
+        "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C252",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:50"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C252",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Import contract surface in browser/worker and execute parser/hash",
+        "errors": [
+          "Not-live: CMS-contract imports execute in Node scripts, but an isolate/browser module-graph build was not performed; framework-free execution is not proven."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C253",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:59"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C253",
+        "status": "pass",
+        "check": "C253 inert render policy rejects scripts and unknown components",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C254",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:63"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C254",
+        "status": "pass",
+        "check": "C254 current and pinned resolved contract validators",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C255",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:60"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C255",
+        "status": "pass",
+        "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C256",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:71"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C256",
+        "status": "pass",
+        "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C257",
+    "sources": [
+      "docs/content/docs/4.guides/2.mdc-components.md:168"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C257",
+        "status": "pass",
+        "check": "C257 C348 V2 policy unions allowed values nesting and V1 documents in V2 manifests",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C258",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:163",
+      "CHANGELOG.md:260"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C258",
+        "status": "pass",
+        "check": "C258 C344 managed media constants and first invalid byte limit",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C266",
+    "sources": [
+      "docs/content/docs/6.migration/5.filesystem-to-cms.md:86"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C266",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Export sidecar title/order then compare imported tree",
+        "errors": [
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); sidecar metadata never reaches a portable tree."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C267",
+    "sources": [
+      "docs/content/docs/6.migration/5.filesystem-to-cms.md:88"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C267",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Export/import content refs and code and compare semantics",
+        "errors": [
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); its Content references and literal examples cannot be compared after export."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C268",
+    "sources": [
+      "docs/content/docs/6.migration/5.filesystem-to-cms.md:92"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C268",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "Export plain local image; require unchanged source and no fetch",
+        "errors": [
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); authored public/external images cannot be compared after export."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C271",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C271",
+        "status": "pass",
+        "check": "C271 C278 YAML/JSON records and canonical incremental SHA-256",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C272",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C272",
+        "status": "pass",
+        "check": "C272 portable MDC classification serialization and normalization",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C273",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C273",
+        "status": "pass",
+        "check": "C273 C277 document codecs validate identity and semantic model equality",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C274",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C274",
+        "status": "pass",
+        "check": "C274 C275 portable relations and managed asset fields collect validate and remap",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C275",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C275",
+        "status": "pass",
+        "check": "C274 C275 portable relations and managed asset fields collect validate and remap",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C276",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C276",
+        "status": "pass",
+        "check": "C276 portable directory round-trip validates and rebuilds manifests",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C277",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C277",
+        "status": "pass",
+        "check": "C273 C277 document codecs validate identity and semantic model equality",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C278",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C278",
+        "status": "pass",
+        "check": "C271 C278 YAML/JSON records and canonical incremental SHA-256",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C287",
+    "sources": [
+      "docs/content/docs/4.guides/11.provider-search-and-caching.md:86"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C287",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C287",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C288",
+    "sources": [
+      "docs/content/docs/4.guides/11.provider-search-and-caching.md:111"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C288",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C288 provider cache hints apply after SSR rendering",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "direct-api-cache-headers",
+            "text": "{\n  \"age\": \"0\",\n  \"cache-control\": \"public, max-age=0, must-revalidate\",\n  \"content-encoding\": \"br\",\n  \"content-type\": \"application/json\",\n  \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n  \"server\": \"Vercel\",\n  \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n  \"x-vercel-cache\": \"MISS\",\n  \"x-vercel-id\": \"fra1::iad1::dw4h9-1791210220772-875eb672eed3\",\n  \"transfer-encoding\": \"chunked\"\n}"
+          },
+          {
+            "name": "runtime-ssr-headers",
+            "text": "{\n  \"age\": \"0\",\n  \"cache-control\": \"public, max-age=0, must-revalidate\",\n  \"content-encoding\": \"br\",\n  \"content-type\": \"text/html;charset=utf-8\",\n  \"date\": \"Mon, 05 Oct 2026 14:23:41 GMT\",\n  \"server\": \"Vercel\",\n  \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n  \"x-nitro-prerender\": \"/api/_content/query/ueoxUbbVFZXgqTrXfVhbOtJ7ZcXuB0pGqPKFnUW9UoU.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsInJlc29sdmVMb2NhbGUiOnt9LCJyZXNvbHZlVmFyaWFudCI6eyJyb3V0ZSI6Ii9kb2NzL3N0/YXJ0In0sImZpcnN0Ijp0cnVlfQ.json,/api/_content/query/h00p8KktRvYS9cTpJlcE4MwpkSeOOkcGz6zaUFY1KW8.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsInJlc29sdmVMb2NhbGUiOnsiZmFsbGJhY2siOnRydWV9LCJyZXNvbHZlVmFyaWFudCI6eyJy/b3V0ZSI6Ii9kb2NzL3N0YXJ0IiwiZmFsbGJhY2siOnRydWV9LCJmaXJzdCI6dHJ1ZX0.json,/api/_content/navigation/g7S2TSgREkmSdR1iKqCKpCyqcKWLAZHeSjwcjV4n2QY.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsIm9ubHkiOlsiaWQiLCJwYXRoIiwiZmlsZSIsImNhbm9uaWNhbEtleSIsImxvY2FsZSIsImRy/YWZ0IiwibmF2aWdhdGlvbiIsInRpdGxlIl19.json\",\n  \"x-powered-by\": \"Nuxt\",\n  \"x-vercel-cache\": \"MISS\",\n  \"x-vercel-id\": \"fra1::iad1::49njb-1791210220926-f76061f4865e\",\n  \"transfer-encoding\": \"chunked\"\n}"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/custom-source-playwright/custom-source-C288-provide-643ba-s-apply-after-SSR-rendering-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"max-age=60\"\u001b[39m\nReceived string:    \u001b[31m\"public, max-age=0, must-revalidate\"\u001b[39m",
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"max-age=60\"\u001b[39m\nReceived string:    \u001b[31m\"public, max-age=0, must-revalidate\"\u001b[39m"
+        ]
+      },
+      {
+        "claim": "C288",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C288 provider cache hints apply after SSR rendering",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "direct-api-cache-headers",
+            "text": "{\n  \"age\": \"0\",\n  \"cache-control\": \"public, max-age=0, must-revalidate\",\n  \"content-encoding\": \"br\",\n  \"content-type\": \"application/json\",\n  \"date\": \"Mon, 05 Oct 2026 14:23:48 GMT\",\n  \"server\": \"Vercel\",\n  \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n  \"x-vercel-cache\": \"MISS\",\n  \"x-vercel-id\": \"fra1::iad1::9x6tp-1791210228532-8ba1459b5f5b\",\n  \"transfer-encoding\": \"chunked\"\n}"
+          },
+          {
+            "name": "runtime-ssr-headers",
+            "text": "{\n  \"age\": \"0\",\n  \"cache-control\": \"public, max-age=0, must-revalidate\",\n  \"content-encoding\": \"br\",\n  \"content-type\": \"text/html;charset=utf-8\",\n  \"date\": \"Mon, 05 Oct 2026 14:23:48 GMT\",\n  \"server\": \"Vercel\",\n  \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n  \"x-nitro-prerender\": \"/api/_content/query/ueoxUbbVFZXgqTrXfVhbOtJ7ZcXuB0pGqPKFnUW9UoU.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsInJlc29sdmVMb2NhbGUiOnt9LCJyZXNvbHZlVmFyaWFudCI6eyJyb3V0ZSI6Ii9kb2NzL3N0/YXJ0In0sImZpcnN0Ijp0cnVlfQ.json,/api/_content/query/h00p8KktRvYS9cTpJlcE4MwpkSeOOkcGz6zaUFY1KW8.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsInJlc29sdmVMb2NhbGUiOnsiZmFsbGJhY2siOnRydWV9LCJyZXNvbHZlVmFyaWFudCI6eyJy/b3V0ZSI6Ii9kb2NzL3N0YXJ0IiwiZmFsbGJhY2siOnRydWV9LCJmaXJzdCI6dHJ1ZX0.json,/api/_content/navigation/g7S2TSgREkmSdR1iKqCKpCyqcKWLAZHeSjwcjV4n2QY.1791210109189/eyJjb2xsZWN0aW9uIjoiZG9jcyIsIm9ubHkiOlsiaWQiLCJwYXRoIiwiZmlsZSIsImNhbm9uaWNhbEtleSIsImxvY2FsZSIsImRy/YWZ0IiwibmF2aWdhdGlvbiIsInRpdGxlIl19.json\",\n  \"x-powered-by\": \"Nuxt\",\n  \"x-vercel-cache\": \"MISS\",\n  \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210228668-0e85f40971b9\",\n  \"transfer-encoding\": \"chunked\"\n}"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/custom-source-playwright/custom-source-C288-provide-643ba-s-apply-after-SSR-rendering-mobile/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"max-age=60\"\u001b[39m\nReceived string:    \u001b[31m\"public, max-age=0, must-revalidate\"\u001b[39m",
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"max-age=60\"\u001b[39m\nReceived string:    \u001b[31m\"public, max-age=0, must-revalidate\"\u001b[39m"
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C294",
+    "sources": [
+      "docs/content/docs/5.reference/6.server-api.md:113"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C294",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C294",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C295",
+    "sources": [
+      "docs/content/docs/5.reference/6.server-api.md:131"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C295",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C295",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C295",
+        "status": "blocked",
+        "mode": "not-live",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "errors": [
+          "Partial live check: request-scoped merge and clear are verified; authenticated preview disabling is not exercised by this public-only provider."
+        ],
+        "evidence": []
+      }
+    ]
+  },
+  {
+    "claim": "C301",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:235"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C301",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:40 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::j6wl9-1791210220111-a9485df7b57f\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C301",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "runtime-inspection",
+            "text": "{\n  \"data\": {\n    \"catalog\": [\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:seed-kit\",\n        \"locale\": \"en\",\n        \"title\": \"Seed kit\",\n        \"description\": \"Seed kit from JSON\",\n        \"price\": 12,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"seed-kit\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Seed kit\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Native meadow seeds for pollinators.\"\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Seed kit Native meadow seeds for pollinators.\",\n        \"id\": \"content:en:products:seed-kit.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/seed-kit\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      },\n      {\n        \"collection\": \"products\",\n        \"canonicalKey\": \"products:solar-lamp\",\n        \"locale\": \"en\",\n        \"title\": \"Solar lamp\",\n        \"description\": \"Solar lamp from JSON\",\n        \"price\": 49,\n        \"body\": {\n          \"type\": \"root\",\n          \"children\": [\n            {\n              \"type\": \"element\",\n              \"tag\": \"h1\",\n              \"props\": {\n                \"id\": \"solar-lamp\"\n              },\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"Solar lamp\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"text\",\n                  \"value\": \"A repairable solar lamp for outdoor paths.\"\n                }\n              ]\n            },\n            {\n              \"type\": \"element\",\n              \"tag\": \"p\",\n              \"props\": {},\n              \"children\": [\n                {\n                  \"type\": \"element\",\n                  \"tag\": \"a\",\n                  \"props\": {\n                    \"href\": \"/docs/care\"\n                  },\n                  \"children\": [\n                    {\n                      \"type\": \"text\",\n                      \"value\": \"Read care instructions\"\n                    }\n                  ]\n                }\n              ]\n            }\n          ]\n        },\n        \"searchText\": \"Solar lamp A repairable solar lamp for outdoor paths. Read care instructions\",\n        \"id\": \"content:en:products:solar-lamp.md\",\n        \"type\": \"markdown\",\n        \"route\": {\n          \"resolvedPath\": \"/products/solar-lamp\",\n          \"alternates\": []\n        },\n        \"resolution\": {\n          \"requested\": {},\n          \"resolved\": {\n            \"locale\": \"en\"\n          },\n          \"usedFallback\": false\n        }\n      }\n    ],\n    \"tree\": [\n      {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      },\n      {\n        \"title\": \"Catalog guide\",\n        \"path\": \"/docs/start\"\n      }\n    ],\n    \"neighbors\": {\n      \"previous\": null,\n      \"next\": {\n        \"title\": \"Care instructions\",\n        \"path\": \"/docs/care\"\n      }\n    },\n    \"providerHint\": {\n      \"tags\": [\n        \"catalog\"\n      ],\n      \"maxAge\": 60,\n      \"swr\": 300,\n      \"etag\": \"fd47dbe5d7f8d3d0a11deb3404cd8b0137a5be864689ebf060922fc5ad0a3124\",\n      \"lastModified\": \"2026-10-05T00:00:00.000Z\"\n    },\n    \"merged\": {\n      \"tags\": [\n        \"one\",\n        \"two\"\n      ],\n      \"maxAge\": 30\n    },\n    \"cleared\": null,\n    \"headers\": [\n      [\n        \"cache-control\",\n        \"max-age=60, stale-while-revalidate=300\"\n      ],\n      [\n        \"etag\",\n        \"catalog-v1\"\n      ],\n      [\n        \"last-modified\",\n        \"Mon, 05 Oct 2026 00:00:00 GMT\"\n      ]\n    ],\n    \"unsupported\": \"catalog does not support query operator: $gt\"\n  },\n  \"headers\": {\n    \"age\": \"0\",\n    \"cache-control\": \"public, max-age=0, must-revalidate\",\n    \"content-encoding\": \"br\",\n    \"content-type\": \"application/json\",\n    \"date\": \"Mon, 05 Oct 2026 14:23:47 GMT\",\n    \"server\": \"Vercel\",\n    \"strict-transport-security\": \"max-age=63072000; includeSubDomains; preload\",\n    \"x-vercel-cache\": \"MISS\",\n    \"x-vercel-id\": \"fra1::iad1::jj4tm-1791210227554-206bbbc42423\",\n    \"transfer-encoding\": \"chunked\"\n  }\n}"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C325",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:174"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C325",
+        "status": "pass",
+        "check": "C325 C326 context-free query lowering and named navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C326",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:178"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C326",
+        "status": "pass",
+        "check": "C325 C326 context-free query lowering and named navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C327",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:196"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised operator $eq",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural and filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural or filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes structural not filter nodes",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes ordered queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes first terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes count terminal queries",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised offset pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes advertised cursor pagination",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider has discriminating probes for every optional operation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes navigation",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes surroundings",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes search",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider executes site data",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      },
+      {
+        "claim": "C327",
+        "status": "pass",
+        "check": "C225 C226 C227 C228 C327 catalog provider returns validated raw route records",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C328",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:137"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C328",
+        "status": "pass",
+        "check": "C328 documented single-query conformance rejects mismatched offset paging",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C329",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:165"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C329",
+        "status": "pass",
+        "check": "C329 ordered route candidates and reference locales choose the next match",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C330",
+    "sources": [
+      "docs/content/docs/5.reference/10.provider-contract.md:268"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C330",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C330",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C330",
+        "status": "pass",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C343",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:58"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C343",
+        "status": "pass",
+        "check": "C070 C343 heading helpers match duplicates and preserve custom IDs",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C344",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:62"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C344",
+        "status": "pass",
+        "check": "C258 C344 managed media constants and first invalid byte limit",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C345",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:36"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C345",
+        "status": "pass",
+        "check": "C345 public schema helpers inspect optional/default/reference fields",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C346",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:36"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C346",
+        "status": "pass",
+        "check": "C346 shared path draft partial and canonical identity helpers",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C347",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C347",
+        "status": "pass",
+        "check": "C347 Unicode and separator portable identities round-trip",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C348",
+    "sources": [
+      "docs/content/docs/4.guides/2.mdc-components.md:202"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "C348",
+        "status": "pass",
+        "check": "C257 C348 V2 policy unions allowed values nesting and V1 documents in V2 manifests",
+        "mode": "build-only",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "X301",
+    "sources": [
+      "checks/custom-source-results.mjs"
+    ],
+    "rationale": "Public request headers must not expose unpublished catalog content.",
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "X301",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "X301",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "X301",
+        "status": "pass",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
+        "mode": "conformance",
+        "errors": [],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "X302",
+    "sources": [
+      "checks/custom-source-results.mjs"
+    ],
+    "rationale": "Header-only caches must reject unsigned revalidation and return 501 for valid signed requests.",
+    "status": "pass",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "X302",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X302 signed revalidation returns the documented unsupported result for a header-only cache",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "X302",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X302 signed revalidation returns the documented unsupported result for a header-only cache",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X303",
+    "sources": [
+      "checks/custom-source-results.mjs"
+    ],
+    "rationale": "The documented Node export should load the unchanged Nuxt docs-site and round-trip its portable directory.",
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "X303",
+        "status": "fail",
+        "check": "X303 export the unchanged docs-site with input hash guard",
+        "mode": "build-only",
+        "errors": [
+          "GinkoBoundaryError: Filesystem content is not portable (1 error(s)).\n    at Module.exportFilesystemToPortableDirectory (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@lupinum+ginko-content@file+vendor+lupinum-ginko-content-1.0.0-beta.10-a3e8ef1.tgz_1eb81cd495718e2504f43c2d57e230e2/node_modules/@lupinum/ginko-content/dist/portability-node/filesystem-export.js:451:77)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:265:20\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:263:1"
+        ],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "K301",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:103"
+    ],
+    "rationale": "D-02: required data title/description must remain in the resolved CMS contract.",
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "K301",
+        "status": "fail",
+        "check": "K301 data title and description remain in the resolved contract (D-02)",
+        "mode": "build-only",
+        "errors": [
+          "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'title',\n-   'description'\n- ]\n\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:32:10\n    at check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:15)\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:31:7"
+        ],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "K302",
+    "sources": [
+      "docs/content/docs/6.migration/5.filesystem-to-cms.md"
+    ],
+    "rationale": "D-03: an unlocalized default filesystem site must not fail locale contract validation.",
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "K302",
+        "status": "fail",
+        "check": "K302 unlocalized defaults export without locale contract failure (D-03)",
+        "mode": "build-only",
+        "errors": [
+          "AssertionError [ERR_ASSERTION]: [{\"severity\":\"error\",\"code\":\"CONTRACT_INVALID\",\"operation\":\"portability.hash\",\"collection\":null,\"file\":null,\"field\":null,\"message\":\"The default locale must be declared in locales.\",\"resolution\":\"Fix the project configuration and regenerate its resolved Content contract.\"}]\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:261:10\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:258:1"
+        ],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "K303",
+    "sources": [
+      "docs/content/docs/6.migration/5.filesystem-to-cms.md:82"
+    ],
+    "rationale": "The programmatic exporter must load a normal defineNuxtConfig configuration.",
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "K303",
+        "status": "fail",
+        "check": "K303 filesystem assessment loads an ordinary Nuxt configuration",
+        "mode": "build-only",
+        "errors": [
+          "AssertionError [ERR_ASSERTION]: [{\"severity\":\"error\",\"code\":\"CONTRACT_INVALID\",\"operation\":\"portability.hash\",\"collection\":null,\"file\":null,\"field\":null,\"message\":\"defineNuxtConfig is not defined\",\"resolution\":\"Fix the project configuration and regenerate its resolved Content contract.\"}]\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:256:10\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:253:1"
+        ],
+        "evidence": [
+          {
+            "name": "scripts.json",
+            "path": "results/evidence/custom-source/scripts.json"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "K304",
+    "sources": [
+      "docs/content/docs/4.guides/13.data-source-adapters.md:238",
+      "docs/content/docs/5.reference/10.provider-contract.md:137"
+    ],
+    "rationale": "A binder claiming fixed-shape result validation should reject a mismatched paging envelope; the separate conformance kit does reject it.",
+    "status": "fail",
+    "url": "https://ginko-demo-custom-source.vercel.app",
+    "evidence": [
+      {
+        "claim": "K304",
+        "status": "fail",
+        "check": "K304 binder rejects a mismatched offset envelope",
+        "mode": "conformance",
+        "errors": [
+          "Error: promise resolved \"{ data: { result: [], …(3) }, …(1), …(1) }\" instead of rejecting\n    at _Assertion.__VITEST_REJECTS__ (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+expect@4.1.6/node_modules/@vitest/expect/dist/index.js:1747:17)\n    at _Assertion.propertyGetter (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1607:27)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1696:22)\n    at /Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/test/source.test.ts:82:48\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)"
+        ],
+        "evidence": [
+          {
+            "name": "conformance.json",
+            "path": "results/evidence/custom-source/conformance.json"
+          }
+        ]
+      }
+    ]
+  }
+]

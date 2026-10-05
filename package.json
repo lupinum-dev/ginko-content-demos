@@ -11,6 +11,8 @@
     "dev": "pnpm --filter @ginko-demo/quickstart dev",
     "check": "pnpm --filter @ginko-demo/checks check",
     "check:map": "node scripts/verify-claims.mjs",
-    "check:known-failures": "node scripts/check-known-failures.mjs"
+    "check:known-failures": "node scripts/check-known-failures.mjs",
+    "test": "pnpm --filter @ginko-demo/custom-source test",
+    "check:custom-source:scripts": "pnpm --filter @ginko-demo/custom-source check:scripts"
   }
 }

@@ -59,6 +59,20 @@ finally { await chrome?.kill() }
 }
 try { budgets.buildSeconds = JSON.parse(await readFile(new URL(`results/evidence/build-${demo}.json`, root), 'utf8')).seconds }
 catch { budgets.issues.push('No local build timing found; run pnpm build to record it.') }
+if (demo === 'custom-source' && !unavailable) {
+  const samples = []
+  for (let i = 0; i < 20; i++) {
+    const start = performance.now()
+    const response = await fetch(new URL('/docs/start',url))
+    const html = await response.text()
+    samples.push({ milliseconds:performance.now()-start,status:response.status,bytes:Buffer.byteLength(html),server:response.headers.get('x-vercel-id'),cache:response.headers.get('x-vercel-cache') })
+  }
+  const sorted = samples.map(s=>s.milliseconds).sort((a,b)=>a-b)
+  const latency = { method:'20 sequential warm-or-cold GETs to /docs/start, including full response body; nearest-rank quantiles', samples, p50:sorted[9],p95:sorted[18] }
+  const path = `results/evidence/${date}-${demo}-latency.json`
+  await writeFile(new URL(path,root),JSON.stringify(latency,null,2)+'\n')
+  budgets.latency = { p50:latency.p50,p95:latency.p95,evidence:path }
+}
 results[0].budgets = budgets
 await writeFile(resultPath, JSON.stringify(results, null, 2) + '\n')
 console.log(JSON.stringify({ url, claims: results.map(({ claim, status }) => ({ claim, status })), budgets }, null, 2))
