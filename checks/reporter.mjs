@@ -3,6 +3,7 @@ import { relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import map from './claims-map.json' with { type: 'json' }
 import targets from './targets.json' with { type: 'json' }
+import claims from './claims-source.json' with { type: 'json' }
 const root = fileURLToPath(new URL('../', import.meta.url))
 export default class ClaimReporter {
   records = []
@@ -15,7 +16,7 @@ export default class ClaimReporter {
     const url = process.env.BASE_URL ?? targets[demo].BASE_URL
     const results = map.filter(entry => entry.demo === demo).map(entry => {
       const checks = this.records.filter(record => record.claim === entry.id)
-      return { claim: entry.id, status: !checks.length || checks.some(check => check.status === 'blocked') ? 'blocked' : checks.some(check => check.status === 'fail') ? 'fail' : 'pass', url, evidence: checks }
+      return { claim: entry.id, sources: claims.find(claim => claim.id === entry.id).sources, quickstartSource: 'docs/content/docs/1.get-started/1.quickstart.md', status: checks.some(check => check.status === 'fail') ? 'fail' : !checks.length || checks.some(check => check.status === 'blocked') ? 'blocked' : 'pass', url, evidence: checks }
     })
     mkdirSync(resolve(root, 'results'), { recursive: true })
     writeFileSync(resolve(root, 'results', `${new Date().toISOString().slice(0, 10)}-${demo}.json`), JSON.stringify(results, null, 2) + '\n')

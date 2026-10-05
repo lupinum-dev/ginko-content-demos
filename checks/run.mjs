@@ -56,4 +56,4 @@ catch { budgets.issues.push('No local build timing found; run pnpm build to reco
 results[0].budgets = budgets
 await writeFile(resultPath, JSON.stringify(results, null, 2) + '\n')
 console.log(JSON.stringify({ url, claims: results.map(({ claim, status }) => ({ claim, status })), budgets }, null, 2))
-process.exitCode = code || (budgets.issues.length ? 1 : 0)
+process.exitCode = code || (budgets.issues.length || results.some(result => result.status !== 'pass') ? 1 : 0)

@@ -4,6 +4,7 @@ import { writeFile } from 'node:fs/promises'
 test('C001 home renders documented Markdown', async ({ page }) => {
   const response = await page.goto('/')
   expect(response.status()).toBe(200)
+  await page.waitForLoadState('networkidle')
   await expect(page.locator('main h1')).toHaveText('Welcome')
   await expect(page.locator('main')).toContainText('This page comes from content/index.md.')
   await expect(page.getByRole('link', { name: 'Read the guide' })).toHaveAttribute('href', '/guide')
@@ -13,6 +14,7 @@ test('C001 home renders documented Markdown', async ({ page }) => {
 test('C001 second page renders documented Markdown', async ({ page }) => {
   const response = await page.goto('/guide')
   expect(response.status()).toBe(200)
+  await page.waitForLoadState('networkidle')
   await expect(page.locator('main h1')).toHaveText('Guide')
   await expect(page.locator('main')).toContainText('Both pages belong to the same typed collection.')
   await expect(page).toHaveTitle('Guide')
@@ -54,7 +56,7 @@ test('C152 client navigation renders both pages without stale-page flashes or co
   await page.goto('/')
   await page.waitForLoadState('networkidle')
   await page.evaluate(() => { window.__demoNavigationMarker = 'same-document' })
-  await page.getByRole('link', { name: 'Read the guide' }).click()
+  await page.getByTestId('guide-link').click()
   await expect(page).toHaveURL(/\/guide$/)
   expect(await page.locator('main h1').allTextContents()).not.toContain('Welcome')
   await expect(page.locator('main h1')).toHaveText('Guide')
@@ -69,7 +71,7 @@ test('C152 client navigation renders both pages without stale-page flashes or co
   expect(errors).toEqual([])
 })
 
-test('C200 serverless filesystem snapshot serves both routes as SSR HTML', async ({ baseURL }, testInfo) => {
+test('C001 both routes deliver server-rendered HTML', async ({ baseURL }, testInfo) => {
   for (const [path, heading, body] of [['/', 'Welcome', 'This page comes from'], ['/guide', 'Guide', 'Both pages belong']]) {
     const response = await fetch(new URL(path, baseURL))
     const html = await response.text()

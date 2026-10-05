@@ -996,7 +996,7 @@
   },
   {
     "id": "C200",
-    "demo": "quickstart",
+    "demo": "blog",
     "check": "Deploy isolated output without source files and load/query content"
   },
   {

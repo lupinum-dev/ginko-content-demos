@@ -67,10 +67,11 @@ node scripts/verify-claims.mjs /path/to/library/.audit/claims/claims.json
 
 `checks/targets.json` supplies each demo's `BASE_URL`; the environment can override
 it. Checks use Chromium only at desktop 1440×900 and mobile 390×844. Plain fetch
-assertions inspect SSR HTML and the unknown route's HTTP status. Browser checks
-assert both pages, app-owned 404 text, SSR payload reuse, client navigation in both
-directions, no stale headings under delayed content requests, and no console or
-page errors during the successful navigation journey.
+assertions inspect server-rendered HTML and the unknown route's HTTP status.
+Browser checks assert both pages, app-owned 404 text, SSR payload reuse, client
+navigation through the shell NuxtLink controls in both directions (the documented
+Markdown link is a native anchor), no stale headings under delayed content
+requests, and no console or page errors during the successful navigation journey.
 
 Test names begin with claim IDs. `results/<UTC-date>-quickstart.json` contains one
 aggregated record per quickstart claim; each retains the individual test,
@@ -79,8 +80,8 @@ blocked, assertion failures are fail, and only completed successful checks pass.
 Screenshots, HTTP responses, failure traces, build timing, client JS details, and
 Lighthouse JSON go under `results/evidence/`. Results are git-ignored local
 artifacts, never committed. `.vercelignore` also excludes results and generated
-local build artifacts from CLI uploads. A same-day rerun replaces the run JSON and Playwright
-artifacts; retain a copy inside `results/evidence/` before rerunning if needed.
+local build artifacts from CLI uploads. A same-day rerun replaces the run JSON
+and Playwright artifacts; retain a copy inside `results/evidence/` before rerunning if needed.
 
 The first claim record also stores measured budgets: cold mobile first-load
 unique script-response gzip bytes (Node gzip defaults, not transfer size), one
@@ -99,9 +100,9 @@ explicitly deferred by DESIGN.md. This slice implements only quickstart.
 
 | Assignment | Claims |
 | --- | ---: |
-| quickstart | 5 |
+| quickstart | 4 |
 | docs-site | 94 |
-| blog | 77 |
+| blog | 78 |
 | multilingual | 32 |
 | custom-source | 91 |
 | scale | 2 |
@@ -109,8 +110,11 @@ explicitly deferred by DESIGN.md. This slice implements only quickstart.
 | **Total** | **365** |
 
 The quickstart records C001 (module/two routes), C151 (SSR payload reuse), C152
-(client navigation/stale-page suppression), C154 (app-owned 404), and C200
-(serverless filesystem snapshot). The two-page fixture proves these scenarios;
+(client navigation/stale-page suppression), C154 (app-owned 404). The unchanged
+docs configuration prerenders the
+two HTML pages, so C200 (serverless filesystem snapshot) is assigned to the
+runtime blog demo. Successful quickstart fetches prove server-rendered HTML,
+not runtime filesystem reads. The two-page fixture proves these scenarios;
 it does not prove every possible configuration of those APIs.
 
 ## Vercel
