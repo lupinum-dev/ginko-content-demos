@@ -1,0 +1,53 @@
+[
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:start",
+    "locale": "en",
+    "contentPath": "/docs/start",
+    "title": "Catalog guide",
+    "description": "Catalog guide from JSON",
+    "mdc": "# Catalog guide\n\nOur JSON store powers this runtime page.\n\n::notice{title=\"Stored MDC\"}\n#default\nThe component comes from the stored body.\n\n#actions\n[View the products](/products/solar-lamp)\n::\n\n[Read care instructions](/docs/care)",
+    "category": "Guide"
+  },
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:care",
+    "locale": "en",
+    "contentPath": "/docs/care",
+    "title": "Care instructions",
+    "description": "Care instructions from JSON",
+    "mdc": "# Care instructions\n\nClean the solar lamp with a soft cloth.\n\n[Back to the catalog guide](/docs/start)",
+    "category": "Guide"
+  },
+  {
+    "collection": "products",
+    "canonicalKey": "products:solar-lamp",
+    "locale": "en",
+    "contentPath": "/products/solar-lamp",
+    "title": "Solar lamp",
+    "description": "Solar lamp from JSON",
+    "mdc": "# Solar lamp\n\nA repairable solar lamp for outdoor paths.\n\n[Read care instructions](/docs/care)",
+    "price": 49
+  },
+  {
+    "collection": "products",
+    "canonicalKey": "products:seed-kit",
+    "locale": "en",
+    "contentPath": "/products/seed-kit",
+    "title": "Seed kit",
+    "description": "Seed kit from JSON",
+    "mdc": "# Seed kit\n\nNative meadow seeds for pollinators.",
+    "price": 12
+  },
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:private",
+    "locale": "en",
+    "contentPath": "/docs/private",
+    "title": "Unpublished experiment",
+    "description": "Unpublished experiment from JSON",
+    "mdc": "# Unpublished experiment",
+    "category": "Draft",
+    "draft": true
+  }
+]

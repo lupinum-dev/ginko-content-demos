@@ -220,3 +220,59 @@ corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupi
 The CLI upload is independent of the existing quickstart GitHub deployment.
 Inspect the project link before deploying; use explicit names and do not deploy
 an unrelated project.
+
+## Custom source demo
+
+Production: <https://ginko-demo-custom-source.vercel.app>.
+Project `ginko-demo-custom-source`, team `Lupinum OG` (`lupinum`), ID
+`prj_Sk21Huih4USEH1pWUD2UvMNBF6wr`. The Nuxt SSR project uses Node 24,
+root `apps/custom-source`, build `pnpm build`, and install
+`cd ../.. && corepack pnpm install --frozen-lockfile`, with workspace source
+outside the root included and deployment protection disabled.
+
+The product catalog and docs come from an in-repo JSON `ContentDataSource`.
+The 118-line source advertises equality, offset and cursor pagination; implements
+navigation, surroundings, provider search, site data and paged route enumeration;
+and excludes unpublished entries on every surface. Pages use collection handles,
+`useContentPage`, `many`, `navigation`, `useContentSearch` and `ContentRenderer`.
+`authored.json` is canonical; the public portable parser rebuilds `published.json`
+at the explicit publishing step. Nuxt route rules keep page delivery at runtime.
+The finite fixture has public read authorization and is not a production CMS.
+
+```sh
+corepack pnpm --filter @ginko-demo/custom-source publish:store
+corepack pnpm --filter @ginko-demo/custom-source dev
+corepack pnpm --filter @ginko-demo/custom-source typecheck
+corepack pnpm test
+corepack pnpm check:custom-source:scripts
+corepack pnpm build custom-source
+corepack pnpm check custom-source
+corepack pnpm check:map
+```
+
+The two documented conformance suites run through the real binder. The script
+command reads the prepared contract, tests CMS/MDC/portable codecs and V1/V2
+policies, round-trips a separate four-document portable directory and rebuilds
+its manifest, and attempts the unchanged filesystem docs-site export. Scripts
+and conformance are recorded as build-only and conformance evidence, never as
+hosted proof. Per-claim summaries remain committed; raw evidence stays ignored.
+Every unverified or partial assigned claim has a reason in the claim map.
+
+The checks retain library failures, including data-field loss, default locale
+export failure, inability to load the normal docs-site Nuxt config, accepted
+invalid binder results, omitted CMS label and missing SSR cache freshness.
+[Custom source friction](apps/custom-source/FRICTION.md) describes the glue and
+limits. These findings do not have package patches or fallback implementations.
+
+The project has `GINKO_CONTENT_REVALIDATE_TOKEN` configured as a production
+secret. The cache adapter only applies standard headers and omits `invalidate`.
+A valid HMAC-signed request therefore returns the documented
+`501 revalidation_not_supported`; unsigned requests are rejected. To rerun the
+signed assertion, supply the same secret through the process environment (never
+print it). If absent, the signed check reports an explicit credential skip.
+No external cache purge or writable catalog endpoint is added.
+
+Production checks cover desktop 1440×900 and mobile 390×844. Budgets include
+first-page unique script gzip, Lighthouse mobile, local build time, and p50/p95
+for 20 sequential full-body requests to `/docs/start`. These are observations,
+not performance guarantees.

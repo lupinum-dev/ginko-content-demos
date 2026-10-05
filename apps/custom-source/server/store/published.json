@@ -1,0 +1,295 @@
+[
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:start",
+    "locale": "en",
+    "contentPath": "/docs/start",
+    "title": "Catalog guide",
+    "description": "Catalog guide from JSON",
+    "category": "Guide",
+    "body": {
+      "type": "root",
+      "children": [
+        {
+          "type": "element",
+          "tag": "h1",
+          "props": {
+            "id": "catalog-guide"
+          },
+          "children": [
+            {
+              "type": "text",
+              "value": "Catalog guide"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "text",
+              "value": "Our JSON store powers this runtime page."
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "notice",
+          "props": {
+            "title": "Stored MDC",
+            "$": {
+              "component": 1,
+              "block": 1
+            }
+          },
+          "children": [
+            {
+              "type": "element",
+              "tag": "template",
+              "props": {
+                "name": "default"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "value": "The component comes from the stored body."
+                }
+              ]
+            },
+            {
+              "type": "element",
+              "tag": "template",
+              "props": {
+                "name": "actions"
+              },
+              "children": [
+                {
+                  "type": "element",
+                  "tag": "a",
+                  "props": {
+                    "href": "/products/solar-lamp"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "View the products"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "element",
+              "tag": "a",
+              "props": {
+                "href": "/docs/care"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Read care instructions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "searchText": "Catalog guide Our JSON store powers this runtime page. The component comes from the stored body. View the products Read care instructions"
+  },
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:care",
+    "locale": "en",
+    "contentPath": "/docs/care",
+    "title": "Care instructions",
+    "description": "Care instructions from JSON",
+    "category": "Guide",
+    "body": {
+      "type": "root",
+      "children": [
+        {
+          "type": "element",
+          "tag": "h1",
+          "props": {
+            "id": "care-instructions"
+          },
+          "children": [
+            {
+              "type": "text",
+              "value": "Care instructions"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "text",
+              "value": "Clean the solar lamp with a soft cloth."
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "element",
+              "tag": "a",
+              "props": {
+                "href": "/docs/start"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Back to the catalog guide"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "searchText": "Care instructions Clean the solar lamp with a soft cloth. Back to the catalog guide"
+  },
+  {
+    "collection": "products",
+    "canonicalKey": "products:solar-lamp",
+    "locale": "en",
+    "contentPath": "/products/solar-lamp",
+    "title": "Solar lamp",
+    "description": "Solar lamp from JSON",
+    "price": 49,
+    "body": {
+      "type": "root",
+      "children": [
+        {
+          "type": "element",
+          "tag": "h1",
+          "props": {
+            "id": "solar-lamp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "value": "Solar lamp"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "text",
+              "value": "A repairable solar lamp for outdoor paths."
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "element",
+              "tag": "a",
+              "props": {
+                "href": "/docs/care"
+              },
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Read care instructions"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "searchText": "Solar lamp A repairable solar lamp for outdoor paths. Read care instructions"
+  },
+  {
+    "collection": "products",
+    "canonicalKey": "products:seed-kit",
+    "locale": "en",
+    "contentPath": "/products/seed-kit",
+    "title": "Seed kit",
+    "description": "Seed kit from JSON",
+    "price": 12,
+    "body": {
+      "type": "root",
+      "children": [
+        {
+          "type": "element",
+          "tag": "h1",
+          "props": {
+            "id": "seed-kit"
+          },
+          "children": [
+            {
+              "type": "text",
+              "value": "Seed kit"
+            }
+          ]
+        },
+        {
+          "type": "element",
+          "tag": "p",
+          "props": {},
+          "children": [
+            {
+              "type": "text",
+              "value": "Native meadow seeds for pollinators."
+            }
+          ]
+        }
+      ]
+    },
+    "searchText": "Seed kit Native meadow seeds for pollinators."
+  },
+  {
+    "collection": "docs",
+    "canonicalKey": "docs:private",
+    "locale": "en",
+    "contentPath": "/docs/private",
+    "title": "Unpublished experiment",
+    "description": "Unpublished experiment from JSON",
+    "category": "Draft",
+    "draft": true,
+    "body": {
+      "type": "root",
+      "children": [
+        {
+          "type": "element",
+          "tag": "h1",
+          "props": {
+            "id": "unpublished-experiment"
+          },
+          "children": [
+            {
+              "type": "text",
+              "value": "Unpublished experiment"
+            }
+          ]
+        }
+      ]
+    },
+    "searchText": "Unpublished experiment"
+  }
+]

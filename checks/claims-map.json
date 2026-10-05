@@ -12,7 +12,8 @@
   {
     "id": "C003",
     "demo": "custom-source",
-    "check": "Load content from an additional configured storage mount"
+    "check": "Load content from an additional configured storage mount",
+    "notLiveReason": "Not-live: filesystem storage-driver mounts are a separate source mechanism; this provider-backed JSON fixture does not exercise an additional filesystem mount."
   },
   {
     "id": "C004",
@@ -63,7 +64,7 @@
   {
     "id": "C013",
     "demo": "custom-source",
-    "check": "Inspect generated contract for label, tree shape, route rules, and field overrides"
+    "check": "C013 explicit CMS label structure and routing survive resolution"
   },
   {
     "id": "C014",
@@ -73,7 +74,7 @@
   {
     "id": "C015",
     "demo": "custom-source",
-    "check": "Display metadata from a configured field and check plain Zod returns no metadata"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C016",
@@ -173,27 +174,27 @@
   {
     "id": "C035",
     "demo": "custom-source",
-    "check": "Inspect generated contract and validation after applying .required"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C036",
     "demo": "custom-source",
-    "check": "Inspect generated contract and validation after applying .label"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C037",
     "demo": "custom-source",
-    "check": "Inspect generated contract and validation after applying .help"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C038",
     "demo": "custom-source",
-    "check": "Inspect generated contract and validation after applying .localized"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C039",
     "demo": "custom-source",
-    "check": "Inspect generated contract and validation after applying .shared"
+    "check": "C015 C035 C036 C037 C038 C039 field modifiers retain validation and metadata"
   },
   {
     "id": "C040",
@@ -364,32 +365,32 @@
   {
     "id": "C069",
     "demo": "custom-source",
-    "check": "Round-trip literal ::card, :fire, braces and #slot without creating components"
+    "check": "C069 round-trip literal MDC-looking text and ordinary colons"
   },
   {
     "id": "C070",
     "demo": "custom-source",
-    "check": "Edit an anchor ID, serialize, parse and compare anchors"
+    "check": "C070 C343 heading helpers match duplicates and preserve custom IDs"
   },
   {
     "id": "C071",
     "demo": "custom-source",
-    "check": "Round-trip indented and nested fences with leading blank lines"
+    "check": "C071 round-trip nested code and inline code"
   },
   {
     "id": "C072",
     "demo": "custom-source",
-    "check": "Round-trip lists beginning with code, quotes and tables"
+    "check": "C072 round-trip list-leading code quote and table"
   },
   {
     "id": "C073",
     "demo": "custom-source",
-    "check": "Round-trip adjacent lists and table delimiter text with formatting"
+    "check": "C073 round-trip adjacent lists strike and hard break"
   },
   {
     "id": "C074",
     "demo": "custom-source",
-    "check": "Preview unfinished components around fences without altering code"
+    "check": "C074 round-trip fence containing component terminators"
   },
   {
     "id": "C075",
@@ -400,27 +401,27 @@
   {
     "id": "C076",
     "demo": "custom-source",
-    "check": "Compare portable and site parser outputs for domains and explicit links"
+    "check": "C076 C248 fixed portable parser does not autolink or run site math plugin"
   },
   {
     "id": "C077",
     "demo": "custom-source",
-    "check": "Reject http:evil and http:///evil but allow http://example.com"
+    "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs"
   },
   {
     "id": "C078",
     "demo": "custom-source",
-    "check": "Round-trip hostile prop strings and confirm no injected prop or line"
+    "check": "C078 round-trip hostile typed props"
   },
   {
     "id": "C079",
     "demo": "custom-source",
-    "check": "Round-trip those values and compare semantic AST"
+    "check": "C079 round-trip spaces and alt text"
   },
   {
     "id": "C080",
     "demo": "custom-source",
-    "check": "Preview an open fence inside unfinished component and preserve fence content"
+    "check": "C080 C090 preview closes unfinished syntax but ingestion rejects it"
   },
   {
     "id": "C081",
@@ -436,17 +437,17 @@
   {
     "id": "C083",
     "demo": "custom-source",
-    "check": "Round-trip a component with props inside blockquote and list"
+    "check": "C083 round-trip multiline props nested in quote and list"
   },
   {
     "id": "C084",
     "demo": "custom-source",
-    "check": "Round-trip title [1] and verify string type"
+    "check": "C084 round-trip link titles are strings"
   },
   {
     "id": "C085",
     "demo": "custom-source",
-    "check": "Require MdcSerializationError for impossible alt text rather than data loss"
+    "check": "C085 C089 unrepresentable native attributes and alt text throw typed errors"
   },
   {
     "id": "C086",
@@ -461,17 +462,17 @@
   {
     "id": "C088",
     "demo": "custom-source",
-    "check": "Round-trip quoted [1,2], unquoted array, and undefined props distinctly"
+    "check": "C088 round-trip JSON-like prop strings and arrays"
   },
   {
     "id": "C089",
     "demo": "custom-source",
-    "check": "Serialize an invalid angle prop name and JSON-like Markdown attribute; require typed errors"
+    "check": "C085 C089 unrepresentable native attributes and alt text throw typed errors"
   },
   {
     "id": "C090",
     "demo": "custom-source",
-    "check": "Preview incomplete angle props; require content build failure for incomplete source"
+    "check": "C080 C090 preview closes unfinished syntax but ingestion rejects it"
   },
   {
     "id": "C091",
@@ -573,12 +574,14 @@
   {
     "id": "C110",
     "demo": "custom-source",
-    "check": "Use 1001 refs to require rejection and instrument concurrency ceiling"
+    "check": "Use 1001 refs to require rejection and instrument concurrency ceiling",
+    "notLiveReason": "Not-live: the JSON catalog has no 1001-reference population fixture or instrumented eight-read ceiling. Population limits are not verified here."
   },
   {
     "id": "C111",
     "demo": "custom-source",
-    "check": "Instrument repeated-target reads and require one lookup per unique target"
+    "check": "Instrument repeated-target reads and require one lookup per unique target",
+    "notLiveReason": "Not-live: no repeated-reference population graph is present. Unique-target lookup deduplication is not verified here."
   },
   {
     "id": "C112",
@@ -593,7 +596,7 @@
   {
     "id": "C114",
     "demo": "custom-source",
-    "check": "Ask for unsupported operator and verify error before provider dispatch"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers"
   },
   {
     "id": "C115",
@@ -939,7 +942,8 @@
   {
     "id": "C180",
     "demo": "custom-source",
-    "check": "Compare same query across three engines for collection/path/excerpt fields"
+    "check": "C180 provider search has the standard collection/path/excerpt shape",
+    "notLiveReason": "Partial live check: provider search shape is verified; equivalent queries against MiniSearch and Pagefind were not run in this worktree."
   },
   {
     "id": "C181",
@@ -1189,172 +1193,174 @@
   {
     "id": "C225",
     "demo": "custom-source",
-    "check": "Swap filesystem for provider and run same page/list calls"
+    "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities"
   },
   {
     "id": "C226",
     "demo": "custom-source",
-    "check": "Run minimum provider; reject optional requests without corresponding methods"
+    "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities"
   },
   {
     "id": "C227",
     "demo": "custom-source",
-    "check": "Capture query envelope and round-trip JSON with v5 and single collection authority"
+    "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities"
   },
   {
     "id": "C228",
     "demo": "custom-source",
-    "check": "Run discriminating probes for every advertised operator/mode"
+    "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities"
   },
   {
     "id": "C229",
     "demo": "custom-source",
-    "check": "Return raw facts and inspect derived public envelope"
+    "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath"
   },
   {
     "id": "C230",
     "demo": "custom-source",
-    "check": "Reject missing identity and verify translations retain same canonical key"
+    "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath"
   },
   {
     "id": "C231",
     "demo": "custom-source",
-    "check": "Return localized mounted path and verify exactly one public locale prefix"
+    "check": "C229 C230 C231 raw documents preserve canonical identity and mounted contentPath"
   },
   {
     "id": "C232",
     "demo": "custom-source",
-    "check": "Return malformed/traversal route and require rejection"
+    "check": "C232 C243 optional route sitemap facts reject invalid images and dates"
   },
   {
     "id": "C233",
     "demo": "custom-source",
-    "check": "Probe configured provider authorization consistently across query/navigation/search/routes"
+    "check": "C233 C330 X003 public authorization excludes drafts on every source surface"
   },
   {
     "id": "C234",
     "demo": "custom-source",
-    "check": "Read site data including null; reject undefined/non-JSON data"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers"
   },
   {
     "id": "C235",
     "demo": "custom-source",
-    "check": "Throw secret-bearing backend error and verify stable public code without leakage"
+    "check": "C235 C244 stable typed unsupported backend and cursor HTTP errors"
   },
   {
     "id": "C236",
     "demo": "custom-source",
-    "check": "Import adapter contract without Nuxt and run real bounded reads"
+    "check": "C236 C237 C238 C241 catalog source returns a found first result"
   },
   {
     "id": "C237",
     "demo": "custom-source",
-    "check": "Run two scoped contexts and verify no cross-request data leakage"
+    "check": "C236 C237 C238 C241 catalog source returns a found first result"
   },
   {
     "id": "C238",
     "demo": "custom-source",
-    "check": "Return oversized/non-JSON results and require boundary rejection"
+    "check": "C236 C237 C238 C241 catalog source returns a found first result"
   },
   {
     "id": "C239",
     "demo": "custom-source",
-    "check": "Run slow backend and require abort and mapped timeout"
+    "check": "C239 backend receives usable cancellation and deadline controls"
   },
   {
     "id": "C240",
     "demo": "custom-source",
-    "check": "Submit oversized and credential-bearing cache hints and require rejection"
+    "check": "C240 cache hint constructor rejects limits and credential-bearing tags"
   },
   {
     "id": "C241",
     "demo": "custom-source",
-    "check": "Enumerate two pages then change snapshot and require rejection"
+    "check": "C236 C237 C238 C241 catalog source returns a found first result"
   },
   {
     "id": "C242",
     "demo": "custom-source",
-    "check": "Use looping/empty cursor pages and require ROUTE_ENUMERATION_INVALID"
+    "check": "C242 binder rejects repeated route cursors and changing snapshots"
   },
   {
     "id": "C243",
     "demo": "custom-source",
-    "check": "Exercise each stated boundary and first invalid value without exceeding ceilings"
+    "check": "C232 C243 optional route sitemap facts reject invalid images and dates"
   },
   {
     "id": "C244",
     "demo": "custom-source",
-    "check": "Trigger cursor/unsupported/backend/deadline cases; require 400/400/502/504"
+    "check": "C244 invalid cursor maps to HTTP 400"
   },
   {
     "id": "C245",
     "demo": "custom-source",
-    "check": "Return skewed producer envelope and require rejection before projection"
+    "check": "C245 separate CMS wire protocol must agree before result parsing"
   },
   {
     "id": "C246",
     "demo": "custom-source",
-    "check": "Prepare consumer then inspect artifact against source collections"
+    "check": "C246 C247 read canonical prepared contract and verify canonical hash"
   },
   {
     "id": "C247",
     "demo": "custom-source",
-    "check": "Read artifact and reject wrong expected sha256"
+    "check": "C246 C247 read canonical prepared contract and verify canonical hash",
+    "notLiveReason": "Partial build-only check: canonical contract/hash read is verified; an expected-input-hash mismatch export cannot be exercised because the unchanged docs-site fails assessment first."
   },
   {
     "id": "C248",
     "demo": "custom-source",
-    "check": "Enable site plugin and verify portable parse remains baseline"
+    "check": "C076 C248 fixed portable parser does not autolink or run site math plugin"
   },
   {
     "id": "C249",
     "demo": "custom-source",
-    "check": "Collect repeated native/component media and confirm order with no code/text hits"
+    "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously"
   },
   {
     "id": "C250",
     "demo": "custom-source",
-    "check": "Rewrite IDs asynchronously; reject invalid ID and invalid policy"
+    "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously"
   },
   {
     "id": "C251",
     "demo": "custom-source",
-    "check": "Use identity remap and compare exact source bytes"
+    "check": "C249 C250 C251 stored media collects repeated identities in order and remaps asynchronously"
   },
   {
     "id": "C252",
     "demo": "custom-source",
-    "check": "Import contract surface in browser/worker and execute parser/hash"
+    "check": "Import contract surface in browser/worker and execute parser/hash",
+    "notLiveReason": "Not-live: CMS-contract imports execute in Node scripts, but an isolate/browser module-graph build was not performed; framework-free execution is not proven."
   },
   {
     "id": "C253",
     "demo": "custom-source",
-    "check": "Attempt unsafe element, URL and undeclared component; require rejection"
+    "check": "C253 inert render policy rejects scripts and unknown components"
   },
   {
     "id": "C254",
     "demo": "custom-source",
-    "check": "Validate both versions and reject schema/version mismatch"
+    "check": "C254 current and pinned resolved contract validators"
   },
   {
     "id": "C255",
     "demo": "custom-source",
-    "check": "Exercise valid/invalid names and public URL schemes"
+    "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs"
   },
   {
     "id": "C256",
     "demo": "custom-source",
-    "check": "Render HTTP link and reject HTTP media"
+    "check": "C077 C255 C256 public URL/name rules reject malformed and credential-bearing URLs"
   },
   {
     "id": "C257",
     "demo": "custom-source",
-    "check": "Render valid union/nested components and reject invalid value or parent"
+    "check": "C257 C348 V2 policy unions allowed values nesting and V1 documents in V2 manifests"
   },
   {
     "id": "C258",
     "demo": "custom-source",
-    "check": "Verify allowed image bytes and reject oversized or fake MIME/signature"
+    "check": "C258 C344 managed media constants and first invalid byte limit"
   },
   {
     "id": "C259",
@@ -1394,17 +1400,20 @@
   {
     "id": "C266",
     "demo": "custom-source",
-    "check": "Export sidecar title/order then compare imported tree"
+    "check": "Export sidecar title/order then compare imported tree",
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); sidecar metadata never reaches a portable tree."
   },
   {
     "id": "C267",
     "demo": "custom-source",
-    "check": "Export/import content refs and code and compare semantics"
+    "check": "Export/import content refs and code and compare semantics",
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); its Content references and literal examples cannot be compared after export."
   },
   {
     "id": "C268",
     "demo": "custom-source",
-    "check": "Export plain local image; require unchanged source and no fetch"
+    "check": "Export plain local image; require unchanged source and no fetch",
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); authored public/external images cannot be compared after export."
   },
   {
     "id": "C269",
@@ -1419,42 +1428,42 @@
   {
     "id": "C271",
     "demo": "custom-source",
-    "check": "Round-trip valid documents and reject non-portable values"
+    "check": "C271 C278 YAML/JSON records and canonical incremental SHA-256"
   },
   {
     "id": "C272",
     "demo": "custom-source",
-    "check": "Round-trip authored MDC and compare normalized semantic content"
+    "check": "C272 portable MDC classification serialization and normalization"
   },
   {
     "id": "C273",
     "demo": "custom-source",
-    "check": "Round-trip page/data identities and reject traversal"
+    "check": "C273 C277 document codecs validate identity and semantic model equality"
   },
   {
     "id": "C274",
     "demo": "custom-source",
-    "check": "Reject missing or wrong-collection references"
+    "check": "C274 C275 portable relations and managed asset fields collect validate and remap"
   },
   {
     "id": "C275",
     "demo": "custom-source",
-    "check": "Remap image references and reject missing asset bytes"
+    "check": "C274 C275 portable relations and managed asset fields collect validate and remap"
   },
   {
     "id": "C276",
     "demo": "custom-source",
-    "check": "Rebuild manifest and compare checksums; reject tampering"
+    "check": "C276 portable directory round-trip validates and rebuilds manifests"
   },
   {
     "id": "C277",
     "demo": "custom-source",
-    "check": "Compare differently serialized equal documents then changed content"
+    "check": "C273 C277 document codecs validate identity and semantic model equality"
   },
   {
     "id": "C278",
     "demo": "custom-source",
-    "check": "Hash reordered JSON keys and incremental bytes against known digest"
+    "check": "C271 C278 YAML/JSON records and canonical incremental SHA-256"
   },
   {
     "id": "C279",
@@ -1499,12 +1508,12 @@
   {
     "id": "C287",
     "demo": "custom-source",
-    "check": "Inspect deployed query/page cache-control and cache tags"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers"
   },
   {
     "id": "C288",
     "demo": "custom-source",
-    "check": "Instrument adapter apply and verify merged response hints"
+    "check": "C288 provider cache hints apply after SSR rendering"
   },
   {
     "id": "C289",
@@ -1534,12 +1543,13 @@
   {
     "id": "C294",
     "demo": "custom-source",
-    "check": "Inspect literal Cache-Control, ETag and Last-Modified"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers"
   },
   {
     "id": "C295",
     "demo": "custom-source",
-    "check": "Issue isolated requests with hints then preview and inspect false/private behavior"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers",
+    "notLiveReason": "Partial live check: request-scoped merge and clear are verified; authenticated preview disabling is not exercised by this public-only provider."
   },
   {
     "id": "C296",
@@ -1569,7 +1579,7 @@
   {
     "id": "C301",
     "demo": "custom-source",
-    "check": "Read existing and null site-data keys in deployed app"
+    "check": "C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear and headers"
   },
   {
     "id": "C302",
@@ -1690,32 +1700,32 @@
   {
     "id": "C325",
     "demo": "custom-source",
-    "check": "Lower filter/path fixture; reject route/ref selectors without application policy"
+    "check": "C325 C326 context-free query lowering and named navigation"
   },
   {
     "id": "C326",
     "demo": "custom-source",
-    "check": "Lower navigation with and without collection and verify validation"
+    "check": "C325 C326 context-free query lowering and named navigation"
   },
   {
     "id": "C327",
     "demo": "custom-source",
-    "check": "Run conformance against ignored first/sort/logical/count behavior"
+    "check": "C225 C226 C227 C228 C327 catalog provider exposes only semantic query capabilities"
   },
   {
     "id": "C328",
     "demo": "custom-source",
-    "check": "Return mismatched paging envelope and require boundary error"
+    "check": "C328 documented single-query conformance rejects mismatched offset paging"
   },
   {
     "id": "C329",
     "demo": "custom-source",
-    "check": "Probe translated mounts with missing first candidate and verify next match"
+    "check": "C329 ordered route candidates and reference locales choose the next match"
   },
   {
     "id": "C330",
     "demo": "custom-source",
-    "check": "Exercise authorization on page/list/count/route/search using same context"
+    "check": "C233 C330 X003 public authorization excludes drafts on every source surface"
   },
   {
     "id": "C331",
@@ -1784,32 +1794,32 @@
   {
     "id": "C343",
     "demo": "custom-source",
-    "check": "Compare helper outputs with rendered non-ASCII/repeated/custom headings"
+    "check": "C070 C343 heading helpers match duplicates and preserve custom IDs"
   },
   {
     "id": "C344",
     "demo": "custom-source",
-    "check": "Inspect published constants and test first-invalid bounded media case"
+    "check": "C258 C344 managed media constants and first invalid byte limit"
   },
   {
     "id": "C345",
     "demo": "custom-source",
-    "check": "Inspect optional/default/reference nested schemas through exported helpers"
+    "check": "C345 public schema helpers inspect optional/default/reference fields"
   },
   {
     "id": "C346",
     "demo": "custom-source",
-    "check": "Compare exported path/identity helpers to deployed filesystem route facts"
+    "check": "C346 shared path draft partial and canonical identity helpers"
   },
   {
     "id": "C347",
     "demo": "custom-source",
-    "check": "Round-trip Unicode and separator-bearing identities; reject invalid encodings"
+    "check": "C347 Unicode and separator portable identities round-trip"
   },
   {
     "id": "C348",
     "demo": "custom-source",
-    "check": "Export V2 policy and verify manifest v2 with document record v1"
+    "check": "C257 C348 V2 policy unions allowed values nesting and V1 documents in V2 manifests"
   },
   {
     "id": "C349",

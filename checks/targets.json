@@ -4,5 +4,8 @@
   },
   "docs-site": {
     "BASE_URL": "https://ginko-demo-docs-site.vercel.app"
+  },
+  "custom-source": {
+    "BASE_URL": "https://ginko-demo-custom-source.vercel.app"
   }
 }

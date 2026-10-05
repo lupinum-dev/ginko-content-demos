@@ -10,6 +10,8 @@
     "build": "node scripts/build.mjs",
     "dev": "pnpm --filter @ginko-demo/quickstart dev",
     "check": "pnpm --filter @ginko-demo/checks check",
-    "check:map": "node scripts/verify-claims.mjs"
+    "check:map": "node scripts/verify-claims.mjs",
+    "test": "pnpm --filter @ginko-demo/custom-source test",
+    "check:custom-source:scripts": "pnpm --filter @ginko-demo/custom-source check:scripts"
   }
 }
