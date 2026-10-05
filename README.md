@@ -200,6 +200,10 @@ on these pages locally and on Vercel. No failure suppression, HTML copy, client-
 wrapper, link rewrite, or library patch is used. The project exists but has no
 successful production deployment; the configured alias is not a live demo.
 Committed results mark production claims blocked and keep local checks separate.
+The check runner still executes both viewport projects against the production
+URL. When Vercel returns `DEPLOYMENT_NOT_FOUND`, the reporter preserves the
+actual assertion errors and marks claims blocked by infrastructure. It does not
+report those 404s as library failures or measure the Vercel error page as the demo.
 
 Project `ginko-demo-docs-site`, team `Lupinum OG` (`lupinum`), ID
 `prj_rlMxOruQimGq6aWjBOYzZYuVER1F`, uses the Other preset, Node 24, root

@@ -281,7 +281,7 @@
   {
     "id": "C055",
     "demo": "docs-site",
-    "check": "C055 Mermaid renders a diagram in server and hydrated output",
+    "check": "C055 Mermaid renders a diagram in the browser",
     "slice": "2a"
   },
   {
