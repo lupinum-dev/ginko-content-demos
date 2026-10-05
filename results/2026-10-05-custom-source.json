@@ -1831,7 +1831,7 @@
         "claim": "C233",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "desktop",
         "evidence": [],
         "errors": []
@@ -1840,7 +1840,7 @@
         "claim": "C233",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "mobile",
         "evidence": [],
         "errors": []
@@ -1848,7 +1848,7 @@
       {
         "claim": "C233",
         "status": "pass",
-        "check": "C233 C330 X003 public authorization excludes drafts on every source surface",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
         "mode": "conformance",
         "errors": [],
         "evidence": [
@@ -3072,7 +3072,7 @@
         "mode": "not-live",
         "check": "Export sidecar title/order then compare imported tree",
         "errors": [
-          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); sidecar metadata never reaches a portable tree."
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); sidecar metadata never reaches a portable tree."
         ],
         "evidence": []
       }
@@ -3092,7 +3092,7 @@
         "mode": "not-live",
         "check": "Export/import content refs and code and compare semantics",
         "errors": [
-          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); its Content references and literal examples cannot be compared after export."
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); its Content references and literal examples cannot be compared after export."
         ],
         "evidence": []
       }
@@ -3112,7 +3112,7 @@
         "mode": "not-live",
         "check": "Export plain local image; require unchanged source and no fetch",
         "errors": [
-          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); authored public/external images cannot be compared after export."
+          "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); authored public/external images cannot be compared after export."
         ],
         "evidence": []
       }
@@ -3846,7 +3846,7 @@
         "claim": "C330",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "desktop",
         "evidence": [],
         "errors": []
@@ -3855,7 +3855,7 @@
         "claim": "C330",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "mobile",
         "evidence": [],
         "errors": []
@@ -3863,7 +3863,7 @@
       {
         "claim": "C330",
         "status": "pass",
-        "check": "C233 C330 X003 public authorization excludes drafts on every source surface",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
         "mode": "conformance",
         "errors": [],
         "evidence": [
@@ -4014,7 +4014,7 @@
     ]
   },
   {
-    "claim": "X003",
+    "claim": "X301",
     "sources": [
       "checks/custom-source-results.mjs"
     ],
@@ -4023,27 +4023,27 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "X003",
+        "claim": "X301",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "desktop",
         "evidence": [],
         "errors": []
       },
       {
-        "claim": "X003",
+        "claim": "X301",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers",
+        "check": "C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers",
         "viewport": "mobile",
         "evidence": [],
         "errors": []
       },
       {
-        "claim": "X003",
+        "claim": "X301",
         "status": "pass",
-        "check": "C233 C330 X003 public authorization excludes drafts on every source surface",
+        "check": "C233 C330 X301 public authorization excludes drafts on every source surface",
         "mode": "conformance",
         "errors": [],
         "evidence": [
@@ -4056,7 +4056,7 @@
     ]
   },
   {
-    "claim": "X004",
+    "claim": "X302",
     "sources": [
       "checks/custom-source-results.mjs"
     ],
@@ -4065,19 +4065,19 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "X004",
+        "claim": "X302",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X004 signed revalidation returns the documented unsupported result for a header-only cache",
+        "check": "X302 signed revalidation returns the documented unsupported result for a header-only cache",
         "viewport": "desktop",
         "evidence": [],
         "errors": []
       },
       {
-        "claim": "X004",
+        "claim": "X302",
         "observedStatus": "passed",
         "status": "pass",
-        "check": "X004 signed revalidation returns the documented unsupported result for a header-only cache",
+        "check": "X302 signed revalidation returns the documented unsupported result for a header-only cache",
         "viewport": "mobile",
         "evidence": [],
         "errors": []
@@ -4085,7 +4085,7 @@
     ]
   },
   {
-    "claim": "X005",
+    "claim": "X303",
     "sources": [
       "checks/custom-source-results.mjs"
     ],
@@ -4094,9 +4094,9 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "X005",
+        "claim": "X303",
         "status": "fail",
-        "check": "X005 export the unchanged docs-site with input hash guard",
+        "check": "X303 export the unchanged docs-site with input hash guard",
         "mode": "build-only",
         "errors": [
           "GinkoBoundaryError: Filesystem content is not portable (1 error(s)).\n    at Module.exportFilesystemToPortableDirectory (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@lupinum+ginko-content@file+vendor+lupinum-ginko-content-1.0.0-beta.10-a3e8ef1.tgz_1eb81cd495718e2504f43c2d57e230e2/node_modules/@lupinum/ginko-content/dist/portability-node/filesystem-export.js:451:77)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:265:20\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:263:1"
@@ -4111,7 +4111,7 @@
     ]
   },
   {
-    "claim": "K001",
+    "claim": "K301",
     "sources": [
       "docs/content/docs/5.reference/2.content-config.md:103"
     ],
@@ -4120,9 +4120,9 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "K001",
+        "claim": "K301",
         "status": "fail",
-        "check": "K001 data title and description remain in the resolved contract (D-02)",
+        "check": "K301 data title and description remain in the resolved contract (D-02)",
         "mode": "build-only",
         "errors": [
           "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'title',\n-   'description'\n- ]\n\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:32:10\n    at check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:15)\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:31:7"
@@ -4137,7 +4137,7 @@
     ]
   },
   {
-    "claim": "K002",
+    "claim": "K302",
     "sources": [
       "docs/content/docs/6.migration/5.filesystem-to-cms.md"
     ],
@@ -4146,9 +4146,9 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "K002",
+        "claim": "K302",
         "status": "fail",
-        "check": "K002 unlocalized defaults export without locale contract failure (D-03)",
+        "check": "K302 unlocalized defaults export without locale contract failure (D-03)",
         "mode": "build-only",
         "errors": [
           "AssertionError [ERR_ASSERTION]: [{\"severity\":\"error\",\"code\":\"CONTRACT_INVALID\",\"operation\":\"portability.hash\",\"collection\":null,\"file\":null,\"field\":null,\"message\":\"The default locale must be declared in locales.\",\"resolution\":\"Fix the project configuration and regenerate its resolved Content contract.\"}]\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:261:10\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:258:1"
@@ -4163,7 +4163,7 @@
     ]
   },
   {
-    "claim": "K003",
+    "claim": "K303",
     "sources": [
       "docs/content/docs/6.migration/5.filesystem-to-cms.md:82"
     ],
@@ -4172,9 +4172,9 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "K003",
+        "claim": "K303",
         "status": "fail",
-        "check": "K003 filesystem assessment loads an ordinary Nuxt configuration",
+        "check": "K303 filesystem assessment loads an ordinary Nuxt configuration",
         "mode": "build-only",
         "errors": [
           "AssertionError [ERR_ASSERTION]: [{\"severity\":\"error\",\"code\":\"CONTRACT_INVALID\",\"operation\":\"portability.hash\",\"collection\":null,\"file\":null,\"field\":null,\"message\":\"defineNuxtConfig is not defined\",\"resolution\":\"Fix the project configuration and regenerate its resolved Content contract.\"}]\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:256:10\n    at async check (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:15:9)\n    at async file:///Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/scripts/check.mjs:253:1"
@@ -4189,7 +4189,7 @@
     ]
   },
   {
-    "claim": "K004",
+    "claim": "K304",
     "sources": [
       "docs/content/docs/4.guides/13.data-source-adapters.md:238",
       "docs/content/docs/5.reference/10.provider-contract.md:137"
@@ -4199,9 +4199,9 @@
     "url": "https://ginko-demo-custom-source.vercel.app",
     "evidence": [
       {
-        "claim": "K004",
+        "claim": "K304",
         "status": "fail",
-        "check": "K004 binder rejects a mismatched offset envelope",
+        "check": "K304 binder rejects a mismatched offset envelope",
         "mode": "conformance",
         "errors": [
           "Error: promise resolved \"{ data: { result: [], …(3) }, …(1), …(1) }\" instead of rejecting\n    at _Assertion.__VITEST_REJECTS__ (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+expect@4.1.6/node_modules/@vitest/expect/dist/index.js:1747:17)\n    at _Assertion.propertyGetter (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1607:27)\n    at Reflect.get (<anonymous>)\n    at Object.proxyGetter [as get] (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/chai@6.3.0/node_modules/chai/index.js:1696:22)\n    at /Users/matthias/Git/0_libs/ginko-content-demos-source/apps/custom-source/test/source.test.ts:82:48\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:302:11\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:1903:26\n    at file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2326:20\n    at new Promise (<anonymous>)\n    at runWithCancel (file:///Users/matthias/Git/0_libs/ginko-content-demos-source/node_modules/.pnpm/@vitest+runner@4.1.6/node_modules/@vitest/runner/dist/chunk-artifact.js:2323:10)"

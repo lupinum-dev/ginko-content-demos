@@ -28,7 +28,7 @@ await check('C013', 'explicit CMS label structure and routing survive resolution
   assert.equal(contract.collections.docs.routing.allowMultipleRoots, true)
   assert.equal(contract.collections.docs.fields.find(f => f.key === 'category').searchable, true)
 })
-await check('K001', 'data title and description remain in the resolved contract (D-02)', () => {
+await check('K301', 'data title and description remain in the resolved contract (D-02)', () => {
   assert.deepEqual(contract.collections.inventory.fields.map(f => f.key), ['title', 'description'])
 })
 await check('C015 C035 C036 C037 C038 C039', 'field modifiers retain validation and metadata', () => {
@@ -250,17 +250,17 @@ await check('C276', 'portable directory round-trip validates and rebuilds manife
 // Exercise the actual docs-site unchanged. Never add locales, remove drafts,
 // rewrite links or replace failed input to make the export green.
 let assessment
-await check('K003', 'filesystem assessment loads an ordinary Nuxt configuration', async () => {
+await check('K303', 'filesystem assessment loads an ordinary Nuxt configuration', async () => {
   assessment = await io.assessFilesystemPortability({ rootDir: resolve('../docs-site') })
   await writeFile(resolve(evidence,'docs-site-assessment.json'), JSON.stringify(assessment,null,2)+'\n')
   assert.ok(!assessment.diagnostics.some(d => d.code === 'CONTRACT_INVALID'), JSON.stringify(assessment.diagnostics))
 })
-await check('K002', 'unlocalized defaults export without locale contract failure (D-03)', async () => {
+await check('K302', 'unlocalized defaults export without locale contract failure (D-03)', async () => {
   const probe = await io.assessFilesystemPortability({ rootDir: resolve('test/fixtures/unlocalized') })
   await writeFile(resolve(evidence,'unlocalized-assessment.json'), JSON.stringify(probe,null,2)+'\n')
   assert.ok(!probe.diagnostics.some(d => d.code === 'CONTRACT_INVALID'), JSON.stringify(probe.diagnostics))
 })
-await check('X005', 'export the unchanged docs-site with input hash guard', async () => {
+await check('X303', 'export the unchanged docs-site with input hash guard', async () => {
   const parent = await mkdtemp(resolve(evidence,'docs-export-'))
   const exported = await io.exportFilesystemToPortableDirectory({ rootDir: resolve('../docs-site'), destination: resolve(parent,'docs-site'), expectedInputHash: assessment?.evidence?.inputHash })
   assert.ok(exported.documents > 0)

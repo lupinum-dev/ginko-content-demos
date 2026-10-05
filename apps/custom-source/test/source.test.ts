@@ -77,14 +77,14 @@ test('C242 binder rejects repeated route cursors and changing snapshots', async 
     await expect(p.routes!(createEvent())).rejects.toMatchObject({ statusCode: 502 })
   }
 })
-test('K004 binder rejects a mismatched offset envelope', async () => {
+test('K304 binder rejects a mismatched offset envelope', async () => {
   const p = bindContentProvider({ source: { ...source, async query() { return { cache: false, data: { result: [], skip: 99, limit: 10, total: 0 } } } }, createContext: () => context })
   await expect(p.query(createEvent(), query())).rejects.toMatchObject({ statusCode: 502 })
 })
 test('C244 invalid cursor maps to HTTP 400', async () => {
   await expect(provider.query(createEvent(), query({ pagination: { mode: 'cursor', limit: 1, after: 'invalid' } }))).rejects.toMatchObject({ statusCode: 400 })
 })
-test('C233 C330 X003 public authorization excludes drafts on every source surface', async () => {
+test('C233 C330 X301 public authorization excludes drafts on every source surface', async () => {
   const r = await provider.query(createEvent(), query({ ...first.plan, filter: eq('title', 'Unpublished experiment') }, 'docs'))
   expect(isContentProviderResult(r) ? r.data : r).toEqual({ result: undefined })
   const countResult = await provider.query(createEvent(), query({ mode: 'count', filter: eq('draft', true), pagination: { mode: 'slice', skip: 0 } }, 'docs'))

@@ -35,7 +35,7 @@ test('C180 provider search has the standard collection/path/excerpt shape', asyn
   await expect(page.getByRole('heading', { name: 'Seed kit' })).toBeVisible()
 })
 
-test('C233 C330 X003 draft pages remain hidden even with caller-supplied preview headers', async ({ request }) => {
+test('C233 C330 X301 draft pages remain hidden even with caller-supplied preview headers', async ({ request }) => {
   const r = await request.get('/docs/private', { headers: { 'x-preview': 'true', 'x-tenant-id': 'admin' } })
   expect(r.status()).toBe(404)
   const html = await r.text()
@@ -63,7 +63,7 @@ test('C114 C234 C287 C294 C295 C301 runtime queries siteData cache merge clear a
 
 })
 
-test('X004 signed revalidation returns the documented unsupported result for a header-only cache', async ({ request }) => {
+test('X302 signed revalidation returns the documented unsupported result for a header-only cache', async ({ request }) => {
   const unsigned = await request.post('/api/_content/revalidate', { data: { tags:['catalog'] } })
   expect([401,403]).toContain(unsigned.status())
   let token = process.env.GINKO_CONTENT_REVALIDATE_TOKEN

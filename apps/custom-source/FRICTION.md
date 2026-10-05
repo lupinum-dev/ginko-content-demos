@@ -26,16 +26,16 @@ policy and no external persistence or writes.
   explicitly requires the generated contract to carry that label; this is
   an expected CMS-metadata loss, not a claim that every input CMS UI setting
   has a declared output field.
-- K001 / D-02: data collection required `title` and `description` produce
+- K301 / D-02: data collection required `title` and `description` produce
   `fields: []`. No alternate field names replace the failing fixture.
-- K002 / D-03: a default unlocalized fixture produces `CONTRACT_INVALID`,
+- K302 / D-03: a default unlocalized fixture produces `CONTRACT_INVALID`,
   “The default locale must be declared in locales.”
-- K003 / X005: the unchanged docs-site export stops at `CONTRACT_INVALID`,
+- K303 / X303: the unchanged docs-site export stops at `CONTRACT_INVALID`,
   “defineNuxtConfig is not defined.” No shim, localization override, source
   copy, draft removal or link rewrite is used to make that export pass.
 - C238: binder accepts a provider document with `score: NaN`, contradicting
   the documented JSON-purity boundary.
-- K004: binder accepts a list with `skip: 99` for requested `skip: 0`.
+- K304: binder accepts a list with `skip: 99` for requested `skip: 0`.
   The documented single-query conformance helper rejects the same mismatch
   (C328 passes). The runtime query boundary is not inferred from this probe.
 - C288: production docs SSR response omits the source freshness hint. Direct

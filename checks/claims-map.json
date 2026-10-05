@@ -1233,7 +1233,7 @@
   {
     "id": "C233",
     "demo": "custom-source",
-    "check": "C233 C330 X003 public authorization excludes drafts on every source surface"
+    "check": "C233 C330 X301 public authorization excludes drafts on every source surface"
   },
   {
     "id": "C234",
@@ -1401,19 +1401,19 @@
     "id": "C266",
     "demo": "custom-source",
     "check": "Export sidecar title/order then compare imported tree",
-    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); sidecar metadata never reaches a portable tree."
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); sidecar metadata never reaches a portable tree."
   },
   {
     "id": "C267",
     "demo": "custom-source",
     "check": "Export/import content refs and code and compare semantics",
-    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); its Content references and literal examples cannot be compared after export."
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); its Content references and literal examples cannot be compared after export."
   },
   {
     "id": "C268",
     "demo": "custom-source",
     "check": "Export plain local image; require unchanged source and no fetch",
-    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K003); authored public/external images cannot be compared after export."
+    "notLiveReason": "Not-live: unchanged docs-site export fails first with CONTRACT_INVALID: defineNuxtConfig is not defined (K303); authored public/external images cannot be compared after export."
   },
   {
     "id": "C269",
@@ -1725,7 +1725,7 @@
   {
     "id": "C330",
     "demo": "custom-source",
-    "check": "C233 C330 X003 public authorization excludes drafts on every source surface"
+    "check": "C233 C330 X301 public authorization excludes drafts on every source surface"
   },
   {
     "id": "C331",
