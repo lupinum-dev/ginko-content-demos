@@ -1,0 +1,1 @@
+export default defineNuxtConfig({ modules: ['@lupinum/ginko-content', '@nuxtjs/sitemap'], site: { url: 'https://ginko-demo-multilingual.vercel.app' }, content: { i18n: { locales: ['en', 'de', 'ja'], defaultLocale: 'en' }, agent: false, sitemap: true } })

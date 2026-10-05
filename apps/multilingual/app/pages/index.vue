@@ -1,0 +1,1 @@
+<template><h1>Multilingual content</h1><p>Shared filename segments and translated slugs in English, German and Japanese.</p><NuxtLink to="/docs/intro">Shared introduction</NuxtLink> · <NuxtLink to="/guides/getting-started">Translated guide</NuxtLink> · <NuxtLink to="/de/docs/english-only">Fallback example</NuxtLink></template>

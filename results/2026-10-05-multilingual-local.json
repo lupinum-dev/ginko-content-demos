@@ -1,0 +1,71 @@
+[
+  {
+    "check": "K003 E-X1 singleton without fallback keeps hreflang and x-default",
+    "status": "fail",
+    "observed": [
+      "<url>\n        <loc>https://ginko-demo-multilingual.vercel.app/docs/single</loc>\n    </url>",
+      "<url>\n        <loc>https://ginko-demo-multilingual.vercel.app/docs/single</loc>\n    </url>"
+    ],
+    "docs": "docs/content/docs/4.guides/9.sitemap-and-prerender.md:Control which pages appear; reasonable indexing expectation E-X1",
+    "evidence": "results/evidence/multilingual-standalone-sitemap.xml",
+    "productionVerified": false
+  },
+  {
+    "check": "Standalone sitemap uniqueness observation",
+    "urls": 12,
+    "uniqueUrls": 7,
+    "productionVerified": false
+  },
+  {
+    "check": "C161 C163 independent content-owned locale and collection policies; shared-slug mode",
+    "status": "pass",
+    "exitCode": 0,
+    "observations": [
+      {
+        "path": "docs/intro",
+        "text": "Standalone English",
+        "matched": true
+      },
+      {
+        "path": "de/docs/intro",
+        "text": "Standalone Deutsch",
+        "matched": true
+      },
+      {
+        "path": "plain",
+        "text": "Unlocalized",
+        "matched": true
+      },
+      {
+        "path": "local/intro",
+        "text": "Local English",
+        "matched": true
+      },
+      {
+        "path": "ja/local/intro",
+        "text": "ローカル",
+        "matched": true
+      }
+    ],
+    "evidence": "results/evidence/multilingual-standalone-build.log",
+    "productionVerified": false
+  },
+  {
+    "check": "K002 E-A013 Unicode filenames keep a distinct public route",
+    "status": "fail",
+    "exitCode": 1,
+    "evidence": "results/evidence/multilingual-unicode-build.log",
+    "docs": "docs/content/docs/4.guides/7.translated-slugs.md:Translate folder and file names",
+    "error": [
+      " Invalid content in ja/docs/紹介.md (conflicts with ja/docs/index.md): duplicate canonical id \"/\" for locale \"ja\"",
+      "  [cause]: Invalid content in ja/docs/紹介.md (conflicts with ja/docs/index.md): duplicate canonical id \"/\" for locale \"ja\""
+    ]
+  },
+  {
+    "check": "C181 post-generation source change leaves Pagefind snapshot unchanged",
+    "status": "pass",
+    "before": "0018c1da448e6e0e6b3ad10a97ba49ee21e6d475d724d8091f6965a183594187",
+    "after": "0018c1da448e6e0e6b3ad10a97ba49ee21e6d475d724d8091f6965a183594187",
+    "productionVerified": false
+  }
+]

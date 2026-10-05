@@ -1,0 +1,22 @@
+[
+  {
+    "id": "K002",
+    "expectation": "E-A013",
+    "fixture": "apps/multilingual/fixtures/unicode",
+    "check": "node checks/multilingual-local.mjs",
+    "error": "Invalid content in ja/docs/紹介.md (conflicts with ja/docs/index.md): duplicate canonical id \"/\" for locale \"ja\"",
+    "source": "docs/content/docs/4.guides/7.translated-slugs.md:Translate folder and file names",
+    "rationale": "Distinct Unicode filenames should retain distinct document and route identities; generation must not confuse a leaf with index.md.",
+    "isolation": "The fixture fails generation and is separate from the production app; no ignore, rename, slug override or failure suppression is applied."
+  },
+  {
+    "id": "K003",
+    "expectation": "E-X1",
+    "fixture": "apps/multilingual/fixtures/standalone/content/en/docs/single.md",
+    "check": "node checks/multilingual-local.mjs",
+    "error": "The singleton /docs/single entry has no hreflang or x-default alternate.",
+    "source": "docs/content/docs/4.guides/9.sitemap-and-prerender.md:Control which pages appear",
+    "rationale": "A localized page with one real English variant still has an English language and a default target. This is the brief's reasonable indexing expectation E-X1, stronger than the guide's promise for plural variants.",
+    "isolation": "Standalone policy has no fallback. Production X004 tests the different configured-fallback case; it does not hide this finding."
+  }
+]
