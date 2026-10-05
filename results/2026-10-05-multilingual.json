@@ -1,0 +1,1555 @@
+[
+  {
+    "claim": "C093",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:56"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C093",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C093 canonical and mounted localized selectors identify the same document",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C093-canonica-95163--identify-the-same-document-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C093",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C093 canonical and mounted localized selectors identify the same document",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C093-canonica-95163--identify-the-same-document-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "budgets": {
+      "clientJsGzipBytes": 272740,
+      "lighthouseMobilePerformance": 100,
+      "buildSeconds": 29.27466325,
+      "issues": [],
+      "clientJsEvidence": "results/evidence/2026-10-05-multilingual-client-js.json",
+      "lighthouseEvidence": "results/evidence/2026-10-05-multilingual-lighthouse.json"
+    }
+  },
+  {
+    "claim": "C102",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:193"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C102",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C102",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C108",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:277"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C108",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C108 projected population retains the translated reference",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C108-projecte-31db8-ns-the-translated-reference-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C108",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C108 projected population retains the translated reference",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C108-projecte-31db8-ns-the-translated-reference-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C134",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:296"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C134",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C134",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C135",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:243"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C135",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C135",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C136",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:298"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C136",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C136",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C137",
+    "sources": [
+      "docs/content/docs/5.reference/4.query-api.md:299"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C137",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C137",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "query results",
+            "text": "{\"exact\":{\"doc\":null,\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"path\":\"/english-only\"},\"locale\":\"de\",\"fallback\":false},\"normalized\":{\"by\":{\"path\":\"/english-only\"}},\"matched\":{\"found\":false,\"collection\":\"docs\"},\"fallback\":{\"used\":false}}},\"chain\":{\"doc\":{\"title\":\"German chain\",\"description\":\"Ordered fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"german-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"German chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"German is first in the Japanese configured fallback chain.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/4.chain.md\",\"stem\":\"de/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/de/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":true},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/de/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"de\"},\"fallback\":{\"used\":true,\"locale\":\"de\"}}},\"defaultOnly\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":\"default\"},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"ordered\":{\"doc\":{\"title\":\"English chain\",\"description\":\"Default fallback fixture.\",\"ref\":\"docs:chain\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-chain\"},\"children\":[{\"type\":\"text\",\"value\":\"English chain\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"English is the default locale.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:4.chain.md\",\"canonicalKey\":\"4\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/4.chain.md\",\"stem\":\"en/1.docs/4.chain\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/chain\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/chain\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/chain\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":true}},\"explain\":{\"requested\":{\"collection\":\"docs\",\"by\":{\"ref\":\"docs:chain\"},\"locale\":\"ja\",\"fallback\":[\"en\",\"de\"]},\"normalized\":{\"by\":{\"ref\":\"docs:chain\"}},\"matched\":{\"found\":true,\"collection\":\"docs\",\"path\":\"/docs/chain\",\"ref\":\"docs:chain\",\"locale\":\"en\"},\"fallback\":{\"used\":true,\"locale\":\"en\"}}},\"populated\":{\"title\":\"Introduction\",\"author\":{\"title\":\"English author\",\"description\":\"English author fixture.\",\"ref\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"english-author\"},\"children\":[{\"type\":\"text\",\"value\":\"English author\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"A localized reference target.\"}]}]},\"type\":\"markdown\",\"id\":\"content:en:1.docs:2.author.md\",\"canonicalKey\":\"2\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/2.author.md\",\"stem\":\"en/1.docs/2.author\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"resolvedPath\":\"/docs/author\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/author\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/author\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/author\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"id\":\"content:en:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"locale\":\"en\",\"file\":{\"source\":\"content\",\"path\":\"en/1.docs/1.intro.md\",\"stem\":\"en/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"collection\":\"docs\",\"route\":{\"resolvedPath\":\"/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},\"canonical\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"mounted\":{\"title\":\"Einführung\",\"description\":\"Einführung fixture.\",\"ref\":\"docs:intro\",\"author\":\"docs:author\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"einfhrung\"},\"children\":[{\"type\":\"text\",\"value\":\"Einführung\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity multilingual fixture. Localized documentation.\"}]}]},\"type\":\"markdown\",\"id\":\"content:de:1.docs:1.intro.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"docs\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/1.docs/1.intro.md\",\"stem\":\"de/1.docs/1.intro\",\"dir\":\"docs\",\"extension\":\"md\"},\"route\":{\"requestedPath\":\"/de/docs/intro\",\"resolvedPath\":\"/de/docs/intro\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/docs/intro\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/docs/intro\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/docs/intro\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},\"translated\":[{\"title\":\"Getting started\",\"description\":\"Getting started fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"getting-started\"},\"children\":[{\"type\":\"text\",\"value\":\"Getting started\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:en:2.guides:1.getting-started.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"en\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"en/2.guides/1.getting-started.md\",\"stem\":\"en/2.guides/1.getting-started\",\"dir\":\"guides\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/guides/getting-started\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"en\"},\"resolved\":{\"locale\":\"en\"},\"usedFallback\":false}},{\"title\":\"Erste Schritte\",\"description\":\"Erste Schritte fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"erste-schritte\"},\"children\":[{\"type\":\"text\",\"value\":\"Erste Schritte\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. One numeric identity across translations.\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:de:2.leitfaden:1.erste-schritte.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"de\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"de/2.leitfaden/1.erste-schritte.md\",\"stem\":\"de/2.leitfaden/1.erste-schritte\",\"dir\":\"leitfaden\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/de/leitfaden/erste-schritte\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"de\"},\"resolved\":{\"locale\":\"de\"},\"usedFallback\":false}},{\"title\":\"はじめに\",\"description\":\"はじめに fixture.\",\"ref\":\"guide:start\",\"body\":{\"type\":\"root\",\"children\":[{\"type\":\"element\",\"tag\":\"h1\",\"props\":{\"id\":\"\"},\"children\":[{\"type\":\"text\",\"value\":\"はじめに\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"text\",\"value\":\"Ginko biodiversity guide. 生物多様性を守る。\"}]},{\"type\":\"element\",\"tag\":\"p\",\"props\":{},\"children\":[{\"type\":\"element\",\"tag\":\"a\",\"props\":{\"href\":\"$main.pricing\"},\"children\":[{\"type\":\"text\",\"value\":\"Pricing\"}]}]}]},\"type\":\"markdown\",\"id\":\"content:ja:2.gaido:1.hajimeni.md\",\"canonicalKey\":\"1\",\"draft\":false,\"partial\":false,\"locale\":\"ja\",\"collection\":\"guides\",\"navigationFile\":false,\"file\":{\"source\":\"content\",\"path\":\"ja/2.gaido/1.hajimeni.md\",\"stem\":\"ja/2.gaido/1.hajimeni\",\"dir\":\"gaido\",\"extension\":\"md\"},\"resolvedRefs\":{\"$main.pricing\":\"$main.pricing\"},\"route\":{\"resolvedPath\":\"/ja/gaido/hajimeni\",\"alternates\":[{\"locale\":\"en\",\"path\":\"/guides/getting-started\",\"source\":\"variant\"},{\"locale\":\"de\",\"path\":\"/de/leitfaden/erste-schritte\",\"source\":\"variant\"},{\"locale\":\"ja\",\"path\":\"/ja/gaido/hajimeni\",\"source\":\"variant\"}]},\"resolution\":{\"requested\":{\"locale\":\"ja\"},\"resolved\":{\"locale\":\"ja\"},\"usedFallback\":false}}],\"notLocale\":[],\"paths\":{\"slug\":\"/de/dokumentation/intro\",\"path\":\"/de/dokumentation/intro\",\"noPrefix\":\"/dokumentation/intro\",\"inheritedError\":\"TypeError: getCollectionPath() cannot project collection \\\"docs\\\" from i18n: true because the pure collection handle does not contain the inherited locale policy. Use an explicit collection-local i18n { locales, defaultLocale } object.\"}}"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C102-C134-C13-c5462-dered-fallback-explanations-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C138",
+    "sources": [
+      "docs/content/docs/4.guides/5.navigation.md:8"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C138",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C138 locale-scoped navigation changes with shared-header language",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C138-locale-s-5d630-with-shared-header-language-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C138",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C138 locale-scoped navigation changes with shared-header language",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C138-locale-s-5d630-with-shared-header-language-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C155",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:45"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C155",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C155 reactive locale getter and refresh update content",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C155-reactive-c7a99--and-refresh-update-content-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C155",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C155 reactive locale getter and refresh update content",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C155-reactive-c7a99--and-refresh-update-content-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C158",
+    "sources": [
+      "docs/content/docs/4.guides/6.routes-links-and-redirects.md:53"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C158",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C158",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C161",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:202"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C161",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C161 not-live: Content-owned locales without Nuxt I18n require an independent module-setup build; this production demo intentionally installs Nuxt I18n.",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C161",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C161 not-live: Content-owned locales without Nuxt I18n require an independent module-setup build; this production demo intentionally installs Nuxt I18n.",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C163",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:99"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C163",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C163 not-live: Opt-out and collection-local policy require extra collection fixtures beyond the brief’s two collections; production proves inherited policy only.",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C163",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C163 not-live: Opt-out and collection-local policy require extra collection fixtures beyond the brief’s two collections; production proves inherited policy only.",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C164",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:88"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C164",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C164",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C165",
+    "sources": [
+      "docs/content/docs/4.guides/7.translated-slugs.md:67"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C165",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/attachments/shared-header-html-354d331b6b5535ec668b1f5e103d960cd75390ef.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C165",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/attachments/shared-header-html-4bb163a4f1f919934fda10f37c6b5c161b68215f.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C166",
+    "sources": [
+      "docs/content/docs/4.guides/7.translated-slugs.md:71"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C166",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C166",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C164 C166 C158 translated mounts preserve identity and public document links",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C164-C166-C15-2c21e-y-and-public-document-links-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C167",
+    "sources": [
+      "docs/content/docs/5.reference/8.document-envelope.md:70"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C167",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C167-C168-fal-8e0b7-riants-and-current-fallback-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C167",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C167-C168-fal-8e0b7-riants-and-current-fallback-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C168",
+    "sources": [
+      "docs/content/docs/5.reference/8.document-envelope.md:76"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C168",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C167-C168-fal-8e0b7-riants-and-current-fallback-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C168",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C167-C168-fal-8e0b7-riants-and-current-fallback-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C169",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:83",
+      "README.md:160",
+      "CHANGELOG.md:169"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C169",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/attachments/shared-header-html-354d331b6b5535ec668b1f5e103d960cd75390ef.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C169",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/attachments/shared-header-html-4bb163a4f1f919934fda10f37c6b5c161b68215f.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C170",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:93"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C170",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C170 missing alternate has a disabled shared-header link",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C170-missing--798fd-disabled-shared-header-link-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C170",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C170 missing alternate has a disabled shared-header link",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C170-missing--798fd-disabled-shared-header-link-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C171",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:97"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C171",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C171 language switching preserves query and hash",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C171-language-5027e-ng-preserves-query-and-hash-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C171",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C171 language switching preserves query and hash",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C171-language-5027e-ng-preserves-query-and-hash-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C172",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:94"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C172",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/attachments/shared-header-html-354d331b6b5535ec668b1f5e103d960cd75390ef.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C172",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C165 C169 C172 shared SSR header switches to proven translated slugs",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "shared-header.html",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/attachments/shared-header-html-4bb163a4f1f919934fda10f37c6b5c161b68215f.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C165-C169-C17-78112--to-proven-translated-slugs-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C173",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:149"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C173",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C173 application-only page uses the shared layout callback",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C173-applicat-cfcf8--the-shared-layout-callback-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C173",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C173 application-only page uses the shared layout callback",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C173-applicat-cfcf8--the-shared-layout-callback-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C179",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:45"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C179",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Pagefind requests",
+            "text": "[\"https://ginko-demo-multilingual.vercel.app/pagefind/ginko-locales.json\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-worker.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-entry.json?ts=1791207676836\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.de_c07bef46dd.pf_meta\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/wasm.de.pagefind\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/index/de_ba8337f.pf_index\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_bfbf40a.pf_fragment\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_acbd8ae.pf_fragment\"]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C179-C188-gen-471d1-results-and-collection-data-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C179",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Pagefind requests",
+            "text": "[\"https://ginko-demo-multilingual.vercel.app/pagefind/ginko-locales.json\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-worker.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-entry.json?ts=1791207696865\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.de_c07bef46dd.pf_meta\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/wasm.de.pagefind\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/index/de_ba8337f.pf_index\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_bfbf40a.pf_fragment\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_acbd8ae.pf_fragment\"]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C179-C188-gen-471d1-results-and-collection-data-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C181",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:63"
+    ],
+    "status": "blocked",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C181",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C181 not-live: Post-build source mutation and regeneration are filesystem/build checks; a production browser cannot mutate the sealed deployment.",
+        "viewport": "desktop",
+        "evidence": [],
+        "errors": []
+      },
+      {
+        "claim": "C181",
+        "observedStatus": "skipped",
+        "status": "blocked",
+        "check": "C181 not-live: Post-build source mutation and regeneration are filesystem/build checks; a production browser cannot mutate the sealed deployment.",
+        "viewport": "mobile",
+        "evidence": [],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C187",
+    "sources": [
+      "docs/content/docs/2.build/3.multilingual-site.md:128"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C187",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C187 search without locale returns multiple languages",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C187-search-w-536d8--returns-multiple-languages-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C187",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C187 search without locale returns multiple languages",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C187-search-w-536d8--returns-multiple-languages-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C188",
+    "sources": [
+      "docs/content/docs/2.build/3.multilingual-site.md:114"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C188",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Pagefind requests",
+            "text": "[\"https://ginko-demo-multilingual.vercel.app/pagefind/ginko-locales.json\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-worker.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-entry.json?ts=1791207676836\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.de_c07bef46dd.pf_meta\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/wasm.de.pagefind\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/index/de_ba8337f.pf_index\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_bfbf40a.pf_fragment\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_acbd8ae.pf_fragment\"]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C179-C188-gen-471d1-results-and-collection-data-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C188",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Pagefind requests",
+            "text": "[\"https://ginko-demo-multilingual.vercel.app/pagefind/ginko-locales.json\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-worker.js\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind-entry.json?ts=1791207696865\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/pagefind.de_c07bef46dd.pf_meta\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/wasm.de.pagefind\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/index/de_ba8337f.pf_index\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_bfbf40a.pf_fragment\",\"https://ginko-demo-multilingual.vercel.app/pagefind/de/fragment/de_acbd8ae.pf_fragment\"]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C179-C188-gen-471d1-results-and-collection-data-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C192",
+    "sources": [
+      "docs/content/docs/4.guides/9.sitemap-and-prerender.md:50"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C192",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-index-xml-690b25a850a50845cfb00dcea5bff0301c117a48.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-0-xml-2b53b85eb1a6c40c0d19fae1eaec22f08c74b000.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-1-xml-9c5ba7b0606ef57f1cbb9a66e396b5e6fd043b98.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-2-xml-a693297d54712269433c0465112a13858d602ddd.xml"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C192",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-index-xml-18fcca92654a089a2678b7e5d4aa0471afdce26e.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-0-xml-f4fb8ff72750eba62d2e1ee42dc0b995af1295f0.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-1-xml-d4ff0d4f55798e2a4c93313f83671d5bd06a8516.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-2-xml-e699a656df394ddf5b9aa50ce115a4c760236bc8.xml"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C195",
+    "sources": [
+      "docs/content/docs/4.guides/9.sitemap-and-prerender.md:78"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C195",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-index-xml-690b25a850a50845cfb00dcea5bff0301c117a48.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-0-xml-2b53b85eb1a6c40c0d19fae1eaec22f08c74b000.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-1-xml-9c5ba7b0606ef57f1cbb9a66e396b5e6fd043b98.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-desktop/attachments/sitemap-2-xml-a693297d54712269433c0465112a13858d602ddd.xml"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C195",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-index-xml-18fcca92654a089a2678b7e5d4aa0471afdce26e.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-0-xml-f4fb8ff72750eba62d2e1ee42dc0b995af1295f0.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-1-xml-d4ff0d4f55798e2a4c93313f83671d5bd06a8516.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-C192-C195-sit-20e2e-ed-alternates-and-x-default-mobile/attachments/sitemap-2-xml-e699a656df394ddf5b9aa50ce115a4c760236bc8.xml"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C205",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:101"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C205",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C205 C217 localized agent indexes raw content metadata and signals",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms-en.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-en-txt-03399908bd4fd958b1d3dc969dc944869389e31d.txt"
+          },
+          {
+            "name": "raw-en.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-en-md-cdd930f9fce5ea173277a103fff97695149faec1.md"
+          },
+          {
+            "name": "llms-de.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-de-txt-17df7e50871b477ea3dedf107d92a49c75e0d5a6.txt"
+          },
+          {
+            "name": "raw-de.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-de-md-4dbb76ba8908abebebf4ed8253d0e5a6f838550a.md"
+          },
+          {
+            "name": "llms-ja.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-ja-txt-0431fed1bbd67c52ef0d45c5001b2d9707221961.txt"
+          },
+          {
+            "name": "raw-ja.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-ja-md-5c3014202056fa8d05a6bed82c1ab32af4ee932e.md"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C205",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C205 C217 localized agent indexes raw content metadata and signals",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "llms-en.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-en-txt-9c336334d80de5a516e84037aa0e5d250f4af4b2.txt"
+          },
+          {
+            "name": "raw-en.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-en-md-1f62f38b238da47d20035d68768bbce6256629f6.md"
+          },
+          {
+            "name": "llms-de.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-de-txt-4219a8f7a23d48e57c02ecda63e83d949818b9f4.txt"
+          },
+          {
+            "name": "raw-de.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-de-md-2655c4cfedf2120ee821449272d7cdc154feccfe.md"
+          },
+          {
+            "name": "llms-ja.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-ja-txt-99978e800d4af51dea07f4ef9a6ea5cd1e8665a4.txt"
+          },
+          {
+            "name": "raw-ja.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-ja-md-08b789e6fbaf50625e3dd8d3333dff026e6de00b.md"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C217",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:218"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C217",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C205 C217 localized agent indexes raw content metadata and signals",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms-en.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-en-txt-03399908bd4fd958b1d3dc969dc944869389e31d.txt"
+          },
+          {
+            "name": "raw-en.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-en-md-cdd930f9fce5ea173277a103fff97695149faec1.md"
+          },
+          {
+            "name": "llms-de.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-de-txt-17df7e50871b477ea3dedf107d92a49c75e0d5a6.txt"
+          },
+          {
+            "name": "raw-de.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-de-md-4dbb76ba8908abebebf4ed8253d0e5a6f838550a.md"
+          },
+          {
+            "name": "llms-ja.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/llms-ja-txt-0431fed1bbd67c52ef0d45c5001b2d9707221961.txt"
+          },
+          {
+            "name": "raw-ja.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-desktop/attachments/raw-ja-md-5c3014202056fa8d05a6bed82c1ab32af4ee932e.md"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C217",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C205 C217 localized agent indexes raw content metadata and signals",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "llms-en.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-en-txt-9c336334d80de5a516e84037aa0e5d250f4af4b2.txt"
+          },
+          {
+            "name": "raw-en.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-en-md-1f62f38b238da47d20035d68768bbce6256629f6.md"
+          },
+          {
+            "name": "llms-de.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-de-txt-4219a8f7a23d48e57c02ecda63e83d949818b9f4.txt"
+          },
+          {
+            "name": "raw-de.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-de-md-2655c4cfedf2120ee821449272d7cdc154feccfe.md"
+          },
+          {
+            "name": "llms-ja.txt",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/llms-ja-txt-99978e800d4af51dea07f4ef9a6ea5cd1e8665a4.txt"
+          },
+          {
+            "name": "raw-ja.md",
+            "path": "results/evidence/multilingual-playwright/multilingual-C205-C217-loc-5f400-ontent-metadata-and-signals-mobile/attachments/raw-ja-md-08b789e6fbaf50625e3dd8d3333dff026e6de00b.md"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C303",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:239"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C303",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C303 collection-local path slug and prefix options reject inherited policy",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C303-collecti-f61c0-ons-reject-inherited-policy-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C303",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C303 collection-local path slug and prefix options reject inherited policy",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C303-collecti-f61c0-ons-reject-inherited-policy-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C334",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:161"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "C334",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C334 named I18n quick links preserve static params and query",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C334-named-I1-ad97e-rve-static-params-and-query-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C334",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C334 named I18n quick links preserve static params and query",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-C334-named-I1-ad97e-rve-static-params-and-query-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X101",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "An exact-locale query with $not: { locale } must return no rows, never other locales (E-A009).",
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "X101",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X101 negation cannot escape requested locale",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "negated locale result E-A009",
+            "text": "[]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-X101-negation-cannot-escape-requested-locale-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X101",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X101 negation cannot escape requested locale",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "negated locale result E-A009",
+            "text": "[]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-X101-negation-cannot-escape-requested-locale-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X102",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "A single available variant still has a real language and a default URL (E-X1).",
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "X102",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X102 singleton localized sitemap keeps hreflang and x-default",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-index-xml-fd292a81e49c41eeba7d6716bb87933d379c0751.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-0-xml-b1ebae8396c5fbd4a58127b78c18db14603cacbb.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-1-xml-7d4cf379717070f08dcd24326019d470e4597200.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-desktop/attachments/sitemap-2-xml-72dc9b1667c2fe15870ed9c1ecc50817fbe77ec0.xml"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X102",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X102 singleton localized sitemap keeps hreflang and x-default",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "sitemap-index.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-index-xml-f465cd874e04abf726cfd1e47a1c92dbedd3bf90.xml"
+          },
+          {
+            "name": "sitemap-0.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-0-xml-747cac31b26a82e7a5dbe3b213002731e93b6aca.xml"
+          },
+          {
+            "name": "sitemap-1.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-1-xml-2900891c5c7138d9565a3c4a624d205bc87afd84.xml"
+          },
+          {
+            "name": "sitemap-2.xml",
+            "path": "results/evidence/multilingual-playwright/multilingual-X102-singleto-31ac1-eeps-hreflang-and-x-default-mobile/attachments/sitemap-2-xml-49c17f805f366362f785806f6a088145ccb675cf.xml"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X103",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "Readers must be able to search Japanese content using Japanese words.",
+    "status": "pass",
+    "url": "https://ginko-demo-multilingual.vercel.app",
+    "evidence": [
+      {
+        "claim": "X103",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X103 Japanese search finds Japanese content",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-X103-Japanese-search-finds-Japanese-content-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X103",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X103 Japanese search finds Japanese content",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/multilingual-playwright/multilingual-X103-Japanese-search-finds-Japanese-content-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  }
+]

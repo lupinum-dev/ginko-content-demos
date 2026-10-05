@@ -12,7 +12,8 @@
     "id": "X002",
     "check": "X002 relative Markdown file links reach the intended page",
     "demos": [
-      "known-failures"
+      "known-failures",
+      "docs-site"
     ],
     "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages.",
     "fixture": "K001"
@@ -48,5 +49,29 @@
       "docs-site"
     ],
     "rationale": "A visitor expects plain-text search snippets to retain spaces between list items, table cells, and other Markdown blocks, rather than joining words. The composable excerpt is rendered without application transformations."
+  },
+  {
+    "id": "X101",
+    "check": "X101 negation cannot escape requested locale",
+    "demos": [
+      "multilingual"
+    ],
+    "rationale": "An exact-locale query with $not: { locale } must return no rows, never other locales (E-A009)."
+  },
+  {
+    "id": "X102",
+    "check": "X102 singleton localized sitemap keeps hreflang and x-default",
+    "demos": [
+      "multilingual"
+    ],
+    "rationale": "A single available variant still has a real language and a default URL (E-X1)."
+  },
+  {
+    "id": "X103",
+    "check": "X103 Japanese search finds Japanese content",
+    "demos": [
+      "multilingual"
+    ],
+    "rationale": "Readers must be able to search Japanese content using Japanese words."
   }
 ]

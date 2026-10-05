@@ -274,3 +274,72 @@ build diagnosis and before/after screenshots remain ignored in
 `results/evidence/slice-2b/` and the per-demo Playwright folders. The compact
 slice report records IDs, docs-review findings, query tables and the before/after
 first-page JS gzip measurements. Library failures remain failing.
+
+## Multilingual demo
+
+Production: <https://ginko-demo-multilingual.vercel.app>.
+Project `ginko-demo-multilingual`, team `Lupinum OG` (`lupinum`), ID
+`prj_sK9SlAbMPlM6QY7UCJXeD7iZzZVQ`. Deployment protection is disabled. It uses
+Node 24, the Other preset, root `apps/multilingual`, build `pnpm build`, output
+`.output/public`, install `cd ../.. && corepack pnpm install --frozen-lockfile`,
+and source files outside the root. The CLI deployment is independent of the
+other demo projects; this branch is pushed without merging or connecting Git.
+
+The static app has English (default), German and Japanese, two collections,
+locale-scoped navigation, Pagefind, localized agent indexes and raw Markdown,
+and reciprocal sitemap alternates including `x-default`. `docs` keeps identical
+filename segments; `guides` translates numbered filenames and route mounts.
+The installed API makes `translatedSlugs` global, so both production collections
+use numeric identity. Genuine shared-slug policy (`translatedSlugs: false`) is
+verified in the independent standalone fixture, not claimed as a separate
+per-collection production setting. Japanese production URLs use ASCII filenames;
+the Unicode filename remains in the failing fixture.
+
+The page owns its content result and passes it to `NuxtLayout`; the shared
+header follows the installed composables recipe and adds no page request or
+global page state. Each content page also renders its proven alternates.
+`/de/docs/english-only` shows the documented fallback notice and route facts.
+`/inspect` exposes exact/configured/default/ordered fallback, selector equivalence,
+projected population and path helpers. `/search`, `/de/search`, and `/ja/search`
+exercise locale-scoped and all-language Pagefind search, including `生物多様性`.
+
+```sh
+corepack pnpm build multilingual
+corepack pnpm --filter @ginko-demo/multilingual typecheck
+corepack pnpm check multilingual
+node checks/multilingual-local.mjs
+corepack pnpm check:map
+```
+
+Production checks run at 1440×900 and 390×844. A check run exits 1 while the
+three not-live claims are blocked; this is not a library assertion failure.
+C161 (without Nuxt I18n), C163 (additional collection policies), and C181
+(post-generation source mutation) have explicit not-live reasons and separate
+local evidence. C181 proves the existing index stays unchanged after an authored
+file is added; it does not prove inclusion after regeneration. C164 covers valid
+mounts, not invalid setup rejection; C170 covers missing translations, not every
+pending/error/stale state; C173 covers the application callback for known locales,
+not runtime unknown-locale input. C195 verifies this deployment's multi-sitemap
+index; the standalone fixture also produces a single sitemap.
+
+Expectations X101 (negated locale isolation), X102 (singleton with configured
+fallback retains language/default alternates), and X103 (Japanese search) run on
+production. E-A009 did not reproduce for an exact German negation query.
+The no-fallback singleton case reproduces E-X1 locally as K102: neither language
+nor `x-default` alternates appear. K101 reproduces E-A013: `紹介.md` and `index.md`
+collide at canonical ID `/`, failing generation. These fixtures remain unchanged
+and their failures stay failures; `checks/known-failures-multilingual.json`
+records the source and rationale. They are not production claim failures.
+
+Committed `results/<UTC-date>-multilingual.json` contains production claim and
+expectation results and measured budgets; `results/<UTC-date>-multilingual-local.json`
+contains separate fixture findings. Logs, screenshots, traces, XML and measurement
+reports remain ignored under `results/evidence/`. The local runner exits 1 for
+its deliberately preserved library failures. Re-run it after a package change.
+
+To redeploy only this approved project:
+
+```sh
+corepack pnpm --filter @ginko-demo/checks exec vercel link --project ginko-demo-multilingual --scope lupinum --yes --cwd ../
+corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupinum --yes --cwd ../
+```

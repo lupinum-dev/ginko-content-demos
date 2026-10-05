@@ -487,7 +487,7 @@
   {
     "id": "C093",
     "demo": "multilingual",
-    "check": "Resolve canonical /intro and mounted localized URL to same document"
+    "check": "C093 canonical and mounted localized selectors identify the same document"
   },
   {
     "id": "C094",
@@ -532,7 +532,7 @@
   {
     "id": "C102",
     "demo": "multilingual",
-    "check": "Resolve a fallback target and display explanation alongside document"
+    "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations"
   },
   {
     "id": "C103",
@@ -564,7 +564,7 @@
   {
     "id": "C108",
     "demo": "multilingual",
-    "check": "Project title only while populating translated author; verify author remains"
+    "check": "C108 projected population retains the translated reference"
   },
   {
     "id": "C109",
@@ -694,27 +694,27 @@
   {
     "id": "C134",
     "demo": "multilingual",
-    "check": "Resolve a missing translation with exact locale only and verify actual locale and usedFallback"
+    "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations"
   },
   {
     "id": "C135",
     "demo": "multilingual",
-    "check": "Resolve a missing translation with configured chain then default and verify actual locale and usedFallback"
+    "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations"
   },
   {
     "id": "C136",
     "demo": "multilingual",
-    "check": "Resolve a missing translation with default only and verify actual locale and usedFallback"
+    "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations"
   },
   {
     "id": "C137",
     "demo": "multilingual",
-    "check": "Resolve a missing translation with explicit ordered chain and verify actual locale and usedFallback"
+    "check": "C102 C134 C135 C136 C137 exact configured default and ordered fallback explanations"
   },
   {
     "id": "C138",
     "demo": "multilingual",
-    "check": "Switch locale and verify translated sidebar tree"
+    "check": "C138 locale-scoped navigation changes with shared-header language"
   },
   {
     "id": "C139",
@@ -810,7 +810,7 @@
   {
     "id": "C155",
     "demo": "multilingual",
-    "check": "Change locale and refresh and confirm page updates"
+    "check": "C155 reactive locale getter and refresh update content"
   },
   {
     "id": "C156",
@@ -825,7 +825,7 @@
   {
     "id": "C158",
     "demo": "multilingual",
-    "check": "Follow localized document link and verify it matches served page"
+    "check": "C164 C166 C158 translated mounts preserve identity and public document links"
   },
   {
     "id": "C159",
@@ -840,7 +840,8 @@
   {
     "id": "C161",
     "demo": "multilingual",
-    "check": "Build standalone content.i18n locales and verify localized routes"
+    "check": "not-live: Module-setup fixture without Nuxt I18n; verified locally by checks/multilingual-local.mjs, not deployed.",
+    "reason": "Module-setup fixture without Nuxt I18n; verified locally by checks/multilingual-local.mjs, not deployed."
   },
   {
     "id": "C162",
@@ -850,57 +851,58 @@
   {
     "id": "C163",
     "demo": "multilingual",
-    "check": "Query inherited, opt-out and collection-local collections in same deployment"
+    "check": "not-live: Independent collection-policy fixture; verified locally by checks/multilingual-local.mjs, not in the two-collection production demo.",
+    "reason": "Independent collection-policy fixture; verified locally by checks/multilingual-local.mjs, not in the two-collection production demo."
   },
   {
     "id": "C164",
     "demo": "multilingual",
-    "check": "Open each translated mount and reject missing/unknown route locale mapping"
+    "check": "C164 C166 C158 translated mounts preserve identity and public document links"
   },
   {
     "id": "C165",
     "demo": "multilingual",
-    "check": "Switch between different-language slugs for same canonical key"
+    "check": "C165 C169 C172 shared SSR header switches to proven translated slugs"
   },
   {
     "id": "C166",
     "demo": "multilingual",
-    "check": "Change collection mount and verify shared variant identity unchanged"
+    "check": "C164 C166 C158 translated mounts preserve identity and public document links"
   },
   {
     "id": "C167",
     "demo": "multilingual",
-    "check": "Request missing translation and verify resolved locale and usedFallback"
+    "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback"
   },
   {
     "id": "C168",
     "demo": "multilingual",
-    "check": "Inspect alternates for missing locales and require no speculative URLs"
+    "check": "C167 C168 fallback page tells the reader and exposes only proven variants and current fallback"
   },
   {
     "id": "C169",
     "demo": "multilingual",
-    "check": "Inspect SSR header and network while switching locales"
+    "check": "C165 C169 C172 shared SSR header switches to proven translated slugs"
   },
   {
     "id": "C170",
     "demo": "multilingual",
-    "check": "Navigate to untranslated and failed pages and verify switch links disabled"
+    "check": "C170 missing alternate has a disabled shared-header link"
   },
   {
     "id": "C171",
     "demo": "multilingual",
-    "check": "Switch language with query/hash and verify both survive"
+    "check": "C171 language switching preserves query and hash"
   },
   {
     "id": "C172",
     "demo": "multilingual",
-    "check": "Compare concrete and fallback alternates; require concrete link"
+    "check": "C165 C169 C172 shared SSR header switches to proven translated slugs"
   },
   {
     "id": "C173",
     "demo": "multilingual",
-    "check": "Open app-only page and verify valid callback links and unknown locale omission"
+    "check": "C173 application-only page uses the shared layout callback"
   },
   {
     "id": "C174",
@@ -932,7 +934,7 @@
   {
     "id": "C179",
     "demo": "multilingual",
-    "check": "Generate and serve output; search loads Pagefind chunks and returns page"
+    "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data"
   },
   {
     "id": "C180",
@@ -942,7 +944,8 @@
   {
     "id": "C181",
     "demo": "multilingual",
-    "check": "Add content after generation and confirm absent until regeneration"
+    "check": "not-live: Source mutation after generation is a local filesystem check; verified locally by checks/multilingual-local.mjs, not a production assertion.",
+    "reason": "Source mutation after generation is a local filesystem check; verified locally by checks/multilingual-local.mjs, not a production assertion."
   },
   {
     "id": "C182",
@@ -974,12 +977,12 @@
   {
     "id": "C187",
     "demo": "multilingual",
-    "check": "Query shared term without locale and verify multiple languages"
+    "check": "C187 search without locale returns multiple languages"
   },
   {
     "id": "C188",
     "demo": "multilingual",
-    "check": "Switch locale and confirm no other-language hits"
+    "check": "C179 C188 generated Pagefind shards return only active-locale results and collection data"
   },
   {
     "id": "C189",
@@ -1002,7 +1005,7 @@
   {
     "id": "C192",
     "demo": "multilingual",
-    "check": "Inspect hreflang alternates and open each target"
+    "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default"
   },
   {
     "id": "C193",
@@ -1017,7 +1020,7 @@
   {
     "id": "C195",
     "demo": "multilingual",
-    "check": "Inspect actual localized single and multi-sitemap deployment entry points"
+    "check": "C192 C195 sitemap index contains reciprocal real translated alternates and x-default"
   },
   {
     "id": "C196",
@@ -1069,7 +1072,7 @@
   {
     "id": "C205",
     "demo": "multilingual",
-    "check": "Open each locale index and raw route; verify locale-specific content"
+    "check": "C205 C217 localized agent indexes raw content metadata and signals"
   },
   {
     "id": "C206",
@@ -1133,7 +1136,7 @@
   {
     "id": "C217",
     "demo": "multilingual",
-    "check": "Inspect localized index and frontmatter for configured signals"
+    "check": "C205 C217 localized agent indexes raw content metadata and signals"
   },
   {
     "id": "C218",
@@ -1564,7 +1567,7 @@
   {
     "id": "C303",
     "demo": "multilingual",
-    "check": "Compare path/slug/prefix settings; inherited-policy-only handle must fail"
+    "check": "C303 collection-local path slug and prefix options reject inherited policy"
   },
   {
     "id": "C304",
@@ -1720,7 +1723,7 @@
   {
     "id": "C334",
     "demo": "multilingual",
-    "check": "Render shortcut with static params/query in two locales and follow link"
+    "check": "C334 named I18n quick links preserve static params and query"
   },
   {
     "id": "C335",
