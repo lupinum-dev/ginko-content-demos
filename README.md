@@ -50,7 +50,7 @@ Routes: `/`, `/guide`, `/missing` (404).
 Production: <https://ginko-demo-quickstart.vercel.app>.
 
 Ginko warns that its enabled sitemap integration has no `@nuxtjs/sitemap` module.
-The quickstart does not install that module; its configuration stays unchanged.
+The quickstart does not install that module. Slice 2b extends its configuration with canonical site metadata and runtime agent delivery.
 Slice 1 does not assert sitemap behavior.
 
 ## Production checks
@@ -103,19 +103,17 @@ server cold start, and runner load.
 `checks/claims-map.json` assigns every ID exactly once. A planned check is not
 verification; only passing production results prove a hosted claim. `not-live`
 entries need the stated type, build, CLI, filesystem, or platform check; C201 is
-explicitly deferred by DESIGN.md. Slice 1 implements quickstart; slice 2a implements docs-site except search and agent output.
-The docs-site mapping marks those remaining claims `slice: "2b"`, so the reporter
-does not count them as unimplemented 2a checks.
+explicitly deferred by DESIGN.md. Slice 1 implements quickstart; slices 2a and 2b implement docs-site. Slice 2b moves runtime negotiation, Markdown 404 recovery, and SSR agent headers (C212, C213, C335) to quickstart. Seven configuration-matrix or framework-free claims have explicit not-live reasons; they are not marked verified.
 
 | Assignment | Claims |
 | --- | ---: |
-| quickstart | 4 |
-| docs-site | 81 |
-| blog | 78 |
+| quickstart | 7 |
+| docs-site | 73 |
+| blog | 76 |
 | multilingual | 32 |
 | custom-source | 91 |
 | scale | 2 |
-| not-live | 77 |
+| not-live | 84 |
 | **Total** | **365** |
 
 The quickstart records C001 (module/two routes), C151 (SSR payload reuse), C152
@@ -150,7 +148,7 @@ Run production checks after each package switch/deployment. Inspect the target
 project before issuing deployment commands; do not reuse an existing library or
 client project. No custom domains or external data services are used.
 
-## Docs site (slice 2a)
+## Docs site (slices 2a and 2b)
 
 Production: <https://ginko-demo-docs-site.vercel.app>. Production checks and
 known-failure fixture results are separate committed JSON files under `results/`.
@@ -161,8 +159,7 @@ a pathless group, a menu-hidden page, a sitemap-hidden page, a production draft,
 a partial, and an ignored invalid source. Its sidebar and previous/next controls
 come from the documented navigation queries; no route list is added to prerender
 or sitemap configuration. `content.config.ts` defines the docs, internal-page,
-and data collections. Agent output is explicitly disabled and search stays off
-until slice 2b.
+and data collections. Slice 2b enables default MiniSearch and static agent output.
 
 The ordinary docs pages show Markdown, final public-path Markdown links, colon and
 angle MDC syntax, inline and nested components, named slots, typed props, images,
@@ -188,8 +185,7 @@ docs-site screenshots.
 
 `X002 relative Markdown file links reach the intended page` is now exercised by
 K001 in the build-only known-failure fixtures. Production checks click final
-absolute `/docs/...` Markdown paths, as the routing guide documents. Partial
-claim coverage (search and agent exclusion) still needs slice 2b.
+absolute `/docs/...` Markdown paths, as the routing guide documents. Search and agent exclusion are now exercised by slice 2b production checks.
 
 ### Known-failure isolation
 
@@ -231,3 +227,50 @@ corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupi
 The CLI upload is independent of the existing quickstart GitHub deployment.
 Inspect the project link before deploying; use explicit names and do not deploy
 an unrelated project.
+
+## Search and agent output (slice 2b)
+
+The shared plain HTML combobox uses `await useContentSearch({ limit: 8 })` with
+`content.search: {}`. Focus opens results; arrows highlight, Enter selects and
+navigates, and Escape resets. There is no documented open shortcut. Result links
+use the public path and optional heading anchor; snippets show the library's
+unmodified `excerpt`. `/search-probe` demonstrates query, limit, locale, selection
+and reset. `/search-collection` additionally loads collection sections and
+`searchNavigation` outside `ClientOnly`, so their static dependencies are captured.
+`/agent-paths` displays the three public route helpers. The helper's `index.md`
+projection is a path utility, not a guarantee that a static `index.md` file exists.
+
+`checks/search-queries.json` fixes eight unambiguous queries, one no-match query,
+and one missing-letter typo. Each query records top three heading/page targets,
+the expected page's rank among hits, and browser latency at both viewports.
+Latency is the browser performance clock from fill to two animation frames;
+it includes automation and rendering, not just MiniSearch computation.
+Initialization can carry the complete records inside Nuxt's JSON payload rather
+than making a separate `/api/_content/search/index.json` request. C178 records
+these transfers and proves subsequent search works offline. C182 drops the SSR
+payload and returns HTTP 503 for the real index request to exercise a cold error;
+it does not mock the search algorithm.
+
+Docs collection agent policy creates `/raw/docs/**.md`, `/llms.txt`, and
+`/llms-full.txt`. The app-owned `/support` has Markdown with title/route metadata
+and is index-only; `/inspect` has a full-only agent representation. The documented
+Nitro plugin serializes callouts with readable blockquotes. Static delivery does
+not negotiate HTML URLs or generate per-page `index.md` files. Quickstart uses
+`delivery: 'runtime'` and public content signals for the corresponding HTTP checks.
+C211 checks the immutable, public slice 2a production deployment with
+`agent: false`; it does not infer disabled behavior from the newly enabled site.
+
+New expectations X003–X006 cover no-match, default fuzzy search, top-1 ranking, and snippet word boundaries.
+No new K fixture is required because generation succeeds. K001/K002 remain
+unchanged. The seven not-live IDs are C176, C186, C209, C340, C351, C360, C362;
+the claims map states exactly which unbuilt engine/configuration or helper matrix
+is not proved. Default typo tolerance, indexing, and exclusion checks do not prove
+arbitrary option overrides.
+
+Both production check commands include existing slice 1/2a regressions. New
+`[HTTP]` checks run only in the desktop project; browser checks run at 1440×900
+and 390×844. The run JSON stays committed; logs, raw responses, query artifacts,
+build diagnosis and before/after screenshots remain ignored in
+`results/evidence/slice-2b/` and the per-demo Playwright folders. The compact
+slice report records IDs, docs-review findings, query tables and the before/after
+first-page JS gzip measurements. Library failures remain failing.

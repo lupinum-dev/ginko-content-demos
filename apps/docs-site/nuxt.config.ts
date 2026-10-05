@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   site: { url: 'https://ginko-demo-docs-site.vercel.app' },
   css: ['katex/dist/katex.min.css'],
   content: {
-    agent: false,
+    search: {},
     ignores: ['ignored\\.md$'],
     sitemap: { include: ['docs'], exclude: ['internal'] },
     markdown: {

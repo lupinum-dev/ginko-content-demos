@@ -14,6 +14,6 @@ export default defineConfig({
   use: { baseURL: process.env.BASE_URL ?? targets[demo].BASE_URL, browserName: 'chromium', screenshot: 'on', trace: 'retain-on-failure' },
   projects: [
     { name: 'desktop', use: { viewport: { width: 1440, height: 900 } } },
-    { name: 'mobile', use: { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true } }
+    { name: 'mobile', grepInvert: /\[HTTP\]/, use: { viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true } }
   ]
 })

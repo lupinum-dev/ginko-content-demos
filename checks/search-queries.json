@@ -1,0 +1,52 @@
+[
+  {
+    "query": "Installation",
+    "expected": "/docs/start/installation",
+    "kind": "title"
+  },
+  {
+    "query": "Formatting",
+    "expected": "/docs/guides/markdown",
+    "kind": "heading"
+  },
+  {
+    "query": "workspace",
+    "expected": "/docs/start/installation",
+    "kind": "body"
+  },
+  {
+    "query": "Sharing",
+    "expected": "/docs/start/sharing",
+    "kind": "title"
+  },
+  {
+    "query": "Updates",
+    "expected": "/docs/start/updates",
+    "kind": "title"
+  },
+  {
+    "query": "Diagrams",
+    "expected": "/docs/guides/diagrams",
+    "kind": "title"
+  },
+  {
+    "query": "Storage",
+    "expected": "/docs/reference/group/storage",
+    "kind": "title"
+  },
+  {
+    "query": "Visibility",
+    "expected": "/docs/reference/visibility",
+    "kind": "title"
+  },
+  {
+    "query": "zzzxqvnosuchword987654321",
+    "expected": null,
+    "kind": "no-match"
+  },
+  {
+    "query": "Installaton",
+    "expected": "/docs/start/installation",
+    "kind": "typo"
+  }
+]

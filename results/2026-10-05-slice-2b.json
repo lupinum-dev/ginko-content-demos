@@ -1,0 +1,1671 @@
+{
+  "slice": "2b",
+  "date": "2026-10-05",
+  "package": "1.0.0-beta.10 / a3e8ef1",
+  "deployments": {
+    "docs": {
+      "id": "dpl_D2pG3oayprT12FRh3TTXp9WLfjFV",
+      "url": "https://ginko-demo-docs-site-r5b6m736y-lupinum.vercel.app",
+      "productionUrl": "https://ginko-demo-docs-site.vercel.app"
+    },
+    "quickstart": {
+      "id": "dpl_GTcEQ6kKL1wHxNmKweYrLjrhcm5s",
+      "url": "https://ginko-demo-quickstart-ft696v7b0-lupinum.vercel.app",
+      "productionUrl": "https://ginko-demo-quickstart.vercel.app"
+    }
+  },
+  "scopeClaims": [
+    {
+      "id": "C174",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/8.search-engines.md:17"
+      ],
+      "checks": [
+        {
+          "check": "C174 empty config enables default MiniSearch and quickstart exposes disabled error",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-desktop/attachments/disabled-search-txt-dd87178aceddfcdf9cb73cf9a1bf209b3540264e.txt",
+            "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C174 empty config enables default MiniSearch and quickstart exposes disabled error",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-mobile/attachments/disabled-search-txt-323ae2ae91f128195745cbd5613874fa7ff8df4d.txt",
+            "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C175",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/8.search-engines.md:23"
+      ],
+      "checks": [
+        {
+          "check": "C175 X005 search query Installation",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/attachments/search-query-json-989673d60906d63eea42a16a68cbd9d9349202b3.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Formatting",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/attachments/search-query-json-0663170cd4463d34baa3cfd7236f2d690da157af.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query workspace",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/attachments/search-query-json-605e95bbb979315b7d9dd725119069ef8333f49c.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Sharing",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/attachments/search-query-json-2b71553ed784b5795a72a7514150e2b666d67c4e.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Updates",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/attachments/search-query-json-443f9bad8ffc23071e30de431b357070d052fe98.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Diagrams",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/attachments/search-query-json-e020b1325992a15743da71f9ee9179de2b164e0e.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Storage",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/attachments/search-query-json-5d85633e00a43b3743f8fe1b73c3842315007fde.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Visibility",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/attachments/search-query-json-d7e82047ada635c899ae1c25d0625fd913c60989.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Installation",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/attachments/search-query-json-84d99e8b34801e889a68e75dffeed9869003f402.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Formatting",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/attachments/search-query-json-a148388ad4b19e02281a90dc2ae0806fc63e900f.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query workspace",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/attachments/search-query-json-08d335f7bbf91af73426087a39212dff6beaec54.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Sharing",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/attachments/search-query-json-cfd58680a400857a43af9fb36e7b672693ad76b0.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Updates",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/attachments/search-query-json-14bb9680d68a2121a4122e9eb844740d6877c110.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Diagrams",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/attachments/search-query-json-ed783627390f9dfca17a56d05c4bfa5245364422.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Storage",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/attachments/search-query-json-82cb392885872177c1e63779fe173239a8043177.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C175 X005 search query Visibility",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/attachments/search-query-json-60b5befa23d484787cce77464ef70a81a52eb905.json",
+            "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C176",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/4.guides/8.search-engines.md:39"
+      ],
+      "reason": "The live demo uses search: {}. Configured extraFields/boost/fuzzy variants require a separate MiniSearch configuration matrix; default fuzzy behavior is covered by X004 here."
+    },
+    {
+      "id": "C177",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/8.search-engines.md:39"
+      ],
+      "checks": [
+        {
+          "check": "C177 data collections do not enter public search",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-desktop/attachments/public-search-collections-json-dacfac61ab4b8e39a4e69e66f79e79d7339eccf2.json",
+            "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C177 data collections do not enter public search",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-mobile/attachments/public-search-collections-json-153a85ba8f7044b7e0eceb4d92406786338243b8.json",
+            "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C178",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/8.search-engines.md:41"
+      ],
+      "checks": [
+        {
+          "check": "C178 complete index initializes before query and then searches offline",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-desktop/attachments/search-index-json-67be97671ff5416e442f10c095d0bad1528733a8.json",
+            "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C178 complete index initializes before query and then searches offline",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-mobile/attachments/search-index-json-d65ed1d95e7971f2e1635dae45d1043b805e93d7.json",
+            "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C182",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/5.composables.md:167"
+      ],
+      "checks": [
+        {
+          "check": "C182 headless state exposes query results empty and loading error",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/attachments/headless-success-json-acb9ec6150320ebfca59439f7cf24207e57e08f3.json",
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/attachments/headless-error-json-4539feac1f117531aa778c433fe675ef100065dd.json",
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C182 headless state exposes query results empty and loading error",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/attachments/headless-success-json-8f779c4cd985e09051bcc2e04c9937a3b4715290.json",
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/attachments/headless-error-json-e3edb9e9d13686921a69e9645a05036a0f512601.json",
+            "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C183",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/5.composables.md:186"
+      ],
+      "checks": [
+        {
+          "check": "C183 collection adds files and searchNavigation while omitted collection stays empty",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-desktop/attachments/collection-search-json-370460cd4bb9ef1ca3e964d4ce4186fed5d5cb08.json",
+            "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C183 collection adds files and searchNavigation while omitted collection stays empty",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-mobile/attachments/collection-search-json-f83225086717204d5c8294e1ed1a19384ce4ef9b.json",
+            "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C184",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/5.composables.md:203"
+      ],
+      "checks": [
+        {
+          "check": "C184 reactive initial query limit and locale update search",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-desktop/attachments/reactive-locale-json-1c5b1b113d1ceba9e801f2d0edda62479ff20e9f.json",
+            "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C184 reactive initial query limit and locale update search",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-mobile/attachments/reactive-locale-json-0737c5815bf32f5ecfebe5a99fff540e86915ad7.json",
+            "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C185",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/5.composables.md:218"
+      ],
+      "checks": [
+        {
+          "check": "C185 headless highlight select reset and shared combobox keyboard navigation",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-desktop/attachments/keyboard-destination-txt-cd55666c8e63c110a6c02d196f55096914ac6cf8.txt",
+            "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C185 headless highlight select reset and shared combobox keyboard navigation",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-mobile/attachments/keyboard-destination-txt-d4e72d40df04f86c17143faa8981808670727fde.txt",
+            "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C186",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/5.reference/5.composables.md:223"
+      ],
+      "reason": "Provider and Pagefind failures require those engines. This MiniSearch demo checks a failed index request under C182 and disabled search under C174; the other engine error paths are not live here."
+    },
+    {
+      "id": "C202",
+      "demo": "docs-site",
+      "status": "fail",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:97"
+      ],
+      "checks": [
+        {
+          "check": "C202 [HTTP] every public docs page has normalized raw Markdown",
+          "viewport": "desktop",
+          "status": "fail",
+          "evidence": [
+            "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/attachments/all-raw-pages-json-94c127fc34965437f148fb60b5f620b046a369d8.json",
+            "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/trace.zip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C203",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:98",
+        "README.md:167"
+      ],
+      "checks": [
+        {
+          "check": "C203 C207 agent index is linked from the live shared shell",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/attachments/visible-agent-index-txt-f603143fd1deb76eb72ebe230d57eaba4ea9adbb.txt",
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C203 [HTTP] sectioned index links all resolve with absolute canonical URLs",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C203-HTTP-sectio-01083-ith-absolute-canonical-URLs-desktop/attachments/llms-txt-7b2857b7ec24133bf13bc54a4a48f89f88083a19.txt",
+            "results/evidence/docs-site-playwright/docs-site-C203-HTTP-sectio-01083-ith-absolute-canonical-URLs-desktop/attachments/index-links-json-cd35fc474e0f88f2a37b6127eaede3a2547e0b0b.json"
+          ]
+        },
+        {
+          "check": "C203 C207 agent index is linked from the live shared shell",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/attachments/visible-agent-index-txt-0265721dad74165a50fc6571e9f453ccd0ebe7e9.txt",
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C204",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:99"
+      ],
+      "checks": [
+        {
+          "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt",
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C206",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:101"
+      ],
+      "checks": [
+        {
+          "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt",
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C207",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:62"
+      ],
+      "checks": [
+        {
+          "check": "C203 C207 agent index is linked from the live shared shell",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/attachments/visible-agent-index-txt-f603143fd1deb76eb72ebe230d57eaba4ea9adbb.txt",
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C207 [HTTP] static HTML and agent files coexist without portable negotiation",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C207-HTTP-static-ecfcc-ithout-portable-negotiation-desktop/attachments/static-delivery-json-c6c1875aa8d0fef085091df1991e0ec09f456687.json"
+          ]
+        },
+        {
+          "check": "C203 C207 agent index is linked from the live shared shell",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/attachments/visible-agent-index-txt-0265721dad74165a50fc6571e9f453ccd0ebe7e9.txt",
+            "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C209",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:83"
+      ],
+      "reason": "The live docs-site runs generate with default static delivery. Proving generate under delivery: runtime needs an alternate build; C207 checks the actual static production files, not that unbuilt variant."
+    },
+    {
+      "id": "C211",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:91"
+      ],
+      "checks": [
+        {
+          "check": "C211 [HTTP] agent false baseline disables raw indexes and middleware",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C211-HTTP-agent--8260a--raw-indexes-and-middleware-desktop/attachments/disabled-baseline-json-e77d85c75a39543127147a3ebae4211f68f1a116.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C212",
+      "demo": "quickstart",
+      "status": "fail",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:103"
+      ],
+      "deliveryReason": "Requires Nitro runtime delivery; docs-site is static.",
+      "checks": [
+        {
+          "check": "C212 [HTTP] runtime delivery negotiates the same public URL",
+          "viewport": "desktop",
+          "status": "fail",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/attachments/Runtime-negotiation-13eadb677e704cb0e2dc25e747c39754945d1004.json",
+            "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/trace.zip"
+          ]
+        },
+        {
+          "check": "C212 C335 runtime agent page stays usable in the browser",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/attachments/Raw-guide-Markdown-1cc63fe347400f95160574b4a7065f77e7f41a70.md",
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C212 C335 runtime agent page stays usable in the browser",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/attachments/Raw-guide-Markdown-0b2307bd7ae0e85fb4a1b019a0944a2597d5aad7.md",
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C213",
+      "demo": "quickstart",
+      "status": "fail",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:114"
+      ],
+      "deliveryReason": "Requires Nitro runtime delivery; docs-site is static.",
+      "checks": [
+        {
+          "check": "C213 [HTTP] Markdown missing public route preserves 404 and recovery links without rewriting API or assets",
+          "viewport": "desktop",
+          "status": "fail",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/attachments/Markdown-404-recovery-7192af12d6dc6f794eaeb4ce36bbe56fc1dbfabc.json",
+            "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/trace.zip"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C214",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:121"
+      ],
+      "checks": [
+        {
+          "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C215",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:140"
+      ],
+      "checks": [
+        {
+          "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C216",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/2.content-config.md:128"
+      ],
+      "checks": [
+        {
+          "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt",
+            "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C219",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "CHANGELOG.md:277"
+      ],
+      "checks": [
+        {
+          "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C220",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "CHANGELOG.md:279"
+      ],
+      "checks": [
+        {
+          "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C222",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/11.package-exports.md:35"
+      ],
+      "checks": [
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C223",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/11.package-exports.md:35"
+      ],
+      "checks": [
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C224",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/11.package-exports.md:35"
+      ],
+      "checks": [
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json",
+            "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C335",
+      "demo": "quickstart",
+      "status": "fail",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:264"
+      ],
+      "deliveryReason": "Requires Nitro runtime delivery; docs-site is static.",
+      "checks": [
+        {
+          "check": "C335 [HTTP] eligible SSR responses expose agent links and configured public content signals",
+          "viewport": "desktop",
+          "status": "fail",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/attachments/Agent-response-headers-1663bf9f76e5d0d99d00db29b2574a60532b0133.json",
+            "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/trace.zip"
+          ]
+        },
+        {
+          "check": "C212 C335 runtime agent page stays usable in the browser",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/attachments/Raw-guide-Markdown-1cc63fe347400f95160574b4a7065f77e7f41a70.md",
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/test-finished-1.png"
+          ]
+        },
+        {
+          "check": "C212 C335 runtime agent page stays usable in the browser",
+          "viewport": "mobile",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/attachments/Raw-guide-Markdown-0b2307bd7ae0e85fb4a1b019a0944a2597d5aad7.md",
+            "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/test-finished-1.png"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C340",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:230"
+      ],
+      "reason": "Explicit collections and filterQuery overrides require an alternate search configuration. This default-engine deployment tests default data exclusion under C177, not arbitrary filtering policies."
+    },
+    {
+      "id": "C351",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/5.reference/11.package-exports.md:34"
+      ],
+      "reason": "The full formatting/registry/helper surface is framework-free and requires a public-export unit matrix. The live custom serializer exercises blockquoteMarkdown/getMarkdownProp/registerAgentMarkdownSerializers under C215 only."
+    },
+    {
+      "id": "C360",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:239"
+      ],
+      "reason": "Retaining required fields under customized storeFields needs a build with storeFields: [title]. The live demo intentionally uses search: {} and does not prove that alternate configuration."
+    },
+    {
+      "id": "C361",
+      "demo": "docs-site",
+      "status": "pass",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:229"
+      ],
+      "checks": [
+        {
+          "check": "C361 [HTTP] default ignored pre tags are absent from index while prose remains",
+          "viewport": "desktop",
+          "status": "pass",
+          "evidence": [
+            "results/evidence/docs-site-playwright/docs-site-C361-HTTP-defaul-2c2c3-m-index-while-prose-remains-desktop/attachments/ignored-tags-json-9efa3299c96b3d7b6ed11cfe0e282c33ffecc5a7.json"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C362",
+      "demo": "not-live",
+      "status": "not-live",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:237"
+      ],
+      "reason": "Custom apiBaseURL and toggled prefix require alternate module configurations. This deployment uses the default endpoint and prefix configuration; neither override is claimed verified."
+    }
+  ],
+  "statuses": {
+    "pass": [
+      "C174",
+      "C175",
+      "C177",
+      "C178",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C203",
+      "C204",
+      "C206",
+      "C207",
+      "C211",
+      "C214",
+      "C215",
+      "C216",
+      "C219",
+      "C220",
+      "C222",
+      "C223",
+      "C224",
+      "C361"
+    ],
+    "fail": [
+      "C202",
+      "C212",
+      "C213",
+      "C335"
+    ],
+    "blocked": [],
+    "not-live": [
+      "C176",
+      "C186",
+      "C209",
+      "C340",
+      "C351",
+      "C360",
+      "C362"
+    ]
+  },
+  "expectations": [
+    {
+      "id": "X001",
+      "status": "fail"
+    },
+    {
+      "id": "X003",
+      "status": "pass"
+    },
+    {
+      "id": "X004",
+      "status": "pass"
+    },
+    {
+      "id": "X005",
+      "status": "pass"
+    },
+    {
+      "id": "X006",
+      "status": "fail"
+    }
+  ],
+  "knownFailures": {
+    "added": [],
+    "unchanged": [
+      "K001",
+      "K002"
+    ],
+    "rerun": false,
+    "reason": "No generation failure introduced; fixtures and their dependencies remain unchanged."
+  },
+  "searchQueries": [
+    {
+      "query": "zzzxqvnosuchword987654321",
+      "expected": null,
+      "kind": "no-match",
+      "top3": [],
+      "rank": null,
+      "ms": 44.6,
+      "viewport": "desktop"
+    },
+    {
+      "query": "zzzxqvnosuchword987654321",
+      "expected": null,
+      "kind": "no-match",
+      "top3": [],
+      "rank": null,
+      "ms": 40.4,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Installaton",
+      "expected": "/docs/start/installation",
+      "kind": "typo",
+      "top3": [
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation"
+        },
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation#installation"
+        },
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 79.3,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Installaton",
+      "expected": "/docs/start/installation",
+      "kind": "typo",
+      "top3": [
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation"
+        },
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation#installation"
+        },
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 50.1,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Installation",
+      "expected": "/docs/start/installation",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation"
+        },
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation#installation"
+        },
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 110.1,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Formatting",
+      "expected": "/docs/guides/markdown",
+      "kind": "heading",
+      "top3": [
+        {
+          "title": "Formatting",
+          "path": "/docs/guides/markdown#formatting"
+        }
+      ],
+      "rank": 1,
+      "ms": 56.9,
+      "viewport": "desktop"
+    },
+    {
+      "query": "workspace",
+      "expected": "/docs/start/installation",
+      "kind": "body",
+      "top3": [
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 74.7,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Sharing",
+      "expected": "/docs/start/sharing",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Sharing",
+          "path": "/docs/start/sharing"
+        },
+        {
+          "title": "Sharing",
+          "path": "/docs/start/sharing#sharing"
+        },
+        {
+          "title": "Share",
+          "path": "/docs/start/sharing#share"
+        }
+      ],
+      "rank": 1,
+      "ms": 42.2,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Updates",
+      "expected": "/docs/start/updates",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates#updates-1"
+        },
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates"
+        },
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates#updates"
+        }
+      ],
+      "rank": 1,
+      "ms": 65.8,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Diagrams",
+      "expected": "/docs/guides/diagrams",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Diagrams",
+          "path": "/docs/guides/diagrams"
+        },
+        {
+          "title": "Diagrams",
+          "path": "/docs/guides/diagrams#diagrams"
+        },
+        {
+          "title": "Workflow",
+          "path": "/docs/guides/diagrams#workflow"
+        }
+      ],
+      "rank": 1,
+      "ms": 67,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Storage",
+      "expected": "/docs/reference/group/storage",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Storage",
+          "path": "/docs/reference/group/storage"
+        },
+        {
+          "title": "Storage",
+          "path": "/docs/reference/group/storage#storage"
+        },
+        {
+          "title": "Backups",
+          "path": "/docs/reference/group/storage#backups"
+        }
+      ],
+      "rank": 1,
+      "ms": 101.9,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Visibility",
+      "expected": "/docs/reference/visibility",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility#visibility-1"
+        },
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility"
+        },
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility#visibility"
+        }
+      ],
+      "rank": 1,
+      "ms": 66.9,
+      "viewport": "desktop"
+    },
+    {
+      "query": "Installation",
+      "expected": "/docs/start/installation",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation"
+        },
+        {
+          "title": "Installation",
+          "path": "/docs/start/installation#installation"
+        },
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 60,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Formatting",
+      "expected": "/docs/guides/markdown",
+      "kind": "heading",
+      "top3": [
+        {
+          "title": "Formatting",
+          "path": "/docs/guides/markdown#formatting"
+        }
+      ],
+      "rank": 1,
+      "ms": 41.9,
+      "viewport": "mobile"
+    },
+    {
+      "query": "workspace",
+      "expected": "/docs/start/installation",
+      "kind": "body",
+      "top3": [
+        {
+          "title": "Install",
+          "path": "/docs/start/installation#install"
+        }
+      ],
+      "rank": 1,
+      "ms": 57.1,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Sharing",
+      "expected": "/docs/start/sharing",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Sharing",
+          "path": "/docs/start/sharing"
+        },
+        {
+          "title": "Sharing",
+          "path": "/docs/start/sharing#sharing"
+        },
+        {
+          "title": "Share",
+          "path": "/docs/start/sharing#share"
+        }
+      ],
+      "rank": 1,
+      "ms": 51.7,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Updates",
+      "expected": "/docs/start/updates",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates#updates-1"
+        },
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates"
+        },
+        {
+          "title": "Updates",
+          "path": "/docs/start/updates#updates"
+        }
+      ],
+      "rank": 1,
+      "ms": 52.2,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Diagrams",
+      "expected": "/docs/guides/diagrams",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Diagrams",
+          "path": "/docs/guides/diagrams"
+        },
+        {
+          "title": "Diagrams",
+          "path": "/docs/guides/diagrams#diagrams"
+        },
+        {
+          "title": "Workflow",
+          "path": "/docs/guides/diagrams#workflow"
+        }
+      ],
+      "rank": 1,
+      "ms": 35.5,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Storage",
+      "expected": "/docs/reference/group/storage",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Storage",
+          "path": "/docs/reference/group/storage"
+        },
+        {
+          "title": "Storage",
+          "path": "/docs/reference/group/storage#storage"
+        },
+        {
+          "title": "Backups",
+          "path": "/docs/reference/group/storage#backups"
+        }
+      ],
+      "rank": 1,
+      "ms": 39.5,
+      "viewport": "mobile"
+    },
+    {
+      "query": "Visibility",
+      "expected": "/docs/reference/visibility",
+      "kind": "title",
+      "top3": [
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility#visibility-1"
+        },
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility"
+        },
+        {
+          "title": "Visibility",
+          "path": "/docs/reference/visibility#visibility"
+        }
+      ],
+      "rank": 1,
+      "ms": 42.1,
+      "viewport": "mobile"
+    }
+  ],
+  "clientJsGzip": {
+    "before": 232371,
+    "after": 249503,
+    "delta": 17132,
+    "percent": 7.37,
+    "method": "Cold mobile first-page unique script response bodies, recompressed with Node gzip defaults.",
+    "evidence": [
+      "results/evidence/slice-2b/client-js-before.json",
+      "results/evidence/2026-10-05-docs-site-client-js.json"
+    ]
+  },
+  "failures": [
+    {
+      "id": "C046",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:117"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator: getByTestId('document').locator('h2').first().locator('a')\nExpected: \"#_1-setup\"\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toHaveAttribute\" with timeout 5000ms\n  - waiting for getByTestId('document').locator('h2').first().locator('a')\n"
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-desktop/attachments/Page-HTTP-response-9a9bd52f5a2d88a6791286a58f2aed097bc8ac3e.html",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-desktop/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-desktop/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-mobile/attachments/Page-HTTP-response-a31f5117c05c3f2fb0fc6d2be47d1a9bef57909b.html",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-mobile/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-mobile/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C046-heading-anc-41fbe-igured-depth-and-exclusions-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "C106",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/5.reference/4.query-api.md:247"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n- Expected  - 3\n+ Received  + 3\n\n  Array [\n    \"Start here\",\n-   \"Updates\",\n-   \"Sharing\",\n-   \"First Note\",\n    \"Install\",\n+   \"First Note\",\n+   \"Sharing\",\n+   \"Updates\",\n  ]\n\nCall log:\n  - Expect \"toHaveText\" with timeout 5000ms\n  - waiting for getByTestId('filtered-navigation').getByRole('link')\n    9 × locator resolved to 5 elements\n",
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n- Expected  - 3\n+ Received  + 3\n\n  Array [\n    \"Start here\",\n-   \"Updates\",\n-   \"Sharing\",\n-   \"First Note\",\n    \"Install\",\n+   \"First Note\",\n+   \"Sharing\",\n+   \"Updates\",\n  ]\n\nCall log:\n  - Expect \"toHaveText\" with timeout 5000ms\n  - waiting for getByTestId('filtered-navigation').getByRole('link')\n    8 × locator resolved to 5 elements\n"
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-desktop/attachments/Page-HTTP-response-664d4386ca57ce05b0505ab0fc48deae0e1621a2.html",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-desktop/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-desktop/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-mobile/attachments/Page-HTTP-response-69adc6bc37f3f8db46ed9858dd22dd24fee0e254.html",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-mobile/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-mobile/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C106-navigation--273c3-ut-losing-structural-groups-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "C190",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/4.guides/9.sitemap-and-prerender.md:49"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(received).not.toContain(expected) // indexOf\n\nExpected substring: not \"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\nReceived string:        \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\n<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/internal</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\n    </url>\n   "
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-C190-sitemap-exc-1131a-ction-and-document-opt-outs-desktop/attachments/Sitemap-XML-242354350bd00a0d2992937b6d427f220a2d992c.xml",
+        "results/evidence/docs-site-playwright/docs-site-C190-sitemap-exc-1131a-ction-and-document-opt-outs-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-C190-sitemap-exc-1131a-ction-and-document-opt-outs-mobile/attachments/Sitemap-XML-72be70787a52dc3c090b3fb8e5d8e66d54a243c5.xml",
+        "results/evidence/docs-site-playwright/docs-site-C190-sitemap-exc-1131a-ction-and-document-opt-outs-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "C199",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/7.resources/2.deployment.md:21"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(received).not.toContain(expected) // indexOf\n\nExpected substring: not \"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\nReceived string:        \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\n<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/internal</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\n    </url>\n    <url>\n        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\n    </url>\n   "
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-desktop/attachments/Page-HTTP-response-704622cf000b02176fa1066279dac2328aa0d1f6.html",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-desktop/attachments/Sitemap-XML-6e70fe42431ed467c7763cb35cfba2ebc036a02b.xml",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-desktop/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-desktop/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-mobile/attachments/Page-HTTP-response-5c2d70c85e3e3f63951f51eff623c2ae758b89b6.html",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-mobile/attachments/Sitemap-XML-01885db1cdced9f07b5a4fc2ff2d6315b2883ea4.xml",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-mobile/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-mobile/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C199-sitemap-opt-7c563-dered-while-absent-from-XML-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "C202",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:97"
+      ],
+      "errors": [
+        "Error: expect(received).toEqual(expected) // deep equality\n\n- Expected  -  1\n+ Received  + 10\n\n- Array []\n+ Array [\n+   Object {\n+     \"route\": \"/docs/reference/off-menu\",\n+     \"status\": 404,\n+   },\n+   Object {\n+     \"route\": \"/docs/reference/limits\",\n+     \"status\": 404,\n+   },\n+ ]"
+      ],
+      "evidence": [
+        "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/attachments/all-raw-pages-json-94c127fc34965437f148fb60b5f620b046a369d8.json",
+        "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/trace.zip"
+      ]
+    },
+    {
+      "id": "C357",
+      "demo": "docs-site",
+      "sources": [
+        "docs/content/docs/6.migration/4.ginko-version-upgrades.md:161"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(locator).not.toContainText(expected) failed\n\nLocator: getByTestId('inline')\nExpected substring: not \"INLINE_COMMENT_SENTINEL\"\nReceived string: \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\nTimeout: 5000ms\n\nCall log:\n  - Expect \"not toContainText\" with timeout 5000ms\n  - waiting for getByTestId('inline')\n    9 × locator resolved to <span data-testid=\"inline\">…</span>\n      - unexpected value \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\n"
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-desktop/attachments/Page-HTTP-response-7da0cc0f3acfc80ebdfdd82ae9cd5401424f55d6.html",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-desktop/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-desktop/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-mobile/attachments/Page-HTTP-response-419873e78daa9f8f759ea0c5d3b6346f25aaa818.html",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-mobile/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-mobile/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-C357-ingested-an-e2970-rendered-output-or-excerpts-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "X001",
+      "demo": "docs-site",
+      "sources": [
+        "checks/expectations.json"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"same-document\"\nReceived: undefined"
+      ],
+      "evidence": [
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-desktop/attachments/Page-HTTP-response-b5bb3b4310d2515eef7bf75896907c006e7ea6c6.html",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-desktop/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-desktop/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-desktop/trace.zip",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-mobile/attachments/Page-HTTP-response-74cbdb061c5ccc2cd1dd3495ba963414dcb2d1a4.html",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-mobile/test-failed-1.png",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-mobile/error-context.md",
+        "results/evidence/docs-site-playwright/docs-site-X001-in-content-links-navigate-client-side-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "X006",
+      "demo": "docs-site",
+      "sources": [
+        "checks/expectations.json"
+      ],
+      "errors": [
+        "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Record a place Record a date\"\nReceived string:    \"A strong note with emphasis and inline code. Record a placeRecord a date Open the notebookSave the note Keep observations short. ItemStatusNotebookReady Create notebook Add observation Fieldnote works with small teams. Components\""
+      ],
+      "evidence": [
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/attachments/snippet-word-boundaries-txt-993aefc59c6db8d0febe1fd0ea13902c42271dc4.txt",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/test-failed-1.png",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/error-context.md",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/trace.zip",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/attachments/snippet-word-boundaries-txt-f73d5c75567610033aae16eddaa13a4df2003fd0.txt",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/test-failed-1.png",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/error-context.md",
+        "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/trace.zip"
+      ]
+    },
+    {
+      "id": "C212",
+      "demo": "quickstart",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:103"
+      ],
+      "errors": [
+        "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"text/markdown\"\nReceived string:    \"text/html; charset=utf-8\""
+      ],
+      "evidence": [
+        "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/attachments/Runtime-negotiation-13eadb677e704cb0e2dc25e747c39754945d1004.json",
+        "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/trace.zip"
+      ]
+    },
+    {
+      "id": "C213",
+      "demo": "quickstart",
+      "sources": [
+        "docs/content/docs/4.guides/12.agent-readable-output.md:114"
+      ],
+      "errors": [
+        "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"text/markdown\"\nReceived string:    \"text/html;charset=utf-8\""
+      ],
+      "evidence": [
+        "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/attachments/Markdown-404-recovery-7192af12d6dc6f794eaeb4ce36bbe56fc1dbfabc.json",
+        "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/trace.zip"
+      ]
+    },
+    {
+      "id": "C335",
+      "demo": "quickstart",
+      "sources": [
+        "docs/content/docs/5.reference/3.module-options.md:264"
+      ],
+      "errors": [
+        "Error: expect(received).toContain(expected) // indexOf\n\nMatcher error: received value must not be null nor undefined\n\nReceived has value: undefined"
+      ],
+      "evidence": [
+        "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/attachments/Agent-response-headers-1663bf9f76e5d0d99d00db29b2574a60532b0133.json",
+        "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/trace.zip"
+      ]
+    },
+    {
+      "id": "X001",
+      "demo": "quickstart",
+      "sources": [
+        "checks/expectations.json"
+      ],
+      "baseline": "fail",
+      "errors": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"same-document\"\nReceived: undefined"
+      ],
+      "evidence": [
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/test-failed-1.png",
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/error-context.md",
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/trace.zip",
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/test-failed-1.png",
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/error-context.md",
+        "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/trace.zip"
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "ids": [
+        "C202"
+      ],
+      "observed": "2 of 17 published docs raw routes return 404: off-menu and limits.",
+      "expected": "Public page collection agent.markdown:true exposes raw Markdown; navigation/sitemap opt-outs are not documented agent exclusions.",
+      "explanation": "Generated agent discovery appears to exclude navigation-hidden or sitemap-hidden pages. High confidence in the mismatch, moderate confidence in the shared filter as cause."
+    },
+    {
+      "ids": [
+        "C212",
+        "C335"
+      ],
+      "observed": "Runtime-configured production guide returns HTML for text/markdown, and has neither Link nor Content-Signal headers.",
+      "expected": "Runtime delivery removes prerendered HTML and Nitro negotiates and adds eligible response headers.",
+      "explanation": "Vercel preset retains guide/index.html (3324 bytes), unlike Node-server output. CDN serving bypasses middleware; high confidence from build artifacts and response headers."
+    },
+    {
+      "ids": [
+        "C213"
+      ],
+      "observed": "Missing public URL remains HTTP 404 but returns HTML rather than Markdown recovery.",
+      "expected": "Runtime server returns Markdown recovery with index/home links and preserves status 404.",
+      "explanation": "Error-response middleware is ineffective in the deployed server. Local Node probe also returns JSON for the missing route. Cause uncertain."
+    },
+    {
+      "ids": [
+        "X006"
+      ],
+      "observed": "Snippet joins separate words as placeRecord, notebookSave, ItemStatusNotebookReady at both viewports.",
+      "expected": "Reasonable expectation: plain-text snippets preserve word boundaries between Markdown blocks.",
+      "explanation": "The generated index already contains the joined text; UI renders excerpt unchanged. High confidence the issue is in library text extraction."
+    },
+    {
+      "ids": [
+        "C046",
+        "C106",
+        "C190",
+        "C199",
+        "C357",
+        "X001"
+      ],
+      "observed": "Existing baseline failures reproduced unchanged on production.",
+      "expected": "Heading anchor settings, navigation sorting, sitemap exclusions, inline comment suppression, and ordinary client-link expectations.",
+      "explanation": "Same failing IDs as the committed slice 2a baseline; no new regression among existing checks. Docs reread is recorded in ignored evidence."
+    }
+  ],
+  "checks": [
+    {
+      "command": "corepack pnpm --filter @ginko-demo/docs-site typecheck",
+      "result": "exit 0; $ nuxt typecheck"
+    },
+    {
+      "command": "corepack pnpm --filter @ginko-demo/quickstart typecheck",
+      "result": "exit 0; existing missing-sitemap-module warning"
+    },
+    {
+      "command": "corepack pnpm build docs-site",
+      "result": "exit 0; Prerendered 99 routes; Generated public .output/public"
+    },
+    {
+      "command": "corepack pnpm build quickstart",
+      "result": "exit 0; Build complete"
+    },
+    {
+      "command": "NITRO_PRESET=vercel corepack pnpm --filter @ginko-demo/quickstart build",
+      "result": "exit 0; runtime HTML unexpectedly retained in .vercel/output/static"
+    },
+    {
+      "command": "corepack pnpm check docs-site",
+      "result": "exit 1; 100 passed, 13 failed (3.5m)"
+    },
+    {
+      "command": "corepack pnpm check quickstart",
+      "result": "exit 1; 14 passed, 5 failed (25.9s)"
+    },
+    {
+      "command": "DEMO=docs-site RESULTS_PATH=../results/evidence/slice-2b/snippet-results.json corepack pnpm --filter @ginko-demo/checks exec playwright test --grep X006 --output ../results/evidence/slice-2b/snippet-playwright",
+      "result": "exit 1; 2 failed, one per viewport"
+    },
+    {
+      "command": "DEMO=docs-site RESULTS_PATH=../results/evidence/slice-2b/routes-results.json corepack pnpm --filter @ginko-demo/checks exec playwright test --grep C178|C202|C198 --output ../results/evidence/slice-2b/routes-playwright",
+      "result": "exit 1; 4 passed, 1 failed (28.4s); stronger complete-index assertion and shared expected-route fixture; only C202 fails"
+    },
+    {
+      "command": "corepack pnpm check:map",
+      "result": "365 claims; 0 duplicates; exactIds true"
+    },
+    {
+      "command": "node scripts/verify-claims.mjs /Users/matthias/Git/0_libs/ginko-content-1.0/.audit/claims/claims.json",
+      "result": "365 claims; 0 duplicates; exactIds true"
+    }
+  ],
+  "assumptions": [
+    "Seven option/engine/helper matrix claims use explicit not-live reasons instead of claiming default configuration proves overrides.",
+    "C211 uses the immutable public pre-slice production deployment; no second disabled app is deployed.",
+    "No open shortcut is implemented because installed docs specify none.",
+    "Only compact results JSON is committed as explicitly required; all evidence and logs remain git-ignored.",
+    "Query latency includes browser automation/render cost; it is not isolated search-engine CPU time.",
+    "X006 was added after visual inspection. Its separate production run is merged into docs-site results; the main run is retained in ignored evidence. The final shared-route and complete-index checks also replace only C178/C198/C202 with their rerun records."
+  ],
+  "issues": [
+    "Not-live variants were not executed: C176, C186, C209, C340, C351, C360, C362. Each has its exact coverage limit in claims-map.json.",
+    "Existing K001/K002 fixtures were not rerun because no fixture/package change or generation-blocking issue occurred.",
+    "The hinted no-match failure was not reproduced by the fixed production no-match query.",
+    "Static Accept text/markdown returning HTML is documented behavior, not a library failure here.",
+    "No live production check was impossible for lack of browser, service, or credentials."
+  ]
+}

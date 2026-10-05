@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test'
 import { writeFile } from 'node:fs/promises'
 
-const routes = ['/docs/start', '/docs/start/installation', '/docs/start/first-note', '/docs/start/sharing', '/docs/start/updates', '/docs/guides', '/docs/guides/markdown', '/docs/guides/components', '/docs/guides/headings', '/docs/guides/plugins', '/docs/guides/diagrams', '/docs/reference', '/docs/reference/routes', '/docs/reference/visibility', '/docs/reference/off-menu', '/docs/reference/group/storage', '/docs/reference/limits']
+import routes from '../docs-site-routes.json' with { type: 'json' }
 async function open(page, path, testInfo) {
   const response = await page.goto(path)
   const html = await response.text()
@@ -320,3 +320,6 @@ test('shell links navigate client-side and preserve the document', async ({ page
   await expect(page.getByTestId('document').locator('h1')).toHaveText('Sharing')
   expect(await page.evaluate(()=>window.__demoNavigationMarker)).toBe('same-document')
 })
+
+// Slice 2b checks share the production target and viewport projects.
+import "./docs-site-search-agent.mjs"

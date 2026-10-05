@@ -93,3 +93,66 @@ test('X001 in-content links navigate client-side', async ({ page }) => {
   await expect(page.locator('main h1')).toHaveText('Guide')
   expect(await page.evaluate(() => window.__demoNavigationMarker)).toBe('same-document')
 })
+
+// Slice 2b: runtime claims belong here because docs-site has no Nitro handler.
+test('C212 [HTTP] runtime delivery negotiates the same public URL', async ({ request }, info) => {
+  const observations = []
+  for (const accept of ['text/html', 'text/markdown']) {
+    const response = await request.get('/guide', { headers: { Accept: accept } })
+    observations.push({ accept, status: response.status(), headers: response.headers(), body: await response.text() })
+  }
+  const path = info.outputPath('negotiation.json')
+  await writeFile(path, JSON.stringify(observations, null, 2))
+  await info.attach('Runtime negotiation', { path, contentType: 'application/json' })
+  expect(observations.map(result => result.status)).toEqual([200, 200])
+  expect(observations[0].headers['content-type']).toContain('text/html')
+  expect(observations[1].headers['content-type']).toContain('text/markdown')
+  expect(observations[1].body).toContain('# Guide')
+  expect(observations[1].body).not.toContain('<!DOCTYPE html>')
+})
+
+test('C213 [HTTP] Markdown missing public route preserves 404 and recovery links without rewriting API or assets', async ({ request }, info) => {
+  const observations = []
+  for (const route of ['/missing-agent-page', '/api/missing-agent-api', '/missing-agent-asset.js']) {
+    const response = await request.get(route, { headers: { Accept: 'text/markdown' } })
+    observations.push({ route, status: response.status(), headers: response.headers(), body: await response.text() })
+  }
+  const path = info.outputPath('markdown-404.json')
+  await writeFile(path, JSON.stringify(observations, null, 2))
+  await info.attach('Markdown 404 recovery', { path, contentType: 'application/json' })
+  expect(observations.map(result => result.status)).toEqual([404, 404, 404])
+  expect(observations[0].headers['content-type']).toContain('text/markdown')
+  for (const target of ['/llms.txt', '/llms-full.txt', 'https://ginko-demo-quickstart.vercel.app/']) expect(observations[0].body).toContain(target)
+  for (const result of observations.slice(1)) {
+    expect(result.headers['content-type']).not.toContain('text/markdown')
+    expect(result.body).not.toContain('/llms-full.txt')
+  }
+})
+
+test('C335 [HTTP] eligible SSR responses expose agent links and configured public content signals', async ({ request }, info) => {
+  const observations = []
+  for (const route of ['/guide', '/api/missing-agent-api']) {
+    const response = await request.get(route, { headers: { Accept: 'text/html' } })
+    observations.push({ route, status: response.status(), headers: response.headers() })
+  }
+  const path = info.outputPath('agent-headers.json')
+  await writeFile(path, JSON.stringify(observations, null, 2))
+  await info.attach('Agent response headers', { path, contentType: 'application/json' })
+  expect(observations[0].headers.link).toContain('/raw/guide.md')
+  expect(observations[0].headers.link).toContain('/llms.txt')
+  expect(observations[0].headers['content-signal']).toContain('ai-train=no')
+  expect(observations[0].headers['content-signal']).toContain('ai-input=yes')
+  expect(observations[0].headers['content-signal']).toContain('search=yes')
+  expect(observations[1].headers.link).toBeUndefined()
+})
+
+test('C212 C335 runtime agent page stays usable in the browser', async ({ page }, info) => {
+  await page.goto('/guide')
+  await expect(page.locator('main h1')).toHaveText('Guide')
+  const response = await page.request.get('/raw/guide.md')
+  expect(response.status()).toBe(200)
+  expect(await response.text()).toContain('# Guide')
+  const path = info.outputPath('guide-agent.md')
+  await writeFile(path, await response.text())
+  await info.attach('Raw guide Markdown', { path, contentType: 'text/markdown' })
+})

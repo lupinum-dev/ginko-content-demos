@@ -905,32 +905,29 @@
   {
     "id": "C174",
     "demo": "docs-site",
-    "check": "Compare disabled error and enabled empty-config results",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C174"
   },
   {
     "id": "C175",
     "demo": "docs-site",
-    "check": "Search terms present only in title, heading or body and follow correct destinations",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C175"
   },
   {
     "id": "C176",
-    "demo": "docs-site",
-    "check": "Search misspelled tag and compare weighted ranking",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "The live demo uses search: {}. Configured extraFields/boost/fuzzy variants require a separate MiniSearch configuration matrix; default fuzzy behavior is covered by X004 here.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C177",
     "demo": "docs-site",
-    "check": "Search unique data-only term and require no result",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C177"
   },
   {
     "id": "C178",
     "demo": "docs-site",
-    "check": "Measure full payload request and confirm browser search works afterward",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C178"
   },
   {
     "id": "C179",
@@ -950,32 +947,29 @@
   {
     "id": "C182",
     "demo": "docs-site",
-    "check": "Type queries, simulate backend failure and verify distinct states",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C182"
   },
   {
     "id": "C183",
     "demo": "docs-site",
-    "check": "Compare payload requests with and without collection option",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C183"
   },
   {
     "id": "C184",
     "demo": "docs-site",
-    "check": "Change each option and confirm displayed results update",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C184"
   },
   {
     "id": "C185",
     "demo": "docs-site",
-    "check": "Use next/previous/select/reset and verify selected result without automatic navigation",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C185"
   },
   {
     "id": "C186",
-    "demo": "docs-site",
-    "check": "Force each backend failure and require error state without stale results",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "Provider and Pagefind failures require those engines. This MiniSearch demo checks a failed index request under C182 and disabled search under C174; the other engine error paths are not live here.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C187",
@@ -1060,20 +1054,17 @@
   {
     "id": "C202",
     "demo": "docs-site",
-    "check": "Open raw route and compare headings, links and code to HTML page",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C202"
   },
   {
     "id": "C203",
     "demo": "docs-site",
-    "check": "Follow all representative index links to valid raw Markdown",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C203"
   },
   {
     "id": "C204",
     "demo": "docs-site",
-    "check": "Compare combined output to collection inclusion policies",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C204"
   },
   {
     "id": "C205",
@@ -1083,14 +1074,12 @@
   {
     "id": "C206",
     "demo": "docs-site",
-    "check": "Search all agent artifacts for forbidden unique text",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C206"
   },
   {
     "id": "C207",
     "demo": "docs-site",
-    "check": "Serve static HTML, raw Markdown and LLM indexes from generated output",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C207"
   },
   {
     "id": "C208",
@@ -1099,9 +1088,10 @@
   },
   {
     "id": "C209",
-    "demo": "docs-site",
-    "check": "Generate runtime-delivery config and serve complete static pages",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "The live docs-site runs generate with default static delivery. Proving generate under delivery: runtime needs an alternate build; C207 checks the actual static production files, not that unbuilt variant.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C210",
@@ -1111,36 +1101,34 @@
   {
     "id": "C211",
     "demo": "docs-site",
-    "check": "Request raw, indexes and Markdown negotiation from disabled fixture",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C211"
   },
   {
     "id": "C212",
-    "demo": "blog",
-    "check": "Compare HTML and Markdown Accept requests on same URL"
+    "demo": "quickstart",
+    "check": "checks/tests/quickstart.spec.mjs: C212",
+    "deliveryReason": "Requires Nitro runtime delivery; docs-site is static."
   },
   {
     "id": "C213",
-    "demo": "blog",
-    "check": "Request missing public, API and asset routes with Markdown Accept"
+    "demo": "quickstart",
+    "check": "checks/tests/quickstart.spec.mjs: C213",
+    "deliveryReason": "Requires Nitro runtime delivery; docs-site is static."
   },
   {
     "id": "C214",
     "demo": "docs-site",
-    "check": "Open support raw route and confirm custom render output",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C214"
   },
   {
     "id": "C215",
     "demo": "docs-site",
-    "check": "Open raw callout page and confirm readable custom serialization",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C215"
   },
   {
     "id": "C216",
     "demo": "docs-site",
-    "check": "Opt page out of index/full separately and inspect each artifact",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C216"
   },
   {
     "id": "C217",
@@ -1155,14 +1143,12 @@
   {
     "id": "C219",
     "demo": "docs-site",
-    "check": "Open raw and full output and verify language/filename metadata",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C219"
   },
   {
     "id": "C220",
     "demo": "docs-site",
-    "check": "Verify 2 precedes 10 within index and full output",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C220"
   },
   {
     "id": "C221",
@@ -1172,20 +1158,17 @@
   {
     "id": "C222",
     "demo": "docs-site",
-    "check": "Display agentMarkdownPathForRoute results for root, nested, locale and unsafe paths",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C222"
   },
   {
     "id": "C223",
     "demo": "docs-site",
-    "check": "Display agentRawPathForRoute results for root, nested, locale and unsafe paths",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C223"
   },
   {
     "id": "C224",
     "demo": "docs-site",
-    "check": "Display normalizeAgentRoutePath results for root, nested, locale and unsafe paths",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C224"
   },
   {
     "id": "C225",
@@ -1741,9 +1724,9 @@
   },
   {
     "id": "C335",
-    "demo": "docs-site",
-    "check": "Inspect eligible HTML headers and compare disabled-linkHeaders/API routes",
-    "slice": "2b"
+    "demo": "quickstart",
+    "check": "checks/tests/quickstart.spec.mjs: C335",
+    "deliveryReason": "Requires Nitro runtime delivery; docs-site is static."
   },
   {
     "id": "C336",
@@ -1768,9 +1751,10 @@
   },
   {
     "id": "C340",
-    "demo": "docs-site",
-    "check": "Configure collections/filterQuery and verify only eligible records searchable",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "Explicit collections and filterQuery overrides require an alternate search configuration. This default-engine deployment tests default data exclusion under C177, not arbitrary filtering policies.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C341",
@@ -1825,9 +1809,10 @@
   },
   {
     "id": "C351",
-    "demo": "docs-site",
-    "check": "Render each helper with escaping and custom component registry in public demo",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "The full formatting/registry/helper surface is framework-free and requires a public-export unit matrix. The live custom serializer exercises blockquoteMarkdown/getMarkdownProp/registerAgentMarkdownSerializers under C215 only.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C352",
@@ -1876,21 +1861,22 @@
   },
   {
     "id": "C360",
-    "demo": "docs-site",
-    "check": "Set storeFields title only and require path/title/excerpt/collection",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "Retaining required fields under customized storeFields needs a build with storeFields: [title]. The live demo intentionally uses search: {} and does not prove that alternate configuration.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C361",
     "demo": "docs-site",
-    "check": "Put unique words in ignored tags and normal prose; require only prose hit",
-    "slice": "2b"
+    "check": "checks/tests/docs-site-search-agent.mjs: C361"
   },
   {
     "id": "C362",
-    "demo": "docs-site",
-    "check": "Toggle prefix behavior and custom apiBaseURL; inspect results and network",
-    "slice": "2b"
+    "demo": "not-live",
+    "reason": "Custom apiBaseURL and toggled prefix require alternate module configurations. This deployment uses the default endpoint and prefix configuration; neither override is claimed verified.",
+    "plannedDemo": "docs-site",
+    "scope": "2b"
   },
   {
     "id": "C363",

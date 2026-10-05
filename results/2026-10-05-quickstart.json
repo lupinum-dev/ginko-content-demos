@@ -101,9 +101,9 @@
       }
     ],
     "budgets": {
-      "clientJsGzipBytes": 221248,
-      "lighthouseMobilePerformance": 97,
-      "buildSeconds": 8.982319708999999,
+      "clientJsGzipBytes": 222863,
+      "lighthouseMobilePerformance": 99,
+      "buildSeconds": 87.590493916,
       "issues": [],
       "clientJsEvidence": "results/evidence/2026-10-05-quickstart-client-js.json",
       "lighthouseEvidence": "results/evidence/2026-10-05-quickstart-lighthouse.json"
@@ -241,6 +241,168 @@
           {
             "name": "screenshot",
             "path": "results/evidence/quickstart-playwright/quickstart-C154-unknown-ro-c1b7c-4-and-app-owned-fatal-error-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C212",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:103"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C212",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C212 [HTTP] runtime delivery negotiates the same public URL",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Runtime negotiation",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/attachments/Runtime-negotiation-13eadb677e704cb0e2dc25e747c39754945d1004.json"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-HTTP-runti-95ea0-otiates-the-same-public-URL-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"text/markdown\"\u001b[39m\nReceived string:    \u001b[31m\"text/html; charset=utf-8\"\u001b[39m"
+        ]
+      },
+      {
+        "claim": "C212",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C212 C335 runtime agent page stays usable in the browser",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Raw guide Markdown",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/attachments/Raw-guide-Markdown-1cc63fe347400f95160574b4a7065f77e7f41a70.md"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C212",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C212 C335 runtime agent page stays usable in the browser",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Raw guide Markdown",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/attachments/Raw-guide-Markdown-0b2307bd7ae0e85fb4a1b019a0944a2597d5aad7.md"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C213",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:114"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C213",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C213 [HTTP] Markdown missing public route preserves 404 and recovery links without rewriting API or assets",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Markdown 404 recovery",
+            "path": "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/attachments/Markdown-404-recovery-7192af12d6dc6f794eaeb4ce36bbe56fc1dbfabc.json"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/quickstart-playwright/quickstart-C213-HTTP-Markd-f81d5-out-rewriting-API-or-assets-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"text/markdown\"\u001b[39m\nReceived string:    \u001b[31m\"text/html;charset=utf-8\"\u001b[39m"
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C335",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:264"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C335",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C335 [HTTP] eligible SSR responses expose agent links and configured public content signals",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Agent response headers",
+            "path": "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/attachments/Agent-response-headers-1663bf9f76e5d0d99d00db29b2574a60532b0133.json"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/quickstart-playwright/quickstart-C335-HTTP-eligi-5e306-ured-public-content-signals-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\n\u001b[1mMatcher error\u001b[22m: \u001b[31mreceived\u001b[39m value must not be null nor undefined\n\nReceived has value: \u001b[31mundefined\u001b[39m"
+        ]
+      },
+      {
+        "claim": "C335",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C212 C335 runtime agent page stays usable in the browser",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Raw guide Markdown",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/attachments/Raw-guide-Markdown-1cc63fe347400f95160574b4a7065f77e7f41a70.md"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C335",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C212 C335 runtime agent page stays usable in the browser",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Raw guide Markdown",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/attachments/Raw-guide-Markdown-0b2307bd7ae0e85fb4a1b019a0944a2597d5aad7.md"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C212-C335-runti-115fa-stays-usable-in-the-browser-mobile/test-finished-1.png"
           }
         ],
         "errors": []

@@ -15,7 +15,7 @@ export default class ClaimReporter {
   onEnd() {
     const demo = process.env.DEMO ?? 'quickstart'
     const url = process.env.BASE_URL ?? targets[demo].BASE_URL
-    const results = [...map.filter(entry => entry.demo === demo && entry.slice !== '2b'), ...expectations.filter(entry => entry.demos.includes(demo))].map(entry => {
+    const results = [...map.filter(entry => entry.demo === demo), ...expectations.filter(entry => entry.demos.includes(demo))].map(entry => {
       const checks = this.records.filter(record => record.claim === entry.id)
       return { claim: entry.id, sources: claims.find(claim => claim.id === entry.id)?.sources ?? ['checks/expectations.json'], rationale: entry.rationale, status: checks.some(check => check.status === 'fail') ? 'fail' : !checks.length || checks.some(check => check.status === 'blocked') ? 'blocked' : 'pass', url, evidence: checks }
     })

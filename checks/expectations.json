@@ -16,5 +16,37 @@
     ],
     "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages.",
     "fixture": "K001"
+  },
+  {
+    "id": "X003",
+    "check": "X003 impossible no-match query returns zero results",
+    "demos": [
+      "docs-site"
+    ],
+    "rationale": "A search query absent from the corpus should not return unrelated fallback hits."
+  },
+  {
+    "id": "X004",
+    "check": "X004 documented default fuzzy search finds a single missing-letter typo",
+    "demos": [
+      "docs-site"
+    ],
+    "rationale": "Default fuzzy: 0.2 should find Installation for Installaton."
+  },
+  {
+    "id": "X005",
+    "check": "X005 fixed unambiguous queries rank the expected page first",
+    "demos": [
+      "docs-site"
+    ],
+    "rationale": "A visitor expects a unique title, heading or body term to rank its owning page first."
+  },
+  {
+    "id": "X006",
+    "check": "X006 search snippets keep word boundaries between Markdown blocks",
+    "demos": [
+      "docs-site"
+    ],
+    "rationale": "A visitor expects plain-text search snippets to retain spaces between list items, table cells, and other Markdown blocks, rather than joining words. The composable excerpt is rendered without application transformations."
   }
 ]

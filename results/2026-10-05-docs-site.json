@@ -45,121 +45,12 @@
       }
     ],
     "budgets": {
-      "clientJsGzipBytes": 232371,
-      "lighthouseMobilePerformance": 99,
-      "buildSeconds": 22.414765209000002,
+      "clientJsGzipBytes": 249503,
+      "lighthouseMobilePerformance": 98,
+      "buildSeconds": 13.394300709000001,
       "issues": [],
       "clientJsEvidence": "results/evidence/2026-10-05-docs-site-client-js.json",
       "lighthouseEvidence": "results/evidence/2026-10-05-docs-site-lighthouse.json"
-    },
-    "run": {
-      "sourceCommit": "a1c8510d73a416b63e117f921b1c2baed793d07d",
-      "checkCommit": "a3ff018",
-      "fixtureCommit": "e4303f6",
-      "deployment": {
-        "id": "dpl_9uBoDTjUBGJZm2PYDeDE1xGjtARs",
-        "url": "ginko-demo-docs-site-ajgbnttsi-lupinum.vercel.app",
-        "readyState": "READY",
-        "target": "production",
-        "alias": [
-          "ginko-demo-docs-site.vercel.app",
-          "ginko-demo-docs-site-lupinum.vercel.app"
-        ],
-        "meta": {
-          "githubCommitSha": "a1c8510d73a416b63e117f921b1c2baed793d07d",
-          "githubCommitRef": "main"
-        }
-      },
-      "viewports": [
-        "desktop 1440x900",
-        "mobile 390x844"
-      ],
-      "checksExecuted": 68,
-      "productionClaims": {
-        "pass": 45,
-        "fail": 5,
-        "blocked": 0
-      },
-      "knownFailuresResult": "results/2026-10-05-known-failures.json",
-      "notLive": [
-        {
-          "id": "C005",
-          "demo": "not-live",
-          "reason": "Requires a Nuxt UI collision fixture with enabled search. Search and its collision-safe alias are slice 2b; page auto-import is exercised by docs-site, but that alone does not prove this full claim."
-        },
-        {
-          "id": "C041",
-          "demo": "not-live",
-          "reason": "Requires two ingestion builds with swapped plugin order and a controlled custom plugin; one deployed plugin pipeline cannot prove ordering."
-        },
-        {
-          "id": "C042",
-          "demo": "not-live",
-          "reason": "Requires isolated omitted-plugin and empty-plugin builds; this docs-site enables plugins. The unchanged quickstart alone does not establish equivalence."
-        },
-        {
-          "id": "C044",
-          "demo": "not-live",
-          "reason": "Requires alternate custom Shiki registrations and setup rejection of theme/langs; docs-site exercises the documented zero-config Shiki variant only."
-        },
-        {
-          "id": "C047",
-          "demo": "not-live",
-          "reason": "Requires builds both with and without Nuxt Image; docs-site checks the plain img fallback only and does not install Nuxt Image."
-        },
-        {
-          "id": "C048",
-          "demo": "not-live",
-          "reason": "Requires invalid custom ingestion-plugin AST builds that must be rejected; putting them in the production collection would prevent generating the public demo."
-        },
-        {
-          "id": "C053",
-          "demo": "not-live",
-          "reason": "Requires a json-render catalog/renderer integration and plugin fixture beyond the documented docs-site setup. No compatible catalog is documented in the supplied installed starting pages."
-        },
-        {
-          "id": "C057",
-          "demo": "not-live",
-          "check": "K002 security plugin required boolean prop",
-          "slice": "2a",
-          "reason": "Build-only known-failure fixture K002 isolates security plugin rejection of a required false boolean; pnpm check:known-failures records the exact diagnostic."
-        },
-        {
-          "id": "C063",
-          "demo": "not-live",
-          "reason": "Full-document rendering is used by docs-site, but the complete claim also requires a resolved Content reference/component fixture; that reference integration needs its own documented fixture."
-        },
-        {
-          "id": "C332",
-          "demo": "not-live",
-          "reason": "Production checks verify partials are hidden; proof that their parsed bodies remain available to build tooling requires inspection through a documented build-tool interface, not a public route."
-        },
-        {
-          "id": "C333",
-          "demo": "not-live",
-          "reason": "The installed guide states partials are not includes but specifies no include syntax to attempt. A partial link is not a transclusion test; requires a maintainer-defined negative fixture."
-        },
-        {
-          "id": "C350",
-          "demo": "not-live",
-          "reason": "A parse/serialize round trip with whitespace and native attributes is a framework-free serializer check, not a deployed visitor flow."
-        },
-        {
-          "id": "C356",
-          "demo": "not-live",
-          "reason": "Requires a negative inline-renderer policy fixture that safely captures its rejection; a deliberately throwing page cannot be statically generated alongside the public docs-site."
-        }
-      ],
-      "evidence": [
-        "results/evidence/docs-site-final-production.log",
-        "results/evidence/docs-site-isolated-build.log",
-        "results/evidence/docs-site-isolated-typecheck.log",
-        "results/evidence/vercel-deploy-isolated-committed.log",
-        "results/evidence/docs-site-public-project.json",
-        "results/evidence/docs-site-public-browser-observations.json",
-        "results/evidence/docs-site-production-desktop.png",
-        "results/evidence/docs-site-production-mobile.png"
-      ]
     }
   },
   {
@@ -870,13 +761,6 @@
         ],
         "errors": []
       }
-    ],
-    "knownFailures": [
-      {
-        "fixture": "K002",
-        "status": "fail",
-        "resultFile": "results/2026-10-05-known-failures.json"
-      }
     ]
   },
   {
@@ -1081,6 +965,10 @@
           {
             "name": "Page HTTP response",
             "path": "results/evidence/docs-site-playwright/docs-site-C068-explicit-no-b8058--the-exported-body-renderer-desktop/attachments/Page-HTTP-response-c010edc71a80270edb31a95000bdbe5e90f8e5d9.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C068-explicit-no-b8058--the-exported-body-renderer-desktop/test-finished-1.png"
           }
         ],
         "errors": []
@@ -1276,7 +1164,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"Start here\",\u001b[22m\n\u001b[32m-   \"Updates\",\u001b[39m\n\u001b[32m-   \"Sharing\",\u001b[39m\n\u001b[32m-   \"First Note\",\u001b[39m\n\u001b[2m    \"Install\",\u001b[22m\n\u001b[31m+   \"First Note\",\u001b[39m\n\u001b[31m+   \"Sharing\",\u001b[39m\n\u001b[31m+   \"Updates\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filtered-navigation').getByRole('link')\u001b[22m\n\u001b[2m    9 \u00d7 locator resolved to 5 elements\u001b[22m\n"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"Start here\",\u001b[22m\n\u001b[32m-   \"Updates\",\u001b[39m\n\u001b[32m-   \"Sharing\",\u001b[39m\n\u001b[32m-   \"First Note\",\u001b[39m\n\u001b[2m    \"Install\",\u001b[22m\n\u001b[31m+   \"First Note\",\u001b[39m\n\u001b[31m+   \"Sharing\",\u001b[39m\n\u001b[31m+   \"Updates\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filtered-navigation').getByRole('link')\u001b[22m\n\u001b[2m    9 × locator resolved to 5 elements\u001b[22m\n"
         ]
       },
       {
@@ -1304,7 +1192,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"Start here\",\u001b[22m\n\u001b[32m-   \"Updates\",\u001b[39m\n\u001b[32m-   \"Sharing\",\u001b[39m\n\u001b[32m-   \"First Note\",\u001b[39m\n\u001b[2m    \"Install\",\u001b[22m\n\u001b[31m+   \"First Note\",\u001b[39m\n\u001b[31m+   \"Sharing\",\u001b[39m\n\u001b[31m+   \"Updates\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filtered-navigation').getByRole('link')\u001b[22m\n\u001b[2m    9 \u00d7 locator resolved to 5 elements\u001b[22m\n"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('filtered-navigation').getByRole('link')\nTimeout: 5000ms\n\u001b[32m- Expected  - 3\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[2m    \"Start here\",\u001b[22m\n\u001b[32m-   \"Updates\",\u001b[39m\n\u001b[32m-   \"Sharing\",\u001b[39m\n\u001b[32m-   \"First Note\",\u001b[39m\n\u001b[2m    \"Install\",\u001b[22m\n\u001b[31m+   \"First Note\",\u001b[39m\n\u001b[31m+   \"Sharing\",\u001b[39m\n\u001b[31m+   \"Updates\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('filtered-navigation').getByRole('link')\u001b[22m\n\u001b[2m    8 × locator resolved to 5 elements\u001b[22m\n"
         ]
       }
     ]
@@ -1816,6 +1704,634 @@
     ]
   },
   {
+    "claim": "C174",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:17"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C174",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C174 empty config enables default MiniSearch and quickstart exposes disabled error",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "disabled-search.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-desktop/attachments/disabled-search-txt-dd87178aceddfcdf9cb73cf9a1bf209b3540264e.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C174",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C174 empty config enables default MiniSearch and quickstart exposes disabled error",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "disabled-search.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-mobile/attachments/disabled-search-txt-323ae2ae91f128195745cbd5613874fa7ff8df4d.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C174-empty-confi-98e92-tart-exposes-disabled-error-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C175",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:23"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Installation",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/attachments/search-query-json-989673d60906d63eea42a16a68cbd9d9349202b3.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Formatting",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/attachments/search-query-json-0663170cd4463d34baa3cfd7236f2d690da157af.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query workspace",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/attachments/search-query-json-605e95bbb979315b7d9dd725119069ef8333f49c.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Sharing",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/attachments/search-query-json-2b71553ed784b5795a72a7514150e2b666d67c4e.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Updates",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/attachments/search-query-json-443f9bad8ffc23071e30de431b357070d052fe98.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Diagrams",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/attachments/search-query-json-e020b1325992a15743da71f9ee9179de2b164e0e.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Storage",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/attachments/search-query-json-5d85633e00a43b3743f8fe1b73c3842315007fde.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Visibility",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/attachments/search-query-json-d7e82047ada635c899ae1c25d0625fd913c60989.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Installation",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/attachments/search-query-json-84d99e8b34801e889a68e75dffeed9869003f402.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Formatting",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/attachments/search-query-json-a148388ad4b19e02281a90dc2ae0806fc63e900f.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query workspace",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/attachments/search-query-json-08d335f7bbf91af73426087a39212dff6beaec54.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Sharing",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/attachments/search-query-json-cfd58680a400857a43af9fb36e7b672693ad76b0.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Updates",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/attachments/search-query-json-14bb9680d68a2121a4122e9eb844740d6877c110.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Diagrams",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/attachments/search-query-json-ed783627390f9dfca17a56d05c4bfa5245364422.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Storage",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/attachments/search-query-json-82cb392885872177c1e63779fe173239a8043177.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C175",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Visibility",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/attachments/search-query-json-60b5befa23d484787cce77464ef70a81a52eb905.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C177",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C177",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C177 data collections do not enter public search",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "public-search-collections.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-desktop/attachments/public-search-collections-json-dacfac61ab4b8e39a4e69e66f79e79d7339eccf2.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C177",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C177 data collections do not enter public search",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "public-search-collections.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-mobile/attachments/public-search-collections-json-153a85ba8f7044b7e0eceb4d92406786338243b8.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C177-data-collections-do-not-enter-public-search-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C178",
+    "sources": [
+      "docs/content/docs/4.guides/8.search-engines.md:41"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C178",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C178 complete index initializes before query and then searches offline",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-index.json",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-desktop/attachments/search-index-json-67be97671ff5416e442f10c095d0bad1528733a8.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C178",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C178 complete index initializes before query and then searches offline",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-index.json",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-mobile/attachments/search-index-json-d65ed1d95e7971f2e1635dae45d1043b805e93d7.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C178-complete-in-37b78-y-and-then-searches-offline-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C182",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:167"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C182",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C182 headless state exposes query results empty and loading error",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "headless-success.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/attachments/headless-success-json-acb9ec6150320ebfca59439f7cf24207e57e08f3.json"
+          },
+          {
+            "name": "headless-error.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/attachments/headless-error-json-4539feac1f117531aa778c433fe675ef100065dd.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C182",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C182 headless state exposes query results empty and loading error",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "headless-success.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/attachments/headless-success-json-8f779c4cd985e09051bcc2e04c9937a3b4715290.json"
+          },
+          {
+            "name": "headless-error.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/attachments/headless-error-json-e3edb9e9d13686921a69e9645a05036a0f512601.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C182-headless-st-460d2-lts-empty-and-loading-error-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C183",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:186"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C183",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C183 collection adds files and searchNavigation while omitted collection stays empty",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "collection-search.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-desktop/attachments/collection-search-json-370460cd4bb9ef1ca3e964d4ce4186fed5d5cb08.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C183",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C183 collection adds files and searchNavigation while omitted collection stays empty",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "collection-search.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-mobile/attachments/collection-search-json-f83225086717204d5c8294e1ed1a19384ce4ef9b.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C183-collection--ee9b0-tted-collection-stays-empty-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C184",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:203"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C184",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C184 reactive initial query limit and locale update search",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "reactive-locale.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-desktop/attachments/reactive-locale-json-1c5b1b113d1ceba9e801f2d0edda62479ff20e9f.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C184",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C184 reactive initial query limit and locale update search",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "reactive-locale.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-mobile/attachments/reactive-locale-json-0737c5815bf32f5ecfebe5a99fff540e86915ad7.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C184-reactive-in-86a75-it-and-locale-update-search-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C185",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:218"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C185",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C185 headless highlight select reset and shared combobox keyboard navigation",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "keyboard-destination.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-desktop/attachments/keyboard-destination-txt-cd55666c8e63c110a6c02d196f55096914ac6cf8.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C185",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C185 headless highlight select reset and shared combobox keyboard navigation",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "keyboard-destination.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-mobile/attachments/keyboard-destination-txt-d4e72d40df04f86c17143faa8981808670727fde.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C185-headless-hi-fb360-ombobox-keyboard-navigation-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
     "claim": "C189",
     "sources": [
       "docs/content/docs/4.guides/9.sitemap-and-prerender.md:29"
@@ -1878,7 +2394,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:23:14.235Z -->\"\u001b[39m"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:49:04.065Z -->\"\u001b[39m"
         ]
       },
       {
@@ -1898,7 +2414,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:23:14.235Z -->\"\u001b[39m"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:49:04.065Z -->\"\u001b[39m"
         ]
       }
     ]
@@ -1977,13 +2493,6 @@
         ],
         "errors": []
       }
-    ],
-    "knownFailures": [
-      {
-        "fixture": "K001",
-        "status": "fail",
-        "resultFile": "results/2026-10-05-known-failures.json"
-      }
     ]
   },
   {
@@ -2023,7 +2532,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:23:14.235Z -->\"\u001b[39m"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:49:04.065Z -->\"\u001b[39m"
         ]
       },
       {
@@ -2055,8 +2564,505 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:23:14.235Z -->\"\u001b[39m"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: not \u001b[32m\"https://ginko-demo-docs-site.vercel.app/internal</loc>\"\u001b[39m\nReceived string:        \u001b[31m\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?><?xml-stylesheet type=\\\"text/xsl\\\" href=\\\"/__sitemap__/style.xsl\\\"?>\u001b[39m\n\u001b[31m<urlset xmlns:xsi=\\\"http://www.w3.org/2001/XMLSchema-instance\\\" xmlns:video=\\\"http://www.google.com/schemas/sitemap-video/1.1\\\" xmlns:xhtml=\\\"http://www.w3.org/1999/xhtml\\\" xmlns:image=\\\"http://www.google.com/schemas/sitemap-image/1.1\\\" xmlns:news=\\\"http://www.google.com/schemas/sitemap-news/0.9\\\" xsi:schemaLocation=\\\"http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd\\\" xmlns=\\\"http://www.sitemaps.org/schemas/sitemap/0.9\\\">\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/agent-paths</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/inspect</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>\u001b[7mhttps://ginko-demo-docs-site.vercel.app/internal</loc>\u001b[27m\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-collection</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/search-probe</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/support</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/components</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/diagrams</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/headings</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/markdown</loc>\u001b[39m\n\u001b[31m        <image:image>\u001b[39m\n\u001b[31m            <image:loc>https://ginko-demo-docs-site.vercel.app/notebook.svg</image:loc>\u001b[39m\n\u001b[31m        </image:image>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/guides/plugins</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/limits</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/off-menu</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/routes</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/visibility</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/first-note</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/installation</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/sharing</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/start/updates</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m    <url>\u001b[39m\n\u001b[31m        <loc>https://ginko-demo-docs-site.vercel.app/docs/reference/group/storage</loc>\u001b[39m\n\u001b[31m    </url>\u001b[39m\n\u001b[31m</urlset>\u001b[39m\n\u001b[31m<!-- XML Sitemap generated by @nuxtjs/sitemap v8.6.1 at 2026-10-05T13:49:04.065Z -->\"\u001b[39m"
         ]
+      }
+    ]
+  },
+  {
+    "claim": "C202",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:97"
+    ],
+    "status": "fail",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C202",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "C202 [HTTP] every public docs page has normalized raw Markdown",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "all-raw-pages.json",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/attachments/all-raw-pages-json-94c127fc34965437f148fb60b5f620b046a369d8.json"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/slice-2b/routes-playwright/docs-site-C202-HTTP-every--5a4fe-has-normalized-raw-Markdown-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 10\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"route\": \"/docs/reference/off-menu\",\u001b[39m\n\u001b[31m+     \"status\": 404,\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"route\": \"/docs/reference/limits\",\u001b[39m\n\u001b[31m+     \"status\": 404,\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m"
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "C203",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:98",
+      "README.md:167"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C203",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C203 C207 agent index is linked from the live shared shell",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "visible-agent-index.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/attachments/visible-agent-index-txt-f603143fd1deb76eb72ebe230d57eaba4ea9adbb.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C203",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C203 [HTTP] sectioned index links all resolve with absolute canonical URLs",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-HTTP-sectio-01083-ith-absolute-canonical-URLs-desktop/attachments/llms-txt-7b2857b7ec24133bf13bc54a4a48f89f88083a19.txt"
+          },
+          {
+            "name": "index-links.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-HTTP-sectio-01083-ith-absolute-canonical-URLs-desktop/attachments/index-links-json-cd35fc474e0f88f2a37b6127eaede3a2547e0b0b.json"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C203",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C203 C207 agent index is linked from the live shared shell",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "visible-agent-index.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/attachments/visible-agent-index-txt-0265721dad74165a50fc6571e9f453ccd0ebe7e9.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C204",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:99"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C204",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms-full.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt"
+          },
+          {
+            "name": "support.md",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C206",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:101"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C206",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms-full.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt"
+          },
+          {
+            "name": "support.md",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C207",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:62"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C207",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C203 C207 agent index is linked from the live shared shell",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "visible-agent-index.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/attachments/visible-agent-index-txt-f603143fd1deb76eb72ebe230d57eaba4ea9adbb.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C207",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C207 [HTTP] static HTML and agent files coexist without portable negotiation",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "static-delivery.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C207-HTTP-static-ecfcc-ithout-portable-negotiation-desktop/attachments/static-delivery-json-c6c1875aa8d0fef085091df1991e0ec09f456687.json"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C207",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C203 C207 agent index is linked from the live shared shell",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "visible-agent-index.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/attachments/visible-agent-index-txt-0265721dad74165a50fc6571e9f453ccd0ebe7e9.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C203-C207-agent--776f3--from-the-live-shared-shell-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C211",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:91"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C211",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C211 [HTTP] agent false baseline disables raw indexes and middleware",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "disabled-baseline.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C211-HTTP-agent--8260a--raw-indexes-and-middleware-desktop/attachments/disabled-baseline-json-e77d85c75a39543127147a3ebae4211f68f1a116.json"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C214",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:121"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C214",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-rendering.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C215",
+    "sources": [
+      "docs/content/docs/4.guides/12.agent-readable-output.md:140"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C215",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-rendering.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C216",
+    "sources": [
+      "docs/content/docs/5.reference/2.content-config.md:128"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C216",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C204 C206 C216 [HTTP] full output policies metadata and forbidden-content exclusions",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "llms-full.txt",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/llms-full-txt-7e1a8931d3a528c5f43e3ebedc5a5b9faefec36f.txt"
+          },
+          {
+            "name": "support.md",
+            "path": "results/evidence/docs-site-playwright/docs-site-C204-C206-C216-H-3314d-orbidden-content-exclusions-desktop/attachments/support-md-ff7db88091db9d8e332d5d6fdba17ca6798b9fe9.md"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C219",
+    "sources": [
+      "CHANGELOG.md:277"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C219",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-rendering.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C220",
+    "sources": [
+      "CHANGELOG.md:279"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C220",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C214 C215 C219 C220 [HTTP] app page serializer fence metadata and numeric source order",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-rendering.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C214-C215-C219-C-01030-ta-and-numeric-source-order-desktop/attachments/agent-rendering-json-eacccdcf7c1f0e370c1b850eef6501a377dce327.json"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C222",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:35"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C222",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C222",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C223",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:35"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C223",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C223",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C224",
+    "sources": [
+      "docs/content/docs/5.reference/11.package-exports.md:35"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C224",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/attachments/agent-paths-json-aae8f3166598dc091b5ecdc7b484acd5db37416b.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C224",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C222 C223 C224 agent path helpers project root nested and localized routes",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "agent-paths.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/attachments/agent-paths-json-d849f344da069a5bcd0e45eaa674b3a98c2b8b85.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C222-C223-C224-a-23ce8-nested-and-localized-routes-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
       }
     ]
   },
@@ -2416,7 +3422,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('inline')\nExpected substring: not \u001b[32m\"INLINE_COMMENT_SENTINEL\"\u001b[39m\nReceived string: \u001b[31m\"Read release notes. <!-- \u001b[7mINLINE_COMMENT_SENTINEL\u001b[27m -->\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('inline')\u001b[22m\n\u001b[2m    9 \u00d7 locator resolved to <span data-testid=\"inline\">\u2026</span>\u001b[22m\n\u001b[2m      - unexpected value \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\u001b[22m\n"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('inline')\nExpected substring: not \u001b[32m\"INLINE_COMMENT_SENTINEL\"\u001b[39m\nReceived string: \u001b[31m\"Read release notes. <!-- \u001b[7mINLINE_COMMENT_SENTINEL\u001b[27m -->\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('inline')\u001b[22m\n\u001b[2m    9 × locator resolved to <span data-testid=\"inline\">…</span>\u001b[22m\n\u001b[2m      - unexpected value \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\u001b[22m\n"
         ]
       },
       {
@@ -2444,7 +3450,7 @@
           }
         ],
         "errors": [
-          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('inline')\nExpected substring: not \u001b[32m\"INLINE_COMMENT_SENTINEL\"\u001b[39m\nReceived string: \u001b[31m\"Read release notes. <!-- \u001b[7mINLINE_COMMENT_SENTINEL\u001b[27m -->\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('inline')\u001b[22m\n\u001b[2m    9 \u00d7 locator resolved to <span data-testid=\"inline\">\u2026</span>\u001b[22m\n\u001b[2m      - unexpected value \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\u001b[22m\n"
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).not.\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('inline')\nExpected substring: not \u001b[32m\"INLINE_COMMENT_SENTINEL\"\u001b[39m\nReceived string: \u001b[31m\"Read release notes. <!-- \u001b[7mINLINE_COMMENT_SENTINEL\u001b[27m -->\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"not toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('inline')\u001b[22m\n\u001b[2m    9 × locator resolved to <span data-testid=\"inline\">…</span>\u001b[22m\n\u001b[2m      - unexpected value \"Read release notes. <!-- INLINE_COMMENT_SENTINEL -->\"\u001b[22m\n"
         ]
       }
     ]
@@ -2489,6 +3495,30 @@
           {
             "name": "screenshot",
             "path": "results/evidence/docs-site-playwright/docs-site-C040-C358-Markdo-17f0d--before-and-after-hydration-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C361",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:229"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "C361",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C361 [HTTP] default ignored pre tags are absent from index while prose remains",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "ignored-tags.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C361-HTTP-defaul-2c2c3-m-index-while-prose-remains-desktop/attachments/ignored-tags-json-9efa3299c96b3d7b6ed11cfe0e282c33ffecc5a7.json"
           }
         ],
         "errors": []
@@ -2558,6 +3588,466 @@
         ],
         "errors": [
           "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"same-document\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m"
+        ]
+      }
+    ]
+  },
+  {
+    "claim": "X003",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "A search query absent from the corpus should not return unrelated fallback hits.",
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "X003",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X003 search query zzzxqvnosuchword987654321",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-X003-search-query-zzzxqvnosuchword987654321-desktop/attachments/search-query-json-4b58d3373590c40249adcf0ce7bff3186745cca3.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-X003-search-query-zzzxqvnosuchword987654321-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X003",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X003 search query zzzxqvnosuchword987654321",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-X003-search-query-zzzxqvnosuchword987654321-mobile/attachments/search-query-json-7f7178d7090ef3b52a8a100fb9eafa39b8efe14c.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-X003-search-query-zzzxqvnosuchword987654321-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X004",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "Default fuzzy: 0.2 should find Installation for Installaton.",
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "X004",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X004 search query Installaton",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-X004-search-query-Installaton-desktop/attachments/search-query-json-270f04b920149862b9100ce06b45e0a09bd3903c.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-X004-search-query-Installaton-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X004",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "X004 search query Installaton",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-X004-search-query-Installaton-mobile/attachments/search-query-json-f5f0f531b4738ea6d42221fae530f90557681917.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-X004-search-query-Installaton-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X005",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "A visitor expects a unique title, heading or body term to rank its owning page first.",
+    "status": "pass",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Installation",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/attachments/search-query-json-989673d60906d63eea42a16a68cbd9d9349202b3.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Formatting",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/attachments/search-query-json-0663170cd4463d34baa3cfd7236f2d690da157af.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query workspace",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/attachments/search-query-json-605e95bbb979315b7d9dd725119069ef8333f49c.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Sharing",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/attachments/search-query-json-2b71553ed784b5795a72a7514150e2b666d67c4e.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Updates",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/attachments/search-query-json-443f9bad8ffc23071e30de431b357070d052fe98.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Diagrams",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/attachments/search-query-json-e020b1325992a15743da71f9ee9179de2b164e0e.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Storage",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/attachments/search-query-json-5d85633e00a43b3743f8fe1b73c3842315007fde.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Visibility",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/attachments/search-query-json-d7e82047ada635c899ae1c25d0625fd913c60989.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Installation",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/attachments/search-query-json-84d99e8b34801e889a68e75dffeed9869003f402.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Installation-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Formatting",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/attachments/search-query-json-a148388ad4b19e02281a90dc2ae0806fc63e900f.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Formatting-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query workspace",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/attachments/search-query-json-08d335f7bbf91af73426087a39212dff6beaec54.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-workspace-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Sharing",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/attachments/search-query-json-cfd58680a400857a43af9fb36e7b672693ad76b0.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Sharing-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Updates",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/attachments/search-query-json-14bb9680d68a2121a4122e9eb844740d6877c110.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Updates-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Diagrams",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/attachments/search-query-json-ed783627390f9dfca17a56d05c4bfa5245364422.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Diagrams-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Storage",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/attachments/search-query-json-82cb392885872177c1e63779fe173239a8043177.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Storage-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "X005",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C175 X005 search query Visibility",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "search-query.json",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/attachments/search-query-json-60b5befa23d484787cce77464ef70a81a52eb905.json"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/docs-site-playwright/docs-site-C175-X005-search-query-Visibility-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X006",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "A visitor expects plain-text search snippets to retain spaces between list items, table cells, and other Markdown blocks, rather than joining words. The composable excerpt is rendered without application transformations.",
+    "status": "fail",
+    "url": "https://ginko-demo-docs-site.vercel.app",
+    "evidence": [
+      {
+        "claim": "X006",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "X006 search snippets keep word boundaries between Markdown blocks",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "snippet-word-boundaries.txt",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/attachments/snippet-word-boundaries-txt-993aefc59c6db8d0febe1fd0ea13902c42271dc4.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/test-failed-1.png"
+          },
+          {
+            "name": "error-context",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/error-context.md"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Record a place Record a date\"\u001b[39m\nReceived string:    \u001b[31m\"A strong note with emphasis and inline code. Record a placeRecord a date Open the notebookSave the note Keep observations short. ItemStatusNotebookReady Create notebook Add observation Fieldnote works with small teams. Components\"\u001b[39m"
+        ]
+      },
+      {
+        "claim": "X006",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "X006 search snippets keep word boundaries between Markdown blocks",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "snippet-word-boundaries.txt",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/attachments/snippet-word-boundaries-txt-f73d5c75567610033aae16eddaa13a4df2003fd0.txt"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/test-failed-1.png"
+          },
+          {
+            "name": "error-context",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/error-context.md"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/slice-2b/snippet-playwright/docs-site-X006-search-snip-93fee-ies-between-Markdown-blocks-mobile/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"Record a place Record a date\"\u001b[39m\nReceived string:    \u001b[31m\"A strong note with emphasis and inline code. Record a placeRecord a date Open the notebookSave the note Keep observations short. ItemStatusNotebookReady Create notebook Add observation Fieldnote works with small teams. Components\"\u001b[39m"
         ]
       }
     ]
