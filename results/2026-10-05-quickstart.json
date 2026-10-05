@@ -1,0 +1,309 @@
+[
+  {
+    "claim": "C001",
+    "sources": [
+      "docs/content/docs/5.reference/3.module-options.md:6"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 home renders documented Markdown",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-home-renders-documented-Markdown-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 second page renders documented Markdown",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-second-page-renders-documented-Markdown-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 both routes deliver server-rendered HTML",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Welcome SSR response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-both-routes-deliver-server-rendered-HTML-desktop/attachments/Welcome-SSR-response-c5db0f63b1dca58f6e724c8644545632d05f448e.html"
+          },
+          {
+            "name": "Guide SSR response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-both-routes-deliver-server-rendered-HTML-desktop/attachments/Guide-SSR-response-7638afe828e6b6c0b771ba8cb9042b7667ee59ce.html"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 home renders documented Markdown",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-home-renders-documented-Markdown-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 second page renders documented Markdown",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-second-page-renders-documented-Markdown-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C001",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C001 both routes deliver server-rendered HTML",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Welcome SSR response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-both-routes-deliver-server-rendered-HTML-mobile/attachments/Welcome-SSR-response-9e305b9f627fead7b8c4016dae61ec053ea751d0.html"
+          },
+          {
+            "name": "Guide SSR response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C001-both-routes-deliver-server-rendered-HTML-mobile/attachments/Guide-SSR-response-8bcd4f9ec6f8a3bac75d4acea35372bfafd32e93.html"
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "budgets": {
+      "clientJsGzipBytes": 221247,
+      "lighthouseMobilePerformance": 97,
+      "buildSeconds": 10.03880875,
+      "issues": [],
+      "clientJsEvidence": "results/evidence/2026-10-05-quickstart-client-js.json",
+      "lighthouseEvidence": "results/evidence/2026-10-05-quickstart-lighthouse.json"
+    }
+  },
+  {
+    "claim": "C151",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C151",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C151 SSR payload is reused without duplicate content query on hydration",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C151-SSR-payloa-2e513--content-query-on-hydration-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C151",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C151 SSR payload is reused without duplicate content query on hydration",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C151-SSR-payloa-2e513--content-query-on-hydration-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C152",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:39"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C152",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C152 client navigation renders both pages without stale-page flashes or console errors",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "Client guide",
+            "path": "results/evidence/quickstart-playwright/quickstart-C152-client-nav-1f069-e-flashes-or-console-errors-desktop/attachments/Client-guide-27a0f75f864c1372e599f78b86577e1780889064.png"
+          },
+          {
+            "name": "Console/page errors",
+            "text": "[]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C152-client-nav-1f069-e-flashes-or-console-errors-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C152",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C152 client navigation renders both pages without stale-page flashes or console errors",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "Client guide",
+            "path": "results/evidence/quickstart-playwright/quickstart-C152-client-nav-1f069-e-flashes-or-console-errors-mobile/attachments/Client-guide-a3f285d760105c472ab4c8f749106f00fb449951.png"
+          },
+          {
+            "name": "Console/page errors",
+            "text": "[]"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C152-client-nav-1f069-e-flashes-or-console-errors-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "C154",
+    "sources": [
+      "docs/content/docs/5.reference/5.composables.md:74"
+    ],
+    "status": "pass",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "C154",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C154 unknown route returns HTTP 404 and app-owned fatal error",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "HTTP 404 response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C154-unknown-ro-c1b7c-4-and-app-owned-fatal-error-desktop/attachments/HTTP-404-response-0167e8a91d093663d85096a8a38f71fadf3d7f48.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C154-unknown-ro-c1b7c-4-and-app-owned-fatal-error-desktop/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      },
+      {
+        "claim": "C154",
+        "observedStatus": "passed",
+        "status": "pass",
+        "check": "C154 unknown route returns HTTP 404 and app-owned fatal error",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "HTTP 404 response",
+            "path": "results/evidence/quickstart-playwright/quickstart-C154-unknown-ro-c1b7c-4-and-app-owned-fatal-error-mobile/attachments/HTTP-404-response-bc9e33e52b4f723624975722cc5a91f4b473c38a.html"
+          },
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-C154-unknown-ro-c1b7c-4-and-app-owned-fatal-error-mobile/test-finished-1.png"
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  {
+    "claim": "X001",
+    "sources": [
+      "checks/expectations.json"
+    ],
+    "rationale": "A visitor expects Markdown links between docs pages to preserve the application document, like sidebar links.",
+    "status": "fail",
+    "url": "https://ginko-demo-quickstart.vercel.app",
+    "evidence": [
+      {
+        "claim": "X001",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "X001 in-content links navigate client-side",
+        "viewport": "desktop",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/test-failed-1.png"
+          },
+          {
+            "name": "error-context",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/error-context.md"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-desktop/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"same-document\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m"
+        ]
+      },
+      {
+        "claim": "X001",
+        "observedStatus": "failed",
+        "status": "fail",
+        "check": "X001 in-content links navigate client-side",
+        "viewport": "mobile",
+        "evidence": [
+          {
+            "name": "screenshot",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/test-failed-1.png"
+          },
+          {
+            "name": "error-context",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/error-context.md"
+          },
+          {
+            "name": "trace",
+            "path": "results/evidence/quickstart-playwright/quickstart-X001-in-content-links-navigate-client-side-mobile/trace.zip"
+          }
+        ],
+        "errors": [
+          "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"same-document\"\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m"
+        ]
+      }
+    ]
+  }
+]
