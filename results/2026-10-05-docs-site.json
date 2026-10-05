@@ -73,6 +73,177 @@
       "issues": [
         "Vercel DEPLOYMENT_NOT_FOUND: no successful production deployment exists"
       ]
+    },
+    "run": {
+      "sourceCommit": "e4d1e2a",
+      "productionUrl": null,
+      "targetUrl": "https://ginko-demo-docs-site.vercel.app",
+      "viewports": [
+        "desktop 1440x900",
+        "mobile 390x844"
+      ],
+      "checksExecuted": 64,
+      "deployment": {
+        "id": "dpl_3TsyxdzTTwbjEUJRqVyM7xJLEAed",
+        "url": "https://ginko-demo-docs-site-kmdhqfou1-lupinum.vercel.app",
+        "productionUrl": null,
+        "inspectorUrl": "https://vercel.com/lupinum/ginko-demo-docs-site/3TsyxdzTTwbjEUJRqVyM7xJLEAed",
+        "readyState": "ERROR",
+        "target": "production",
+        "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_3TsyxdzTTwbjEUJRqVyM7xJLEAed",
+        "buildMachine": {
+          "cores": 4,
+          "memory": 8192,
+          "machine": "standard",
+          "selectionType": "elastic",
+          "selectionSource": "elastic-algorithm"
+        },
+        "error": {
+          "name": "BUILD_ERROR",
+          "message": "Command \"pnpm build\" exited with 1"
+        }
+      },
+      "build": {
+        "demo": "docs-site",
+        "seconds": 88.018079417,
+        "exitCode": 1,
+        "node": "v24.21.0"
+      },
+      "notLive": [
+        {
+          "id": "C005",
+          "demo": "not-live",
+          "reason": "Requires a Nuxt UI collision fixture with enabled search. Search and its collision-safe alias are slice 2b; page auto-import is exercised by docs-site, but that alone does not prove this full claim.",
+          "sources": [
+            "docs/content/docs/5.reference/5.composables.md:6"
+          ]
+        },
+        {
+          "id": "C041",
+          "demo": "not-live",
+          "reason": "Requires two ingestion builds with swapped plugin order and a controlled custom plugin; one deployed plugin pipeline cannot prove ordering.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:89"
+          ]
+        },
+        {
+          "id": "C042",
+          "demo": "not-live",
+          "reason": "Requires isolated omitted-plugin and empty-plugin builds; this docs-site enables plugins. The unchanged quickstart alone does not establish equivalence.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:90"
+          ]
+        },
+        {
+          "id": "C044",
+          "demo": "not-live",
+          "reason": "Requires alternate custom Shiki registrations and setup rejection of theme/langs; docs-site exercises the documented zero-config Shiki variant only.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:106"
+          ]
+        },
+        {
+          "id": "C047",
+          "demo": "not-live",
+          "reason": "Requires builds both with and without Nuxt Image; docs-site checks the plain img fallback only and does not install Nuxt Image.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:120"
+          ]
+        },
+        {
+          "id": "C048",
+          "demo": "not-live",
+          "reason": "Requires invalid custom ingestion-plugin AST builds that must be rejected; putting them in the production collection would prevent generating the public demo.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:110"
+          ]
+        },
+        {
+          "id": "C053",
+          "demo": "not-live",
+          "reason": "Requires a json-render catalog/renderer integration and plugin fixture beyond the documented docs-site setup. No compatible catalog is documented in the supplied installed starting pages.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:91"
+          ]
+        },
+        {
+          "id": "C063",
+          "demo": "not-live",
+          "reason": "Full-document rendering is used by docs-site, but the complete claim also requires a resolved Content reference/component fixture; that reference integration needs its own documented fixture.",
+          "sources": [
+            "docs/content/docs/5.reference/7.components.md:8",
+            "skills/ginko-content/references/querying-rendering.md:78"
+          ]
+        },
+        {
+          "id": "C332",
+          "demo": "not-live",
+          "reason": "Production checks verify partials are hidden; proof that their parsed bodies remain available to build tooling requires inspection through a documented build-tool interface, not a public route.",
+          "sources": [
+            "docs/content/docs/4.guides/4.drafts-and-partials.md:34"
+          ]
+        },
+        {
+          "id": "C333",
+          "demo": "not-live",
+          "reason": "The installed guide states partials are not includes but specifies no include syntax to attempt. A partial link is not a transclusion test; requires a maintainer-defined negative fixture.",
+          "sources": [
+            "docs/content/docs/4.guides/4.drafts-and-partials.md:36"
+          ]
+        },
+        {
+          "id": "C350",
+          "demo": "not-live",
+          "reason": "A parse/serialize round trip with whitespace and native attributes is a framework-free serializer check, not a deployed visitor flow.",
+          "sources": [
+            "docs/content/docs/4.guides/2.mdc-components.md:152"
+          ]
+        },
+        {
+          "id": "C356",
+          "demo": "not-live",
+          "reason": "Requires a negative inline-renderer policy fixture that safely captures its rejection; a deliberately throwing page cannot be statically generated alongside the public docs-site.",
+          "sources": [
+            "docs/content/docs/6.migration/4.ginko-version-upgrades.md:82"
+          ]
+        }
+      ],
+      "findings": [
+        {
+          "ids": [
+            "C198",
+            "X002"
+          ],
+          "stage": "generation",
+          "error": "Public Markdown AST is not render-safe; ingested ./3.first-note.md becomes bare first-note and fails unsafe_url validation. Cross-section links lose the /docs mount and prerender /start/installation returns 404.",
+          "sources": [
+            "checks/expectations.json",
+            "docs/content/docs/7.resources/2.deployment.md:21"
+          ],
+          "evidence": [
+            "results/evidence/local-query-response.json",
+            "results/evidence/docs-site-build-committed.log",
+            "results/evidence/vercel-deploy-committed.log"
+          ]
+        },
+        {
+          "ids": [
+            "C057",
+            "C062",
+            "C198"
+          ],
+          "stage": "generation",
+          "error": "Security plugin removes enabled=false; the renderer reports Required component property \"enabled\" is missing.",
+          "sources": [
+            "docs/content/docs/5.reference/3.module-options.md:91",
+            "docs/content/docs/4.guides/2.mdc-components.md:85"
+          ],
+          "evidence": [
+            "results/evidence/docs-site-dev.log",
+            "results/evidence/vercel-deploy-committed.log"
+          ]
+        }
+      ]
     }
   },
   {
