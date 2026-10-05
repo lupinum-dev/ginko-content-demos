@@ -5,7 +5,7 @@ if (!targets[demo]) throw new Error(`Unknown demo: ${demo}`)
 export default defineConfig({
   testDir: './tests',
   testMatch: `${demo}.spec.mjs`,
-  outputDir: '../results/evidence/playwright',
+  outputDir: `../results/evidence/${demo}-playwright`,
   fullyParallel: false,
   workers: 1,
   retries: 0,

@@ -73,13 +73,20 @@ navigation through the shell NuxtLink controls in both directions (the documente
 Markdown link is a native anchor), no stale headings under delayed content
 requests, and no console or page errors during the successful navigation journey.
 
-Test names begin with claim IDs. `results/<UTC-date>-quickstart.json` contains one
+`X001 in-content links navigate client-side` clicks the actual Markdown link and
+requires a window marker to survive. It is intentionally failing on beta.10:
+the content link is a native anchor and reloads the document. The shell NuxtLink
+check remains separate. `checks/expectations.json` records expectation checks
+and their rationale; they are reported beside claims and do not change the
+365-claim inventory.
+
+Test names begin with claim IDs or expectation IDs. `results/<UTC-date>-quickstart.json` contains one
 aggregated record per quickstart claim; each retains the individual test,
 viewport, failure, and evidence. Skipped/interrupted or unimplemented checks are
 blocked, assertion failures are fail, and only completed successful checks pass.
 Screenshots, HTTP responses, failure traces, build timing, client JS details, and
-Lighthouse JSON go under `results/evidence/`. Results are git-ignored local
-artifacts, never committed. `.vercelignore` also excludes results and generated
+Lighthouse JSON go under `results/evidence/`. Run summaries in `results/*.json` are committed. Screenshots, traces, response
+bodies, and measurement logs under `results/evidence/` stay git-ignored. `.vercelignore` also excludes results and generated
 local build artifacts from CLI uploads. A same-day rerun replaces the run JSON
 and Playwright artifacts; retain a copy inside `results/evidence/` before rerunning if needed.
 
@@ -96,17 +103,19 @@ server cold start, and runner load.
 `checks/claims-map.json` assigns every ID exactly once. A planned check is not
 verification; only passing production results prove a hosted claim. `not-live`
 entries need the stated type, build, CLI, filesystem, or platform check; C201 is
-explicitly deferred by DESIGN.md. This slice implements only quickstart.
+explicitly deferred by DESIGN.md. Slice 1 implements quickstart; slice 2a implements docs-site except search and agent output.
+The docs-site mapping marks those remaining claims `slice: "2b"`, so the reporter
+does not count them as unimplemented 2a checks.
 
 | Assignment | Claims |
 | --- | ---: |
 | quickstart | 4 |
-| docs-site | 94 |
+| docs-site | 82 |
 | blog | 78 |
 | multilingual | 32 |
 | custom-source | 91 |
 | scale | 2 |
-| not-live | 64 |
+| not-live | 76 |
 | **Total** | **365** |
 
 The quickstart records C001 (module/two routes), C151 (SSR payload reuse), C152
@@ -140,3 +149,70 @@ corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --yes --scop
 Run production checks after each package switch/deployment. Inspect the target
 project before issuing deployment commands; do not reuse an existing library or
 client project. No custom domains or external data services are used.
+
+## Docs site (slice 2a)
+
+`apps/docs-site` is a static Nuxt app built with `nuxt generate`. It has 17 public
+docs pages in three numbered sections, section `index.md` files, folder metadata,
+a pathless group, a menu-hidden page, a sitemap-hidden page, a production draft,
+a partial, and an ignored invalid source. Its sidebar and previous/next controls
+come from the documented navigation queries; no route list is added to prerender
+or sitemap configuration. `content.config.ts` defines the docs, internal-page,
+and data collections. Agent output is explicitly disabled and search stays off
+until slice 2b.
+
+The ordinary docs pages show Markdown, relative Markdown file links, colon and
+angle MDC syntax, inline and nested components, named slots, typed props, images,
+code highlighting, repeated headings and TOC. `/inspect` shows tree helpers,
+filtered navigation, surround boundaries, excerpt rendering, wrapper attributes,
+inline Markdown editing, the fixed inline profile, and the public body renderer.
+Summary delimiters use `<!-- more -->`, the Comark default. KaTeX CSS is explicitly
+included, as the installed guide requires. Optional plugin peers match the
+vendor package's declared ranges.
+
+```sh
+corepack pnpm --filter @ginko-demo/docs-site dev
+corepack pnpm build docs-site
+corepack pnpm --filter @ginko-demo/docs-site typecheck
+corepack pnpm check docs-site
+corepack pnpm check:map
+```
+
+A named build records `results/evidence/build-<demo>.json`. The check runner reads
+only that demo's timing and does not reuse another demo's build time. Browser
+artifacts use per-demo folders, so checking quickstart does not overwrite the
+docs-site screenshots.
+
+`X002 relative Markdown file links reach the intended page` covers same-folder
+and cross-section authored file links. The guide recommends final public paths;
+X002 is a visitor/author expectation, not an invented library claim. Deferred
+non-live fixture requirements are explained per ID in `checks/claims-map.json`.
+Partial claim coverage (such as search exposure of `navigation: false`, and
+search/agent comment and draft exclusion) still needs slice 2b.
+
+### Current generation blocker
+
+The vendor beta.10 fixture remains unmodified. Relative link ingestion changes
+`./3.first-note.md` into bare `first-note`; the renderer rejects that as an unsafe
+URL. The enabled `security` plugin removes the typed `enabled=false` component
+prop; rendering then rejects the required missing prop. `nuxt generate` exits 1
+on these pages locally and on Vercel. No failure suppression, HTML copy, client-only
+wrapper, link rewrite, or library patch is used. The project exists but has no
+successful production deployment; the configured alias is not a live demo.
+Committed results mark production claims blocked and keep local checks separate.
+
+Project `ginko-demo-docs-site`, team `Lupinum OG` (`lupinum`), ID
+`prj_rlMxOruQimGq6aWjBOYzZYuVER1F`, uses the Other preset, Node 24, root
+`apps/docs-site`, build `pnpm build`, output `.output/public`, and install
+`cd ../.. && corepack pnpm install --frozen-lockfile`. Source files outside the
+root are included. Deployment protection is disabled only on this approved project.
+The CLI upload uses the workspace root, linked explicitly to this project:
+
+```sh
+corepack pnpm --filter @ginko-demo/checks exec vercel link --project ginko-demo-docs-site --scope lupinum --yes --cwd ../
+corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupinum --yes --cwd ../
+```
+
+The CLI upload is independent of the existing quickstart GitHub deployment.
+Inspect the project link before deploying; use explicit names and do not deploy
+an unrelated project.

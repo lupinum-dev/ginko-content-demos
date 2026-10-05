@@ -1,0 +1,19 @@
+[
+  {
+    "id": "X001",
+    "check": "X001 in-content links navigate client-side",
+    "demos": [
+      "quickstart",
+      "docs-site"
+    ],
+    "rationale": "A visitor expects Markdown links between docs pages to preserve the application document, like sidebar links."
+  },
+  {
+    "id": "X002",
+    "check": "X002 relative Markdown file links reach the intended page",
+    "demos": [
+      "docs-site"
+    ],
+    "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages."
+  }
+]

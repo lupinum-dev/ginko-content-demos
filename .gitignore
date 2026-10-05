@@ -2,5 +2,7 @@ node_modules/
 .nuxt/
 .output/
 .vercel/
-results/
+results/*
+!results/*.json
 .ginko/
+.env*

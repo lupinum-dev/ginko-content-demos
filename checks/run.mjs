@@ -51,7 +51,7 @@ try {
   budgets.lighthouseEvidence = path
 } catch (error) { budgets.issues.push(`Lighthouse measurement blocked: ${error.message}`) }
 finally { await chrome?.kill() }
-try { budgets.buildSeconds = JSON.parse(await readFile(new URL('results/evidence/build.json', root), 'utf8')).seconds }
+try { budgets.buildSeconds = JSON.parse(await readFile(new URL(`results/evidence/build-${demo}.json`, root), 'utf8')).seconds }
 catch { budgets.issues.push('No local build timing found; run pnpm build to record it.') }
 results[0].budgets = budgets
 await writeFile(resultPath, JSON.stringify(results, null, 2) + '\n')

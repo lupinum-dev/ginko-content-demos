@@ -1,5 +1,8 @@
 {
   "quickstart": {
     "BASE_URL": "https://ginko-demo-quickstart.vercel.app"
+  },
+  "docs-site": {
+    "BASE_URL": "https://ginko-demo-docs-site.vercel.app"
   }
 }

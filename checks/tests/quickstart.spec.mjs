@@ -83,3 +83,13 @@ test('C001 both routes deliver server-rendered HTML', async ({ baseURL }, testIn
     expect(html).toContain(body)
   }
 })
+
+// Deliberately an ordinary visitor click, with no interception or router workaround.
+test('X001 in-content links navigate client-side', async ({ page }) => {
+  await page.goto('/')
+  await page.waitForLoadState('networkidle')
+  await page.evaluate(() => { window.__demoNavigationMarker = 'same-document' })
+  await page.getByRole('link', { name: 'Read the guide' }).click()
+  await expect(page.locator('main h1')).toHaveText('Guide')
+  expect(await page.evaluate(() => window.__demoNavigationMarker)).toBe('same-document')
+})

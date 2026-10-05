@@ -17,12 +17,13 @@
   {
     "id": "C004",
     "demo": "docs-site",
-    "check": "Place an ignored invalid file in the source and confirm no public route"
+    "check": "C004 C331 drafts partials and ignored invalid files are absent from production pages and sidebar",
+    "slice": "2a"
   },
   {
     "id": "C005",
-    "demo": "docs-site",
-    "check": "Call auto-imported helpers with Nuxt UI present and confirm correct search function"
+    "demo": "not-live",
+    "reason": "Requires a Nuxt UI collision fixture with enabled search. Search and its collision-safe alias are slice 2b; page auto-import is exercised by docs-site, but that alone does not prove this full claim."
   },
   {
     "id": "C006",
@@ -197,17 +198,18 @@
   {
     "id": "C040",
     "demo": "docs-site",
-    "check": "Render headings, lists, quotes, tables, links and code in SSR and hydrated output"
+    "check": "C040 C358 Markdown structures render before and after hydration",
+    "slice": "2a"
   },
   {
     "id": "C041",
-    "demo": "docs-site",
-    "check": "Change plugin order and confirm expected enriched output"
+    "demo": "not-live",
+    "reason": "Requires two ingestion builds with swapped plugin order and a controlled custom plugin; one deployed plugin pipeline cannot prove ordering."
   },
   {
     "id": "C042",
-    "demo": "docs-site",
-    "check": "Build with omitted plugins and empty plugins and compare output"
+    "demo": "not-live",
+    "reason": "Requires isolated omitted-plugin and empty-plugin builds; this docs-site enables plugins. The unchanged quickstart alone does not establish equivalence."
   },
   {
     "id": "C043",
@@ -216,128 +218,148 @@
   },
   {
     "id": "C044",
-    "demo": "docs-site",
-    "check": "Render custom language in both themes and reject singular theme/langs"
+    "demo": "not-live",
+    "reason": "Requires alternate custom Shiki registrations and setup rejection of theme/langs; docs-site exercises the documented zero-config Shiki variant only."
   },
   {
     "id": "C045",
     "demo": "docs-site",
-    "check": "Render custom prose mappings and inspect final elements"
+    "check": "C045 Markdown tag mapping renders application prose component",
+    "slice": "2a"
   },
   {
     "id": "C046",
     "demo": "docs-site",
-    "check": "Check anchors on allowed headings and absent anchors on excluded depths"
+    "check": "C046 heading anchors obey configured depth and exclusions",
+    "slice": "2a"
   },
   {
     "id": "C047",
-    "demo": "docs-site",
-    "check": "Build with and without Nuxt Image and inspect image rendering"
+    "demo": "not-live",
+    "reason": "Requires builds both with and without Nuxt Image; docs-site checks the plain img fallback only and does not install Nuxt Image."
   },
   {
     "id": "C048",
-    "demo": "docs-site",
-    "check": "Try a directive, event handler and script node; require rejection"
+    "demo": "not-live",
+    "reason": "Requires invalid custom ingestion-plugin AST builds that must be rejected; putting them in the production collection would prevent generating the public demo."
   },
   {
     "id": "C049",
     "demo": "docs-site",
-    "check": "Enable breaks with required peers and confirm its specific rendered output"
+    "check": "C049 breaks plugin preserves the authored soft line break",
+    "slice": "2a"
   },
   {
     "id": "C050",
     "demo": "docs-site",
-    "check": "Enable emoji with required peers and confirm its specific rendered output"
+    "check": "C050 emoji plugin renders the authored shortcode",
+    "slice": "2a"
   },
   {
     "id": "C051",
     "demo": "docs-site",
-    "check": "Enable footnotes with required peers and confirm its specific rendered output"
+    "check": "C051 footnotes plugin renders the note and its visitor jump link",
+    "slice": "2a"
   },
   {
     "id": "C052",
     "demo": "docs-site",
-    "check": "Enable shiki with required peers and confirm its specific rendered output"
+    "check": "C052 Shiki highlights fenced code in server and hydrated output",
+    "slice": "2a"
   },
   {
     "id": "C053",
-    "demo": "docs-site",
-    "check": "Enable json-render with required peers and confirm its specific rendered output"
+    "demo": "not-live",
+    "reason": "Requires a json-render catalog/renderer integration and plugin fixture beyond the documented docs-site setup. No compatible catalog is documented in the supplied installed starting pages."
   },
   {
     "id": "C054",
     "demo": "docs-site",
-    "check": "Enable math with required peers and confirm its specific rendered output"
+    "check": "C054 C337 math renders on the server with the explicitly included KaTeX CSS",
+    "slice": "2a"
   },
   {
     "id": "C055",
     "demo": "docs-site",
-    "check": "Enable mermaid with required peers and confirm its specific rendered output"
+    "check": "C055 Mermaid renders a diagram in server and hydrated output",
+    "slice": "2a"
   },
   {
     "id": "C056",
     "demo": "docs-site",
-    "check": "Enable punctuation with required peers and confirm its specific rendered output"
+    "check": "C056 punctuation converts straight quotes and ellipsis",
+    "slice": "2a"
   },
   {
     "id": "C057",
     "demo": "docs-site",
-    "check": "Enable security with required peers and confirm its specific rendered output"
+    "check": "C057 security plugin retains harmless authored component props",
+    "slice": "2a"
   },
   {
     "id": "C058",
     "demo": "docs-site",
-    "check": "Enable summary with required peers and confirm its specific rendered output"
+    "check": "C058 C064 excerpt renders only the boundary prefix",
+    "slice": "2a"
   },
   {
     "id": "C059",
     "demo": "docs-site",
-    "check": "Enable toc with required peers and confirm its specific rendered output"
+    "check": "C075 C059 C081 C302 TOC destinations match nested repeated headings and exclude fences",
+    "slice": "2a"
   },
   {
     "id": "C060",
     "demo": "docs-site",
-    "check": "Render a block and inline component with correct props and children"
+    "check": "C060 C061 C062 block inline angle nested components slots and JSON props render",
+    "slice": "2a"
   },
   {
     "id": "C061",
     "demo": "docs-site",
-    "check": "Render multiple named slots inside nested components"
+    "check": "C060 C061 C062 block inline angle nested components slots and JSON props render",
+    "slice": "2a"
   },
   {
     "id": "C062",
     "demo": "docs-site",
-    "check": "Parse and render angle syntax with string, number, boolean and object props"
+    "check": "C060 C061 C062 block inline angle nested components slots and JSON props render",
+    "slice": "2a"
   },
   {
     "id": "C063",
-    "demo": "docs-site",
-    "check": "Render a full query document containing a resolved Content link"
+    "demo": "not-live",
+    "reason": "Full-document rendering is used by docs-site, but the complete claim also requires a resolved Content reference/component fixture; that reference integration needs its own documented fixture."
   },
   {
     "id": "C064",
     "demo": "docs-site",
-    "check": "Switch excerpt true and verify content stops at the excerpt boundary"
+    "check": "C058 C064 excerpt renders only the boundary prefix",
+    "slice": "2a"
   },
   {
     "id": "C065",
     "demo": "docs-site",
-    "check": "Change tag and unwrap options and inspect DOM"
+    "check": "C065 C066 renderer wrapper unwrap and inherited attributes have one target",
+    "slice": "2a"
   },
   {
     "id": "C066",
     "demo": "docs-site",
-    "check": "Set class/id/data attributes and verify exactly one target wrapper"
+    "check": "C065 C066 renderer wrapper unwrap and inherited attributes have one target",
+    "slice": "2a"
   },
   {
     "id": "C067",
     "demo": "docs-site",
-    "check": "Render inline text and override one component"
+    "check": "C067 C353 inline Markdown renders an override and reacts to editing without a reload",
+    "slice": "2a"
   },
   {
     "id": "C068",
     "demo": "docs-site",
-    "check": "Pass normalized body and policy through direct exported renderer"
+    "check": "C068 explicit normalized body and policy render using the exported body renderer",
+    "slice": "2a"
   },
   {
     "id": "C069",
@@ -372,7 +394,8 @@
   {
     "id": "C075",
     "demo": "docs-site",
-    "check": "Compare extracted TOC destinations against rendered heading ids"
+    "check": "C075 C059 C081 C302 TOC destinations match nested repeated headings and exclude fences",
+    "slice": "2a"
   },
   {
     "id": "C076",
@@ -402,7 +425,8 @@
   {
     "id": "C081",
     "demo": "docs-site",
-    "check": "Render code containing # headings and confirm no TOC entries"
+    "check": "C075 C059 C081 C302 TOC destinations match nested repeated headings and exclude fences",
+    "slice": "2a"
   },
   {
     "id": "C082",
@@ -522,12 +546,14 @@
   {
     "id": "C105",
     "demo": "docs-site",
-    "check": "Check neighbors on first, middle and last ordered pages"
+    "check": "C105 surround returns first middle and last neighbors and visitor links follow them",
+    "slice": "2a"
   },
   {
     "id": "C106",
     "demo": "docs-site",
-    "check": "Filter and sort tree, preserving structural nodes and paths"
+    "check": "C106 navigation applies filtering sorting and projection without losing structural groups",
+    "slice": "2a"
   },
   {
     "id": "C107",
@@ -692,32 +718,38 @@
   {
     "id": "C139",
     "demo": "docs-site",
-    "check": "Set nested short title and verify sidebar label differs from heading"
+    "check": "C139 C140 C141 C142 sidebar labels folder metadata numeric order and pathless groups",
+    "slice": "2a"
   },
   {
     "id": "C140",
     "demo": "docs-site",
-    "check": "Render folder title/icon/sidebar metadata"
+    "check": "C139 C140 C141 C142 sidebar labels folder metadata numeric order and pathless groups",
+    "slice": "2a"
   },
   {
     "id": "C141",
     "demo": "docs-site",
-    "check": "Verify 2 precedes 10 and neither prefix appears in URLs"
+    "check": "C139 C140 C141 C142 sidebar labels folder metadata numeric order and pathless groups",
+    "slice": "2a"
   },
   {
     "id": "C142",
     "demo": "docs-site",
-    "check": "Verify a folder without index renders label/children with no broken link"
+    "check": "C139 C140 C141 C142 sidebar labels folder metadata numeric order and pathless groups",
+    "slice": "2a"
   },
   {
     "id": "C143",
     "demo": "docs-site",
-    "check": "Click docs-root redirect and confirm first real page"
+    "check": "C143 first-routable docs entry works through an ordinary visitor click",
+    "slice": "2a"
   },
   {
     "id": "C144",
     "demo": "docs-site",
-    "check": "Open hidden-menu page directly and find it in search"
+    "check": "C144 navigation false removes the menu entry while keeping direct access",
+    "slice": "2a"
   },
   {
     "id": "C145",
@@ -727,27 +759,32 @@
   {
     "id": "C146",
     "demo": "docs-site",
-    "check": "Invoke findFirstNavigationChild in a demo on groups, nested paths and missing pages"
+    "check": "C146 C147 C148 C149 C150 framework-free helpers walk find contain normalize and prune",
+    "slice": "2a"
   },
   {
     "id": "C147",
     "demo": "docs-site",
-    "check": "Invoke findNavigationTrail in a demo on groups, nested paths and missing pages"
+    "check": "C146 C147 C148 C149 C150 framework-free helpers walk find contain normalize and prune",
+    "slice": "2a"
   },
   {
     "id": "C148",
     "demo": "docs-site",
-    "check": "Invoke navigationItemContainsPath in a demo on groups, nested paths and missing pages"
+    "check": "C146 C147 C148 C149 C150 framework-free helpers walk find contain normalize and prune",
+    "slice": "2a"
   },
   {
     "id": "C149",
     "demo": "docs-site",
-    "check": "Invoke normalizeNavigationPath in a demo on groups, nested paths and missing pages"
+    "check": "C146 C147 C148 C149 C150 framework-free helpers walk find contain normalize and prune",
+    "slice": "2a"
   },
   {
     "id": "C150",
     "demo": "docs-site",
-    "check": "Invoke walkNavigationTree in a demo on groups, nested paths and missing pages"
+    "check": "C146 C147 C148 C149 C150 framework-free helpers walk find contain normalize and prune",
+    "slice": "2a"
   },
   {
     "id": "C151",
@@ -867,27 +904,32 @@
   {
     "id": "C174",
     "demo": "docs-site",
-    "check": "Compare disabled error and enabled empty-config results"
+    "check": "Compare disabled error and enabled empty-config results",
+    "slice": "2b"
   },
   {
     "id": "C175",
     "demo": "docs-site",
-    "check": "Search terms present only in title, heading or body and follow correct destinations"
+    "check": "Search terms present only in title, heading or body and follow correct destinations",
+    "slice": "2b"
   },
   {
     "id": "C176",
     "demo": "docs-site",
-    "check": "Search misspelled tag and compare weighted ranking"
+    "check": "Search misspelled tag and compare weighted ranking",
+    "slice": "2b"
   },
   {
     "id": "C177",
     "demo": "docs-site",
-    "check": "Search unique data-only term and require no result"
+    "check": "Search unique data-only term and require no result",
+    "slice": "2b"
   },
   {
     "id": "C178",
     "demo": "docs-site",
-    "check": "Measure full payload request and confirm browser search works afterward"
+    "check": "Measure full payload request and confirm browser search works afterward",
+    "slice": "2b"
   },
   {
     "id": "C179",
@@ -907,27 +949,32 @@
   {
     "id": "C182",
     "demo": "docs-site",
-    "check": "Type queries, simulate backend failure and verify distinct states"
+    "check": "Type queries, simulate backend failure and verify distinct states",
+    "slice": "2b"
   },
   {
     "id": "C183",
     "demo": "docs-site",
-    "check": "Compare payload requests with and without collection option"
+    "check": "Compare payload requests with and without collection option",
+    "slice": "2b"
   },
   {
     "id": "C184",
     "demo": "docs-site",
-    "check": "Change each option and confirm displayed results update"
+    "check": "Change each option and confirm displayed results update",
+    "slice": "2b"
   },
   {
     "id": "C185",
     "demo": "docs-site",
-    "check": "Use next/previous/select/reset and verify selected result without automatic navigation"
+    "check": "Use next/previous/select/reset and verify selected result without automatic navigation",
+    "slice": "2b"
   },
   {
     "id": "C186",
     "demo": "docs-site",
-    "check": "Force each backend failure and require error state without stale results"
+    "check": "Force each backend failure and require error state without stale results",
+    "slice": "2b"
   },
   {
     "id": "C187",
@@ -942,17 +989,20 @@
   {
     "id": "C189",
     "demo": "docs-site",
-    "check": "Inspect deployed XML against representative canonical routes"
+    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "slice": "2a"
   },
   {
     "id": "C190",
     "demo": "docs-site",
-    "check": "Verify excluded collection/document absent from XML"
+    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "slice": "2a"
   },
   {
     "id": "C191",
     "demo": "docs-site",
-    "check": "Check forbidden source identities have no XML URL"
+    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "slice": "2a"
   },
   {
     "id": "C192",
@@ -987,12 +1037,14 @@
   {
     "id": "C198",
     "demo": "docs-site",
-    "check": "Serve generated HTML and directly load nested content routes"
+    "check": "C198 static HTML exists on direct loads for every public document",
+    "slice": "2a"
   },
   {
     "id": "C199",
     "demo": "docs-site",
-    "check": "Verify opted-out page has HTML but no sitemap URL"
+    "check": "C189 C190 C191 C199 sitemap includes canonical content and excludes opt-outs data drafts partials",
+    "slice": "2a"
   },
   {
     "id": "C200",
@@ -1007,17 +1059,20 @@
   {
     "id": "C202",
     "demo": "docs-site",
-    "check": "Open raw route and compare headings, links and code to HTML page"
+    "check": "Open raw route and compare headings, links and code to HTML page",
+    "slice": "2b"
   },
   {
     "id": "C203",
     "demo": "docs-site",
-    "check": "Follow all representative index links to valid raw Markdown"
+    "check": "Follow all representative index links to valid raw Markdown",
+    "slice": "2b"
   },
   {
     "id": "C204",
     "demo": "docs-site",
-    "check": "Compare combined output to collection inclusion policies"
+    "check": "Compare combined output to collection inclusion policies",
+    "slice": "2b"
   },
   {
     "id": "C205",
@@ -1027,12 +1082,14 @@
   {
     "id": "C206",
     "demo": "docs-site",
-    "check": "Search all agent artifacts for forbidden unique text"
+    "check": "Search all agent artifacts for forbidden unique text",
+    "slice": "2b"
   },
   {
     "id": "C207",
     "demo": "docs-site",
-    "check": "Serve static HTML, raw Markdown and LLM indexes from generated output"
+    "check": "Serve static HTML, raw Markdown and LLM indexes from generated output",
+    "slice": "2b"
   },
   {
     "id": "C208",
@@ -1042,7 +1099,8 @@
   {
     "id": "C209",
     "demo": "docs-site",
-    "check": "Generate runtime-delivery config and serve complete static pages"
+    "check": "Generate runtime-delivery config and serve complete static pages",
+    "slice": "2b"
   },
   {
     "id": "C210",
@@ -1052,7 +1110,8 @@
   {
     "id": "C211",
     "demo": "docs-site",
-    "check": "Request raw, indexes and Markdown negotiation from disabled fixture"
+    "check": "Request raw, indexes and Markdown negotiation from disabled fixture",
+    "slice": "2b"
   },
   {
     "id": "C212",
@@ -1067,17 +1126,20 @@
   {
     "id": "C214",
     "demo": "docs-site",
-    "check": "Open support raw route and confirm custom render output"
+    "check": "Open support raw route and confirm custom render output",
+    "slice": "2b"
   },
   {
     "id": "C215",
     "demo": "docs-site",
-    "check": "Open raw callout page and confirm readable custom serialization"
+    "check": "Open raw callout page and confirm readable custom serialization",
+    "slice": "2b"
   },
   {
     "id": "C216",
     "demo": "docs-site",
-    "check": "Opt page out of index/full separately and inspect each artifact"
+    "check": "Opt page out of index/full separately and inspect each artifact",
+    "slice": "2b"
   },
   {
     "id": "C217",
@@ -1092,12 +1154,14 @@
   {
     "id": "C219",
     "demo": "docs-site",
-    "check": "Open raw and full output and verify language/filename metadata"
+    "check": "Open raw and full output and verify language/filename metadata",
+    "slice": "2b"
   },
   {
     "id": "C220",
     "demo": "docs-site",
-    "check": "Verify 2 precedes 10 within index and full output"
+    "check": "Verify 2 precedes 10 within index and full output",
+    "slice": "2b"
   },
   {
     "id": "C221",
@@ -1107,17 +1171,20 @@
   {
     "id": "C222",
     "demo": "docs-site",
-    "check": "Display agentMarkdownPathForRoute results for root, nested, locale and unsafe paths"
+    "check": "Display agentMarkdownPathForRoute results for root, nested, locale and unsafe paths",
+    "slice": "2b"
   },
   {
     "id": "C223",
     "demo": "docs-site",
-    "check": "Display agentRawPathForRoute results for root, nested, locale and unsafe paths"
+    "check": "Display agentRawPathForRoute results for root, nested, locale and unsafe paths",
+    "slice": "2b"
   },
   {
     "id": "C224",
     "demo": "docs-site",
-    "check": "Display normalizeAgentRoutePath results for root, nested, locale and unsafe paths"
+    "check": "Display normalizeAgentRoutePath results for root, nested, locale and unsafe paths",
+    "slice": "2b"
   },
   {
     "id": "C225",
@@ -1507,7 +1574,8 @@
   {
     "id": "C302",
     "demo": "docs-site",
-    "check": "Show extracted TOC and follow nested/repeated heading anchors"
+    "check": "C075 C059 C081 C302 TOC destinations match nested repeated headings and exclude fences",
+    "slice": "2a"
   },
   {
     "id": "C303",
@@ -1652,17 +1720,18 @@
   {
     "id": "C331",
     "demo": "docs-site",
-    "check": "Compare dev and production page/list/nav/search/sitemap/agent outputs"
+    "check": "C004 C331 drafts partials and ignored invalid files are absent from production pages and sidebar",
+    "slice": "2a"
   },
   {
     "id": "C332",
-    "demo": "docs-site",
-    "check": "Verify _partial body available to build tooling but absent from public reads"
+    "demo": "not-live",
+    "reason": "Production checks verify partials are hidden; proof that their parsed bodies remain available to build tooling requires inspection through a documented build-tool interface, not a public route."
   },
   {
     "id": "C333",
-    "demo": "docs-site",
-    "check": "Try authored partial inclusion and verify no transcluded content"
+    "demo": "not-live",
+    "reason": "The installed guide states partials are not includes but specifies no include syntax to attempt. A partial link is not a transclusion test; requires a maintainer-defined negative fixture."
   },
   {
     "id": "C334",
@@ -1672,7 +1741,8 @@
   {
     "id": "C335",
     "demo": "docs-site",
-    "check": "Inspect eligible HTML headers and compare disabled-linkHeaders/API routes"
+    "check": "Inspect eligible HTML headers and compare disabled-linkHeaders/API routes",
+    "slice": "2b"
   },
   {
     "id": "C336",
@@ -1682,7 +1752,8 @@
   {
     "id": "C337",
     "demo": "docs-site",
-    "check": "Direct-load math page and verify styled markup before hydration"
+    "check": "C054 C337 math renders on the server with the explicitly included KaTeX CSS",
+    "slice": "2a"
   },
   {
     "id": "C338",
@@ -1697,7 +1768,8 @@
   {
     "id": "C340",
     "demo": "docs-site",
-    "check": "Configure collections/filterQuery and verify only eligible records searchable"
+    "check": "Configure collections/filterQuery and verify only eligible records searchable",
+    "slice": "2b"
   },
   {
     "id": "C341",
@@ -1742,17 +1814,19 @@
   {
     "id": "C349",
     "demo": "docs-site",
-    "check": "Render repeated Japanese-only headings and explicit ID; compare IDs and TOC"
+    "check": "C349 non-ASCII headings require explicit anchors and repeat deterministically",
+    "slice": "2a"
   },
   {
     "id": "C350",
-    "demo": "docs-site",
-    "check": "Round-trip whitespace/native list attributes and show documented normalization"
+    "demo": "not-live",
+    "reason": "A parse/serialize round trip with whitespace and native attributes is a framework-free serializer check, not a deployed visitor flow."
   },
   {
     "id": "C351",
     "demo": "docs-site",
-    "check": "Render each helper with escaping and custom component registry in public demo"
+    "check": "Render each helper with escaping and custom component registry in public demo",
+    "slice": "2b"
   },
   {
     "id": "C352",
@@ -1762,32 +1836,37 @@
   {
     "id": "C353",
     "demo": "docs-site",
-    "check": "Render same inline Markdown before/after hydration and reactive edit"
+    "check": "C067 C353 inline Markdown renders an override and reacts to editing without a reload",
+    "slice": "2a"
   },
   {
     "id": "C354",
     "demo": "docs-site",
-    "check": "Render table alignment/task checkbox/alert in inline renderer"
+    "check": "C354 C355 inline baseline supports GFM while excluding ingestion plugins and mappings",
+    "slice": "2a"
   },
   {
     "id": "C355",
     "demo": "docs-site",
-    "check": "Enable site plugins and verify inline profile stays unchanged"
+    "check": "C354 C355 inline baseline supports GFM while excluding ingestion plugins and mappings",
+    "slice": "2a"
   },
   {
     "id": "C356",
-    "demo": "docs-site",
-    "check": "Try override for unauthorized tag and require safe rejection"
+    "demo": "not-live",
+    "reason": "Requires a negative inline-renderer policy fixture that safely captures its rejection; a deliberately throwing page cannot be statically generated alongside the public docs-site."
   },
   {
     "id": "C357",
     "demo": "docs-site",
-    "check": "Use unique comment text and search every public output for absence"
+    "check": "C357 ingested and inline comments do not enter rendered output or excerpts",
+    "slice": "2a"
   },
   {
     "id": "C358",
     "demo": "docs-site",
-    "check": "Render fixture with all constructs in SSR and hydration"
+    "check": "C040 C358 Markdown structures render before and after hydration",
+    "slice": "2a"
   },
   {
     "id": "C359",
@@ -1797,17 +1876,20 @@
   {
     "id": "C360",
     "demo": "docs-site",
-    "check": "Set storeFields title only and require path/title/excerpt/collection"
+    "check": "Set storeFields title only and require path/title/excerpt/collection",
+    "slice": "2b"
   },
   {
     "id": "C361",
     "demo": "docs-site",
-    "check": "Put unique words in ignored tags and normal prose; require only prose hit"
+    "check": "Put unique words in ignored tags and normal prose; require only prose hit",
+    "slice": "2b"
   },
   {
     "id": "C362",
     "demo": "docs-site",
-    "check": "Toggle prefix behavior and custom apiBaseURL; inspect results and network"
+    "check": "Toggle prefix behavior and custom apiBaseURL; inspect results and network",
+    "slice": "2b"
   },
   {
     "id": "C363",
