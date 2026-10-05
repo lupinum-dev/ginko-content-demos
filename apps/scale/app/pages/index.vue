@@ -1,0 +1,1 @@
+<template><main><h1>Ginko Content scale measurement</h1><p>2,000 generated Markdown documents: 1,000 English and 1,000 German. Default MiniSearch and agent middleware.</p><NuxtLink to="/docs/section-01/page-0001">English documentation</NuxtLink> <NuxtLink to="/de/docs/section-01/page-0001">German documentation</NuxtLink></main></template>

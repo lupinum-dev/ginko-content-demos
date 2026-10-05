@@ -433,7 +433,7 @@
   {
     "id": "C082",
     "demo": "scale",
-    "check": "Measure escaping time for 1x, 2x and 4x equal-pattern strings; record ratios"
+    "check": "C082 public serializer equal-pattern escaping at 1x, 2x and 4x (checks/scale-escaping.mjs; local empirical ratios)"
   },
   {
     "id": "C083",
@@ -1546,7 +1546,7 @@
   {
     "id": "C297",
     "demo": "scale",
-    "check": "Deploy representative 2000-document corpus and record build/query/search timings"
+    "check": "C297 representative 2000-document corpus renders both locales with navigation; checks/scale-builds.mjs and checks/scale-production.mjs record performance without an SLA"
   },
   {
     "id": "C298",

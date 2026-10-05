@@ -10,5 +10,8 @@
   },
   "custom-source": {
     "BASE_URL": "https://ginko-demo-custom-source.vercel.app"
+  },
+  "scale": {
+    "BASE_URL": "https://ginko-demo-scale.vercel.app"
   }
 }

@@ -73,5 +73,13 @@
       "multilingual"
     ],
     "rationale": "Readers must be able to search Japanese content using Japanese words."
+  },
+  {
+    "id": "X401",
+    "check": "X401 all 20 unique tokens are searchable in each locale",
+    "demos": [
+      "scale"
+    ],
+    "rationale": "Default MiniSearch must find exact owning pages across the entire corpus, including pages 101 and 1000; preserve E-A003 failures."
   }
 ]

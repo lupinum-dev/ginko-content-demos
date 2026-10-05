@@ -399,3 +399,74 @@ Production checks cover desktop 1440×900 and mobile 390×844. Budgets include
 first-page unique script gzip, Lighthouse mobile, local build time, and p50/p95
 for 20 sequential full-body requests to `/docs/start`. These are observations,
 not performance guarantees.
+
+## Scale demo (slice 6)
+
+Production: <https://ginko-demo-scale.vercel.app>.
+Project `ginko-demo-scale`, team `Lupinum OG` (`lupinum`), ID
+`prj_fnxu1xv4hLgURgcufE5v3Zsuk47I`, uses Nuxt SSR, Node 24,
+root `apps/scale`, build `pnpm build`, install
+`cd ../.. && corepack pnpm install --frozen-lockfile`, and workspace source
+outside the root. Deployment protection is disabled. GitHub `main` is connected.
+
+The deterministic generator creates 2,000 Markdown documents, split equally
+between English and German in one localized `docs` collection. Each locale has
+20 sections of 50 pages, numeric `rank` frontmatter, and 896–1,944-word bodies
+with headings, lists, code, one or two allowed MDC callouts, and absolute links.
+ASCII filenames avoid the known non-Latin filename failure. Tokens `zq0001`
+through `zq1000` identify translation pairs; search checks require the exact
+owning route, so fuzzy matches cannot hide an omitted document.
+
+Generated `content/` is ignored and excluded from CLI uploads. Both local and
+Vercel build commands run the generator. `SCALE_DOCUMENTS` is the total across
+both locales; 200 and 1,000 create smaller fixtures from the same page seeds.
+SSR disables HTML prerendering while keeping the required content snapshot and
+search-index routes. Static generation uses Ginko's route discovery and crawler.
+There is no application-maintained prerender route list or library patch.
+
+```sh
+corepack pnpm --filter @ginko-demo/scale dev
+corepack pnpm --filter @ginko-demo/scale typecheck
+corepack pnpm build scale
+corepack pnpm --filter @ginko-demo/scale generate
+
+# Sequential clean local builds: three per N/mode, inverted-pair reruns,
+# then two 2,000-document Node builds for the middleware comparison.
+node checks/scale-builds.mjs
+node checks/scale-local.mjs
+node checks/scale-escaping.mjs
+corepack pnpm check scale
+node checks/scale-report.mjs
+corepack pnpm check:map
+```
+
+`checks/scale-builds.mjs` uses macOS `/usr/bin/time -l`: wall seconds, peak
+process RSS in bytes, output file sizes, prerendered route count, and HTML count.
+It records load averages and retains timing inversions rather than replacing
+the original samples. Local SSR compares the default agent configuration with
+`agent: false`, with three batches of 50 full-body requests to five pages.
+Production measures 50 requests, 10 search tokens per locale, first-doc-page
+script gzip, and Lighthouse mobile. The first observed request is retained;
+absence of a reliable cold-start marker is reported instead of inferred.
+
+C297 checks rendering, numeric rank, MDC, complete sidebar navigation, and
+previous/next controls at desktop and mobile viewports. Performance is measured
+without inventing an SLA. X401 requires all 20 sampled owning pages per locale
+and remains failing when the library omits them. C082 separately measures the
+documented public serializer on equal-pattern 1x/2x/4x text, outside parsing,
+with round-trip validation. Its ratios are local evidence, not an asymptotic
+proof or a hosted escaping benchmark.
+
+The slice brief requires **all** evidence to remain ignored, including
+`results/<UTC-date>-scale.json` and `results/scale-report.md`. This overrides the
+earlier slices' committed run-summary convention. The local `.git/info/exclude`
+excludes `results/` because the root `.gitignore` re-includes top-level JSON.
+Logs, raw responses, screenshots, traces, Node comparison builds, and full
+Lighthouse reports live in `results/evidence/scale*`.
+
+To redeploy only this approved project:
+
+```sh
+corepack pnpm --filter @ginko-demo/checks exec vercel link --project ginko-demo-scale --scope lupinum --yes --cwd ../
+corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupinum --yes --cwd ../
+```

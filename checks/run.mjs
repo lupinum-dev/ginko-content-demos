@@ -7,6 +7,10 @@ import { launch } from 'chrome-launcher'
 import targets from './targets.json' with { type: 'json' }
 
 const demo = process.argv[2] ?? 'quickstart'
+if (demo === 'scale') {
+  await import('./scale-production.mjs')
+  process.exit(process.exitCode ?? 0)
+}
 if (!targets[demo]) throw new Error(`Unknown demo: ${demo}`)
 const url = process.env.BASE_URL ?? targets[demo].BASE_URL
 if (!url) throw new Error(`No production BASE_URL configured for ${demo}`)

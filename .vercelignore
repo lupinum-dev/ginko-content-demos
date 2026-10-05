@@ -5,3 +5,5 @@ results/
 **/.ginko/
 **/.vercel/
 .git/
+apps/scale/content/
+.env*
