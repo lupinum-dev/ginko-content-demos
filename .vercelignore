@@ -6,4 +6,4 @@ results/
 **/.vercel/
 .git/
 apps/scale/content/
-.env*
+**/.env*

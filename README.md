@@ -473,3 +473,61 @@ To redeploy only this approved project:
 corepack pnpm --filter @ginko-demo/checks exec vercel link --project ginko-demo-scale --scope lupinum --yes --cwd ../
 corepack pnpm --filter @ginko-demo/checks exec vercel deploy --prod --scope lupinum --yes --cwd ../
 ```
+
+## Blog demo
+
+`apps/blog` is a Nuxt app configured for runtime SSR with 30 EN posts, two YAML authors,
+JSON categories and site settings, semicolon CSV and JSON5 data, a production
+draft, and an excluded invalid author. Every documented `fields.*` helper is
+used in the post schema. Cards link with `route.resolvedPath`; post pages load
+populated authors/categories and previous/next controls. The index provides
+filters and offset paging; `/inspect` shows cursor paging, resolveOne,
+backlinks, navigation, transformed fields, and browser population. A site-data
+button exercises the documented optional provider API; filesystem support is
+not assumed. The site settings are separately queryable as a data collection.
+
+Production: <https://ginko-demo-blog.vercel.app>.
+Project: `ginko-demo-blog`, team `Lupinum OG` (`lupinum`), ID
+`prj_wcDTZDWtsGQrk5LbNUtNVOpjAKB3`. Node 24, Nuxt preset, root `apps/blog`,
+build `pnpm build`, install `cd ../.. && corepack pnpm install --frozen-lockfile`,
+with source files outside the root included and deployment protection disabled.
+Run the CLI from the workspace root linked to this project (do not run it with
+`pnpm --filter ... exec`, which changes its working directory). Production
+preview/revalidation tokens are environment variables on
+this project only; `apps/blog/.env.test` holds matching local check credentials
+and is ignored. These credentials must not be committed or printed.
+
+```sh
+NITRO_PRESET=vercel corepack pnpm build blog
+corepack pnpm --filter @ginko-demo/blog typecheck
+node checks/blog-local.mjs
+corepack pnpm check blog
+node checks/blog-latency.mjs
+corepack pnpm check:map
+```
+
+`content.agent.delivery: 'runtime'` requests runtime delivery. The local build
+inspection compares ordinary output with the Vercel static output.
+K203 currently finds 32 retained page HTML files in the Vercel output; this means
+the public HTML pages are static despite the configured runtime delivery. Production HTTP and Chromium checks run at
+1440×900 and 390×844. Public Nitro examples under `server/api` call the documented
+server helpers; the custom built-in query base is `/api/blog-content`.
+
+Revalidation uses the documented header-only cache adapter. Signed requests
+must reach `501 revalidation_not_supported`; this demo has no purge backend.
+Authentication and input-limit checks do not claim that a platform cache purge
+occurred. The no-token route variant, CSV row-array option, missing Vue handler,
+and app-wide failure fixtures are tested in isolated local production builds,
+with their scope stated in each result. `known-failures/README.md` records K201
+(targetless reference setup), K202 (malformed JSON ingestion), and K203
+(Vercel retains static HTML).
+
+Projection uses public `select`. The installed docs do not expose `only` or
+`without` as public query options; X202 checks dotted `select` instead. X201 checks
+the blog guide's mount-relative slug, X203 checks nested query-result aliasing,
+X204 checks aggregate ETags, and X205 checks malformed JSON. Expected library
+failures remain ordinary failing assertions. Run summaries are committed;
+responses, screenshots, traces, documentation rereads, build/support logs, and
+latency samples stay in ignored `results/evidence/blog/` or the harness's
+`results/evidence/blog-playwright/` folder. The first claim record stores client
+JS gzip, Lighthouse mobile, build seconds, and 20-request list/detail latency.

@@ -13,5 +13,8 @@
   },
   "scale": {
     "BASE_URL": "https://ginko-demo-scale.vercel.app"
+  },
+  "blog": {
+    "BASE_URL": "https://ginko-demo-blog.vercel.app"
   }
 }

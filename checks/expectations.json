@@ -75,6 +75,46 @@
     "rationale": "Readers must be able to search Japanese content using Japanese words."
   },
   {
+    "id": "X201",
+    "check": "X201 blog guide source glob yields the documented mount-relative slug",
+    "demos": [
+      "blog"
+    ],
+    "rationale": "The Build a blog guide promises route /blog/<slug> for files under a source folder with mount /blog."
+  },
+  {
+    "id": "X202",
+    "check": "X202 dotted projection returns selected nested authored value",
+    "demos": [
+      "blog"
+    ],
+    "rationale": "Projection should retain a named nested field without disclosing sibling fields. The installed public API uses select; only/without are not documented public options."
+  },
+  {
+    "id": "X203",
+    "check": "X203 query results do not mutate the sealed provider cache",
+    "demos": [
+      "blog"
+    ],
+    "rationale": "A returned document is a snapshot; editing it should not corrupt later provider reads."
+  },
+  {
+    "id": "X204",
+    "check": "X204 aggregate ETag represents both query dependencies",
+    "demos": [
+      "blog"
+    ],
+    "rationale": "A response derived from two content dependencies must not represent only the last dependency in its validator."
+  },
+  {
+    "id": "X205",
+    "check": "X205 K202 malformed JSON is rejected by isolated production-built filesystem parser",
+    "demos": [
+      "blog"
+    ],
+    "rationale": "A malformed JSON source must cause a parser error; returning an empty document silently loses content. Tested in an isolated local production build to prevent breaking every blog query."
+  },
+  {
     "id": "X401",
     "check": "X401 all 20 unique tokens are searchable in each locale",
     "demos": [
