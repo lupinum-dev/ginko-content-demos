@@ -101,9 +101,9 @@
       }
     ],
     "budgets": {
-      "clientJsGzipBytes": 221247,
+      "clientJsGzipBytes": 221248,
       "lighthouseMobilePerformance": 97,
-      "buildSeconds": 10.03880875,
+      "buildSeconds": 8.982319708999999,
       "issues": [],
       "clientJsEvidence": "results/evidence/2026-10-05-quickstart-client-js.json",
       "lighthouseEvidence": "results/evidence/2026-10-05-quickstart-lighthouse.json"

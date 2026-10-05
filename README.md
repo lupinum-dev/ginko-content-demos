@@ -152,6 +152,9 @@ client project. No custom domains or external data services are used.
 
 ## Docs site (slice 2a)
 
+Production: <https://ginko-demo-docs-site.vercel.app>. Production checks and
+known-failure fixture results are separate committed JSON files under `results/`.
+
 `apps/docs-site` is a static Nuxt app built with `nuxt generate`. It has 17 public
 docs pages in three numbered sections, section `index.md` files, folder metadata,
 a pathless group, a menu-hidden page, a sitemap-hidden page, a production draft,
