@@ -1,0 +1,1827 @@
+[
+  {
+    "id": "C001",
+    "demo": "quickstart",
+    "check": "Install beta.10 in a clean Nuxt app and load two Markdown routes"
+  },
+  {
+    "id": "C002",
+    "demo": "blog",
+    "check": "Use a custom base URL and inspect successful browser query requests"
+  },
+  {
+    "id": "C003",
+    "demo": "custom-source",
+    "check": "Load content from an additional configured storage mount"
+  },
+  {
+    "id": "C004",
+    "demo": "docs-site",
+    "check": "Place an ignored invalid file in the source and confirm no public route"
+  },
+  {
+    "id": "C005",
+    "demo": "docs-site",
+    "check": "Call auto-imported helpers with Nuxt UI present and confirm correct search function"
+  },
+  {
+    "id": "C006",
+    "demo": "not-live",
+    "reason": "Type inference requires a consumer typecheck."
+  },
+  {
+    "id": "C007",
+    "demo": "blog",
+    "check": "Query data records and confirm they have no public page or sitemap URL"
+  },
+  {
+    "id": "C008",
+    "demo": "blog",
+    "check": "Query overlapping globs and confirm excluded documents are absent"
+  },
+  {
+    "id": "C009",
+    "demo": "not-live",
+    "reason": "Invalid-schema rejection is a build-time check."
+  },
+  {
+    "id": "C010",
+    "demo": "blog",
+    "check": "Load invalid content under strict false and inspect warning and original fields"
+  },
+  {
+    "id": "C011",
+    "demo": "not-live",
+    "reason": "Date-output rejection requires positive and negative builds."
+  },
+  {
+    "id": "C012",
+    "demo": "not-live",
+    "reason": "Legacy signature and name rejection are setup-time checks."
+  },
+  {
+    "id": "C013",
+    "demo": "custom-source",
+    "check": "Inspect generated contract for label, tree shape, route rules, and field overrides"
+  },
+  {
+    "id": "C014",
+    "demo": "blog",
+    "check": "Resolve authored refs in Markdown and data records"
+  },
+  {
+    "id": "C015",
+    "demo": "custom-source",
+    "check": "Display metadata from a configured field and check plain Zod returns no metadata"
+  },
+  {
+    "id": "C016",
+    "demo": "blog",
+    "check": "Compare accented, spaced and uppercase slugs to expected public URLs"
+  },
+  {
+    "id": "C017",
+    "demo": "blog",
+    "check": "Build valid and invalid text values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C018",
+    "demo": "blog",
+    "check": "Build valid and invalid textarea values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C019",
+    "demo": "blog",
+    "check": "Build valid and invalid richtext values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C020",
+    "demo": "blog",
+    "check": "Build valid and invalid slug values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C021",
+    "demo": "blog",
+    "check": "Build valid and invalid email values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C022",
+    "demo": "blog",
+    "check": "Build valid and invalid url values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C023",
+    "demo": "blog",
+    "check": "Build valid and invalid number values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C024",
+    "demo": "blog",
+    "check": "Build valid and invalid boolean values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C025",
+    "demo": "blog",
+    "check": "Build valid and invalid date values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C026",
+    "demo": "blog",
+    "check": "Build valid and invalid datetime values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C027",
+    "demo": "blog",
+    "check": "Build valid and invalid select values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C028",
+    "demo": "blog",
+    "check": "Build valid and invalid json values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C029",
+    "demo": "blog",
+    "check": "Build valid and invalid icon values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C030",
+    "demo": "blog",
+    "check": "Build valid and invalid object values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C031",
+    "demo": "blog",
+    "check": "Build valid and invalid array values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C032",
+    "demo": "blog",
+    "check": "Build valid and invalid image values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C033",
+    "demo": "blog",
+    "check": "Build valid and invalid relation values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C034",
+    "demo": "blog",
+    "check": "Build valid and invalid relations values and inspect normalized output and contract metadata"
+  },
+  {
+    "id": "C035",
+    "demo": "custom-source",
+    "check": "Inspect generated contract and validation after applying .required"
+  },
+  {
+    "id": "C036",
+    "demo": "custom-source",
+    "check": "Inspect generated contract and validation after applying .label"
+  },
+  {
+    "id": "C037",
+    "demo": "custom-source",
+    "check": "Inspect generated contract and validation after applying .help"
+  },
+  {
+    "id": "C038",
+    "demo": "custom-source",
+    "check": "Inspect generated contract and validation after applying .localized"
+  },
+  {
+    "id": "C039",
+    "demo": "custom-source",
+    "check": "Inspect generated contract and validation after applying .shared"
+  },
+  {
+    "id": "C040",
+    "demo": "docs-site",
+    "check": "Render headings, lists, quotes, tables, links and code in SSR and hydrated output"
+  },
+  {
+    "id": "C041",
+    "demo": "docs-site",
+    "check": "Change plugin order and confirm expected enriched output"
+  },
+  {
+    "id": "C042",
+    "demo": "docs-site",
+    "check": "Build with omitted plugins and empty plugins and compare output"
+  },
+  {
+    "id": "C043",
+    "demo": "not-live",
+    "reason": "Removed plugin option rejection is a build-time check."
+  },
+  {
+    "id": "C044",
+    "demo": "docs-site",
+    "check": "Render custom language in both themes and reject singular theme/langs"
+  },
+  {
+    "id": "C045",
+    "demo": "docs-site",
+    "check": "Render custom prose mappings and inspect final elements"
+  },
+  {
+    "id": "C046",
+    "demo": "docs-site",
+    "check": "Check anchors on allowed headings and absent anchors on excluded depths"
+  },
+  {
+    "id": "C047",
+    "demo": "docs-site",
+    "check": "Build with and without Nuxt Image and inspect image rendering"
+  },
+  {
+    "id": "C048",
+    "demo": "docs-site",
+    "check": "Try a directive, event handler and script node; require rejection"
+  },
+  {
+    "id": "C049",
+    "demo": "docs-site",
+    "check": "Enable breaks with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C050",
+    "demo": "docs-site",
+    "check": "Enable emoji with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C051",
+    "demo": "docs-site",
+    "check": "Enable footnotes with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C052",
+    "demo": "docs-site",
+    "check": "Enable shiki with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C053",
+    "demo": "docs-site",
+    "check": "Enable json-render with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C054",
+    "demo": "docs-site",
+    "check": "Enable math with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C055",
+    "demo": "docs-site",
+    "check": "Enable mermaid with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C056",
+    "demo": "docs-site",
+    "check": "Enable punctuation with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C057",
+    "demo": "docs-site",
+    "check": "Enable security with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C058",
+    "demo": "docs-site",
+    "check": "Enable summary with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C059",
+    "demo": "docs-site",
+    "check": "Enable toc with required peers and confirm its specific rendered output"
+  },
+  {
+    "id": "C060",
+    "demo": "docs-site",
+    "check": "Render a block and inline component with correct props and children"
+  },
+  {
+    "id": "C061",
+    "demo": "docs-site",
+    "check": "Render multiple named slots inside nested components"
+  },
+  {
+    "id": "C062",
+    "demo": "docs-site",
+    "check": "Parse and render angle syntax with string, number, boolean and object props"
+  },
+  {
+    "id": "C063",
+    "demo": "docs-site",
+    "check": "Render a full query document containing a resolved Content link"
+  },
+  {
+    "id": "C064",
+    "demo": "docs-site",
+    "check": "Switch excerpt true and verify content stops at the excerpt boundary"
+  },
+  {
+    "id": "C065",
+    "demo": "docs-site",
+    "check": "Change tag and unwrap options and inspect DOM"
+  },
+  {
+    "id": "C066",
+    "demo": "docs-site",
+    "check": "Set class/id/data attributes and verify exactly one target wrapper"
+  },
+  {
+    "id": "C067",
+    "demo": "docs-site",
+    "check": "Render inline text and override one component"
+  },
+  {
+    "id": "C068",
+    "demo": "docs-site",
+    "check": "Pass normalized body and policy through direct exported renderer"
+  },
+  {
+    "id": "C069",
+    "demo": "custom-source",
+    "check": "Round-trip literal ::card, :fire, braces and #slot without creating components"
+  },
+  {
+    "id": "C070",
+    "demo": "custom-source",
+    "check": "Edit an anchor ID, serialize, parse and compare anchors"
+  },
+  {
+    "id": "C071",
+    "demo": "custom-source",
+    "check": "Round-trip indented and nested fences with leading blank lines"
+  },
+  {
+    "id": "C072",
+    "demo": "custom-source",
+    "check": "Round-trip lists beginning with code, quotes and tables"
+  },
+  {
+    "id": "C073",
+    "demo": "custom-source",
+    "check": "Round-trip adjacent lists and table delimiter text with formatting"
+  },
+  {
+    "id": "C074",
+    "demo": "custom-source",
+    "check": "Preview unfinished components around fences without altering code"
+  },
+  {
+    "id": "C075",
+    "demo": "docs-site",
+    "check": "Compare extracted TOC destinations against rendered heading ids"
+  },
+  {
+    "id": "C076",
+    "demo": "custom-source",
+    "check": "Compare portable and site parser outputs for domains and explicit links"
+  },
+  {
+    "id": "C077",
+    "demo": "custom-source",
+    "check": "Reject http:evil and http:///evil but allow http://example.com"
+  },
+  {
+    "id": "C078",
+    "demo": "custom-source",
+    "check": "Round-trip hostile prop strings and confirm no injected prop or line"
+  },
+  {
+    "id": "C079",
+    "demo": "custom-source",
+    "check": "Round-trip those values and compare semantic AST"
+  },
+  {
+    "id": "C080",
+    "demo": "custom-source",
+    "check": "Preview an open fence inside unfinished component and preserve fence content"
+  },
+  {
+    "id": "C081",
+    "demo": "docs-site",
+    "check": "Render code containing # headings and confirm no TOC entries"
+  },
+  {
+    "id": "C082",
+    "demo": "scale",
+    "check": "Measure escaping time for 1x, 2x and 4x equal-pattern strings; record ratios"
+  },
+  {
+    "id": "C083",
+    "demo": "custom-source",
+    "check": "Round-trip a component with props inside blockquote and list"
+  },
+  {
+    "id": "C084",
+    "demo": "custom-source",
+    "check": "Round-trip title [1] and verify string type"
+  },
+  {
+    "id": "C085",
+    "demo": "custom-source",
+    "check": "Require MdcSerializationError for impossible alt text rather than data loss"
+  },
+  {
+    "id": "C086",
+    "demo": "not-live",
+    "reason": "Public editing type ownership is a typecheck claim."
+  },
+  {
+    "id": "C087",
+    "demo": "not-live",
+    "reason": "Serializer option restrictions are type-level."
+  },
+  {
+    "id": "C088",
+    "demo": "custom-source",
+    "check": "Round-trip quoted [1,2], unquoted array, and undefined props distinctly"
+  },
+  {
+    "id": "C089",
+    "demo": "custom-source",
+    "check": "Serialize an invalid angle prop name and JSON-like Markdown attribute; require typed errors"
+  },
+  {
+    "id": "C090",
+    "demo": "custom-source",
+    "check": "Preview incomplete angle props; require content build failure for incomplete source"
+  },
+  {
+    "id": "C091",
+    "demo": "blog",
+    "check": "Run equivalent client/server reads and compare normalized documents"
+  },
+  {
+    "id": "C092",
+    "demo": "blog",
+    "check": "Query each selector and reject mixed selectors"
+  },
+  {
+    "id": "C093",
+    "demo": "multilingual",
+    "check": "Resolve canonical /intro and mounted localized URL to same document"
+  },
+  {
+    "id": "C094",
+    "demo": "blog",
+    "check": "Query existing and missing targets and inspect null miss"
+  },
+  {
+    "id": "C095",
+    "demo": "blog",
+    "check": "Query matches and misses and require [] on miss"
+  },
+  {
+    "id": "C096",
+    "demo": "blog",
+    "check": "Submit limits 101 and skip 10001 and require input errors"
+  },
+  {
+    "id": "C097",
+    "demo": "blog",
+    "check": "Query duplicate primary sort values and verify secondary order"
+  },
+  {
+    "id": "C098",
+    "demo": "blog",
+    "check": "Count over 100 matching documents and inspect request/response size"
+  },
+  {
+    "id": "C099",
+    "demo": "blog",
+    "check": "Visit first, middle and last pages and check totals and previous/next"
+  },
+  {
+    "id": "C100",
+    "demo": "blog",
+    "check": "Traverse two pages with endCursor and confirm no duplicates"
+  },
+  {
+    "id": "C101",
+    "demo": "blog",
+    "check": "Send offset after and cursor page and require rejection"
+  },
+  {
+    "id": "C102",
+    "demo": "multilingual",
+    "check": "Resolve a fallback target and display explanation alongside document"
+  },
+  {
+    "id": "C103",
+    "demo": "blog",
+    "check": "Select an author and verify only referring posts returned"
+  },
+  {
+    "id": "C104",
+    "demo": "blog",
+    "check": "Request backlinks with no relation metadata and require error"
+  },
+  {
+    "id": "C105",
+    "demo": "docs-site",
+    "check": "Check neighbors on first, middle and last ordered pages"
+  },
+  {
+    "id": "C106",
+    "demo": "docs-site",
+    "check": "Filter and sort tree, preserving structural nodes and paths"
+  },
+  {
+    "id": "C107",
+    "demo": "blog",
+    "check": "Query one missing scalar and mixed array refs and compare literal results"
+  },
+  {
+    "id": "C108",
+    "demo": "multilingual",
+    "check": "Project title only while populating translated author; verify author remains"
+  },
+  {
+    "id": "C109",
+    "demo": "blog",
+    "check": "Inspect network for a page with multiple populated refs"
+  },
+  {
+    "id": "C110",
+    "demo": "custom-source",
+    "check": "Use 1001 refs to require rejection and instrument concurrency ceiling"
+  },
+  {
+    "id": "C111",
+    "demo": "custom-source",
+    "check": "Instrument repeated-target reads and require one lookup per unique target"
+  },
+  {
+    "id": "C112",
+    "demo": "blog",
+    "check": "Use wrong target collection and require rejection"
+  },
+  {
+    "id": "C113",
+    "demo": "blog",
+    "check": "select title only and verify id, collection, canonicalKey, locale, route and resolution"
+  },
+  {
+    "id": "C114",
+    "demo": "custom-source",
+    "check": "Ask for unsupported operator and verify error before provider dispatch"
+  },
+  {
+    "id": "C115",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $eq queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C116",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $ne queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C117",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $gt queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C118",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $gte queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C119",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $lt queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C120",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $lte queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C121",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $in queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C122",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $nin queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C123",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $contains queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C124",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $containsAny queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C125",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $icontains queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C126",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $exists queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C127",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $type queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C128",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $prefix queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C129",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $and queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C130",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $or queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C131",
+    "demo": "blog",
+    "check": "Run discriminating matching and nonmatching $not queries against deployed source; compare exact IDs"
+  },
+  {
+    "id": "C132",
+    "demo": "blog",
+    "check": "Compare direct equality and explicit $eq results"
+  },
+  {
+    "id": "C133",
+    "demo": "blog",
+    "check": "Send $regex/$options and SQL syntax and require validation errors"
+  },
+  {
+    "id": "C134",
+    "demo": "multilingual",
+    "check": "Resolve a missing translation with exact locale only and verify actual locale and usedFallback"
+  },
+  {
+    "id": "C135",
+    "demo": "multilingual",
+    "check": "Resolve a missing translation with configured chain then default and verify actual locale and usedFallback"
+  },
+  {
+    "id": "C136",
+    "demo": "multilingual",
+    "check": "Resolve a missing translation with default only and verify actual locale and usedFallback"
+  },
+  {
+    "id": "C137",
+    "demo": "multilingual",
+    "check": "Resolve a missing translation with explicit ordered chain and verify actual locale and usedFallback"
+  },
+  {
+    "id": "C138",
+    "demo": "multilingual",
+    "check": "Switch locale and verify translated sidebar tree"
+  },
+  {
+    "id": "C139",
+    "demo": "docs-site",
+    "check": "Set nested short title and verify sidebar label differs from heading"
+  },
+  {
+    "id": "C140",
+    "demo": "docs-site",
+    "check": "Render folder title/icon/sidebar metadata"
+  },
+  {
+    "id": "C141",
+    "demo": "docs-site",
+    "check": "Verify 2 precedes 10 and neither prefix appears in URLs"
+  },
+  {
+    "id": "C142",
+    "demo": "docs-site",
+    "check": "Verify a folder without index renders label/children with no broken link"
+  },
+  {
+    "id": "C143",
+    "demo": "docs-site",
+    "check": "Click docs-root redirect and confirm first real page"
+  },
+  {
+    "id": "C144",
+    "demo": "docs-site",
+    "check": "Open hidden-menu page directly and find it in search"
+  },
+  {
+    "id": "C145",
+    "demo": "not-live",
+    "reason": "Warnings require development/prerender log inspection."
+  },
+  {
+    "id": "C146",
+    "demo": "docs-site",
+    "check": "Invoke findFirstNavigationChild in a demo on groups, nested paths and missing pages"
+  },
+  {
+    "id": "C147",
+    "demo": "docs-site",
+    "check": "Invoke findNavigationTrail in a demo on groups, nested paths and missing pages"
+  },
+  {
+    "id": "C148",
+    "demo": "docs-site",
+    "check": "Invoke navigationItemContainsPath in a demo on groups, nested paths and missing pages"
+  },
+  {
+    "id": "C149",
+    "demo": "docs-site",
+    "check": "Invoke normalizeNavigationPath in a demo on groups, nested paths and missing pages"
+  },
+  {
+    "id": "C150",
+    "demo": "docs-site",
+    "check": "Invoke walkNavigationTree in a demo on groups, nested paths and missing pages"
+  },
+  {
+    "id": "C151",
+    "demo": "quickstart",
+    "check": "Direct-load then hydrate; require same content without duplicate page query"
+  },
+  {
+    "id": "C152",
+    "demo": "quickstart",
+    "check": "Throttle navigation between pages; require no old document under new URL"
+  },
+  {
+    "id": "C153",
+    "demo": "blog",
+    "check": "Exercise slow, existing, missing and failing routes and display distinct statuses"
+  },
+  {
+    "id": "C154",
+    "demo": "quickstart",
+    "check": "Resolve a miss/fallback and confirm helper does not throw or redirect"
+  },
+  {
+    "id": "C155",
+    "demo": "multilingual",
+    "check": "Change locale and refresh and confirm page updates"
+  },
+  {
+    "id": "C156",
+    "demo": "blog",
+    "check": "Compare request count with surround disabled and enabled"
+  },
+  {
+    "id": "C157",
+    "demo": "blog",
+    "check": "Create content mount and matching catch-all; verify route then missing page-handler failure"
+  },
+  {
+    "id": "C158",
+    "demo": "multilingual",
+    "check": "Follow localized document link and verify it matches served page"
+  },
+  {
+    "id": "C159",
+    "demo": "not-live",
+    "reason": "Broken link rejection is a build-time check."
+  },
+  {
+    "id": "C160",
+    "demo": "not-live",
+    "reason": "Duplicate locale authority is a setup-time error."
+  },
+  {
+    "id": "C161",
+    "demo": "multilingual",
+    "check": "Build standalone content.i18n locales and verify localized routes"
+  },
+  {
+    "id": "C162",
+    "demo": "not-live",
+    "reason": "Missing translation strict validation is a build-time error."
+  },
+  {
+    "id": "C163",
+    "demo": "multilingual",
+    "check": "Query inherited, opt-out and collection-local collections in same deployment"
+  },
+  {
+    "id": "C164",
+    "demo": "multilingual",
+    "check": "Open each translated mount and reject missing/unknown route locale mapping"
+  },
+  {
+    "id": "C165",
+    "demo": "multilingual",
+    "check": "Switch between different-language slugs for same canonical key"
+  },
+  {
+    "id": "C166",
+    "demo": "multilingual",
+    "check": "Change collection mount and verify shared variant identity unchanged"
+  },
+  {
+    "id": "C167",
+    "demo": "multilingual",
+    "check": "Request missing translation and verify resolved locale and usedFallback"
+  },
+  {
+    "id": "C168",
+    "demo": "multilingual",
+    "check": "Inspect alternates for missing locales and require no speculative URLs"
+  },
+  {
+    "id": "C169",
+    "demo": "multilingual",
+    "check": "Inspect SSR header and network while switching locales"
+  },
+  {
+    "id": "C170",
+    "demo": "multilingual",
+    "check": "Navigate to untranslated and failed pages and verify switch links disabled"
+  },
+  {
+    "id": "C171",
+    "demo": "multilingual",
+    "check": "Switch language with query/hash and verify both survive"
+  },
+  {
+    "id": "C172",
+    "demo": "multilingual",
+    "check": "Compare concrete and fallback alternates; require concrete link"
+  },
+  {
+    "id": "C173",
+    "demo": "multilingual",
+    "check": "Open app-only page and verify valid callback links and unknown locale omission"
+  },
+  {
+    "id": "C174",
+    "demo": "docs-site",
+    "check": "Compare disabled error and enabled empty-config results"
+  },
+  {
+    "id": "C175",
+    "demo": "docs-site",
+    "check": "Search terms present only in title, heading or body and follow correct destinations"
+  },
+  {
+    "id": "C176",
+    "demo": "docs-site",
+    "check": "Search misspelled tag and compare weighted ranking"
+  },
+  {
+    "id": "C177",
+    "demo": "docs-site",
+    "check": "Search unique data-only term and require no result"
+  },
+  {
+    "id": "C178",
+    "demo": "docs-site",
+    "check": "Measure full payload request and confirm browser search works afterward"
+  },
+  {
+    "id": "C179",
+    "demo": "multilingual",
+    "check": "Generate and serve output; search loads Pagefind chunks and returns page"
+  },
+  {
+    "id": "C180",
+    "demo": "custom-source",
+    "check": "Compare same query across three engines for collection/path/excerpt fields"
+  },
+  {
+    "id": "C181",
+    "demo": "multilingual",
+    "check": "Add content after generation and confirm absent until regeneration"
+  },
+  {
+    "id": "C182",
+    "demo": "docs-site",
+    "check": "Type queries, simulate backend failure and verify distinct states"
+  },
+  {
+    "id": "C183",
+    "demo": "docs-site",
+    "check": "Compare payload requests with and without collection option"
+  },
+  {
+    "id": "C184",
+    "demo": "docs-site",
+    "check": "Change each option and confirm displayed results update"
+  },
+  {
+    "id": "C185",
+    "demo": "docs-site",
+    "check": "Use next/previous/select/reset and verify selected result without automatic navigation"
+  },
+  {
+    "id": "C186",
+    "demo": "docs-site",
+    "check": "Force each backend failure and require error state without stale results"
+  },
+  {
+    "id": "C187",
+    "demo": "multilingual",
+    "check": "Query shared term without locale and verify multiple languages"
+  },
+  {
+    "id": "C188",
+    "demo": "multilingual",
+    "check": "Switch locale and confirm no other-language hits"
+  },
+  {
+    "id": "C189",
+    "demo": "docs-site",
+    "check": "Inspect deployed XML against representative canonical routes"
+  },
+  {
+    "id": "C190",
+    "demo": "docs-site",
+    "check": "Verify excluded collection/document absent from XML"
+  },
+  {
+    "id": "C191",
+    "demo": "docs-site",
+    "check": "Check forbidden source identities have no XML URL"
+  },
+  {
+    "id": "C192",
+    "demo": "multilingual",
+    "check": "Inspect hreflang alternates and open each target"
+  },
+  {
+    "id": "C193",
+    "demo": "not-live",
+    "reason": "Sitemap size assertions require a failing build fixture."
+  },
+  {
+    "id": "C194",
+    "demo": "not-live",
+    "reason": "Assertion modes require a build/generate matrix."
+  },
+  {
+    "id": "C195",
+    "demo": "multilingual",
+    "check": "Inspect actual localized single and multi-sitemap deployment entry points"
+  },
+  {
+    "id": "C196",
+    "demo": "not-live",
+    "reason": "Missing production origin/provider routes is a setup-time error."
+  },
+  {
+    "id": "C197",
+    "demo": "not-live",
+    "reason": "Invalid collection inclusion is a build-time error."
+  },
+  {
+    "id": "C198",
+    "demo": "docs-site",
+    "check": "Serve generated HTML and directly load nested content routes"
+  },
+  {
+    "id": "C199",
+    "demo": "docs-site",
+    "check": "Verify opted-out page has HTML but no sitemap URL"
+  },
+  {
+    "id": "C200",
+    "demo": "quickstart",
+    "check": "Deploy isolated output without source files and load/query content"
+  },
+  {
+    "id": "C201",
+    "demo": "not-live",
+    "reason": "Edge demo deferred by DESIGN.md pending maintainer decision."
+  },
+  {
+    "id": "C202",
+    "demo": "docs-site",
+    "check": "Open raw route and compare headings, links and code to HTML page"
+  },
+  {
+    "id": "C203",
+    "demo": "docs-site",
+    "check": "Follow all representative index links to valid raw Markdown"
+  },
+  {
+    "id": "C204",
+    "demo": "docs-site",
+    "check": "Compare combined output to collection inclusion policies"
+  },
+  {
+    "id": "C205",
+    "demo": "multilingual",
+    "check": "Open each locale index and raw route; verify locale-specific content"
+  },
+  {
+    "id": "C206",
+    "demo": "docs-site",
+    "check": "Search all agent artifacts for forbidden unique text"
+  },
+  {
+    "id": "C207",
+    "demo": "docs-site",
+    "check": "Serve static HTML, raw Markdown and LLM indexes from generated output"
+  },
+  {
+    "id": "C208",
+    "demo": "blog",
+    "check": "Inspect output then request HTML and Markdown successfully through Nitro"
+  },
+  {
+    "id": "C209",
+    "demo": "docs-site",
+    "check": "Generate runtime-delivery config and serve complete static pages"
+  },
+  {
+    "id": "C210",
+    "demo": "not-live",
+    "reason": "Missing site.url is a build-time error."
+  },
+  {
+    "id": "C211",
+    "demo": "docs-site",
+    "check": "Request raw, indexes and Markdown negotiation from disabled fixture"
+  },
+  {
+    "id": "C212",
+    "demo": "blog",
+    "check": "Compare HTML and Markdown Accept requests on same URL"
+  },
+  {
+    "id": "C213",
+    "demo": "blog",
+    "check": "Request missing public, API and asset routes with Markdown Accept"
+  },
+  {
+    "id": "C214",
+    "demo": "docs-site",
+    "check": "Open support raw route and confirm custom render output"
+  },
+  {
+    "id": "C215",
+    "demo": "docs-site",
+    "check": "Open raw callout page and confirm readable custom serialization"
+  },
+  {
+    "id": "C216",
+    "demo": "docs-site",
+    "check": "Opt page out of index/full separately and inspect each artifact"
+  },
+  {
+    "id": "C217",
+    "demo": "multilingual",
+    "check": "Inspect localized index and frontmatter for configured signals"
+  },
+  {
+    "id": "C218",
+    "demo": "not-live",
+    "reason": "Unknown agent section is a setup-time error."
+  },
+  {
+    "id": "C219",
+    "demo": "docs-site",
+    "check": "Open raw and full output and verify language/filename metadata"
+  },
+  {
+    "id": "C220",
+    "demo": "docs-site",
+    "check": "Verify 2 precedes 10 within index and full output"
+  },
+  {
+    "id": "C221",
+    "demo": "not-live",
+    "reason": "Installed documentation is verified through package files."
+  },
+  {
+    "id": "C222",
+    "demo": "docs-site",
+    "check": "Display agentMarkdownPathForRoute results for root, nested, locale and unsafe paths"
+  },
+  {
+    "id": "C223",
+    "demo": "docs-site",
+    "check": "Display agentRawPathForRoute results for root, nested, locale and unsafe paths"
+  },
+  {
+    "id": "C224",
+    "demo": "docs-site",
+    "check": "Display normalizeAgentRoutePath results for root, nested, locale and unsafe paths"
+  },
+  {
+    "id": "C225",
+    "demo": "custom-source",
+    "check": "Swap filesystem for provider and run same page/list calls"
+  },
+  {
+    "id": "C226",
+    "demo": "custom-source",
+    "check": "Run minimum provider; reject optional requests without corresponding methods"
+  },
+  {
+    "id": "C227",
+    "demo": "custom-source",
+    "check": "Capture query envelope and round-trip JSON with v5 and single collection authority"
+  },
+  {
+    "id": "C228",
+    "demo": "custom-source",
+    "check": "Run discriminating probes for every advertised operator/mode"
+  },
+  {
+    "id": "C229",
+    "demo": "custom-source",
+    "check": "Return raw facts and inspect derived public envelope"
+  },
+  {
+    "id": "C230",
+    "demo": "custom-source",
+    "check": "Reject missing identity and verify translations retain same canonical key"
+  },
+  {
+    "id": "C231",
+    "demo": "custom-source",
+    "check": "Return localized mounted path and verify exactly one public locale prefix"
+  },
+  {
+    "id": "C232",
+    "demo": "custom-source",
+    "check": "Return malformed/traversal route and require rejection"
+  },
+  {
+    "id": "C233",
+    "demo": "custom-source",
+    "check": "Probe configured provider authorization consistently across query/navigation/search/routes"
+  },
+  {
+    "id": "C234",
+    "demo": "custom-source",
+    "check": "Read site data including null; reject undefined/non-JSON data"
+  },
+  {
+    "id": "C235",
+    "demo": "custom-source",
+    "check": "Throw secret-bearing backend error and verify stable public code without leakage"
+  },
+  {
+    "id": "C236",
+    "demo": "custom-source",
+    "check": "Import adapter contract without Nuxt and run real bounded reads"
+  },
+  {
+    "id": "C237",
+    "demo": "custom-source",
+    "check": "Run two scoped contexts and verify no cross-request data leakage"
+  },
+  {
+    "id": "C238",
+    "demo": "custom-source",
+    "check": "Return oversized/non-JSON results and require boundary rejection"
+  },
+  {
+    "id": "C239",
+    "demo": "custom-source",
+    "check": "Run slow backend and require abort and mapped timeout"
+  },
+  {
+    "id": "C240",
+    "demo": "custom-source",
+    "check": "Submit oversized and credential-bearing cache hints and require rejection"
+  },
+  {
+    "id": "C241",
+    "demo": "custom-source",
+    "check": "Enumerate two pages then change snapshot and require rejection"
+  },
+  {
+    "id": "C242",
+    "demo": "custom-source",
+    "check": "Use looping/empty cursor pages and require ROUTE_ENUMERATION_INVALID"
+  },
+  {
+    "id": "C243",
+    "demo": "custom-source",
+    "check": "Exercise each stated boundary and first invalid value without exceeding ceilings"
+  },
+  {
+    "id": "C244",
+    "demo": "custom-source",
+    "check": "Trigger cursor/unsupported/backend/deadline cases; require 400/400/502/504"
+  },
+  {
+    "id": "C245",
+    "demo": "custom-source",
+    "check": "Return skewed producer envelope and require rejection before projection"
+  },
+  {
+    "id": "C246",
+    "demo": "custom-source",
+    "check": "Prepare consumer then inspect artifact against source collections"
+  },
+  {
+    "id": "C247",
+    "demo": "custom-source",
+    "check": "Read artifact and reject wrong expected sha256"
+  },
+  {
+    "id": "C248",
+    "demo": "custom-source",
+    "check": "Enable site plugin and verify portable parse remains baseline"
+  },
+  {
+    "id": "C249",
+    "demo": "custom-source",
+    "check": "Collect repeated native/component media and confirm order with no code/text hits"
+  },
+  {
+    "id": "C250",
+    "demo": "custom-source",
+    "check": "Rewrite IDs asynchronously; reject invalid ID and invalid policy"
+  },
+  {
+    "id": "C251",
+    "demo": "custom-source",
+    "check": "Use identity remap and compare exact source bytes"
+  },
+  {
+    "id": "C252",
+    "demo": "custom-source",
+    "check": "Import contract surface in browser/worker and execute parser/hash"
+  },
+  {
+    "id": "C253",
+    "demo": "custom-source",
+    "check": "Attempt unsafe element, URL and undeclared component; require rejection"
+  },
+  {
+    "id": "C254",
+    "demo": "custom-source",
+    "check": "Validate both versions and reject schema/version mismatch"
+  },
+  {
+    "id": "C255",
+    "demo": "custom-source",
+    "check": "Exercise valid/invalid names and public URL schemes"
+  },
+  {
+    "id": "C256",
+    "demo": "custom-source",
+    "check": "Render HTTP link and reject HTTP media"
+  },
+  {
+    "id": "C257",
+    "demo": "custom-source",
+    "check": "Render valid union/nested components and reject invalid value or parent"
+  },
+  {
+    "id": "C258",
+    "demo": "custom-source",
+    "check": "Verify allowed image bytes and reject oversized or fake MIME/signature"
+  },
+  {
+    "id": "C259",
+    "demo": "not-live",
+    "reason": "Unsupported managed MIME is a contract-generation failure."
+  },
+  {
+    "id": "C260",
+    "demo": "not-live",
+    "reason": "Local portability assessment is a script check."
+  },
+  {
+    "id": "C261",
+    "demo": "not-live",
+    "reason": "Stale prepared contract is a build-time diagnostic."
+  },
+  {
+    "id": "C262",
+    "demo": "not-live",
+    "reason": "Assessment diagnostics and exit codes require CLI execution."
+  },
+  {
+    "id": "C263",
+    "demo": "not-live",
+    "reason": "Atomic filesystem export is a local script check."
+  },
+  {
+    "id": "C264",
+    "demo": "not-live",
+    "reason": "Assessment/export input races require a local script check."
+  },
+  {
+    "id": "C265",
+    "demo": "not-live",
+    "reason": "Draft/partial incompatibility requires local assessment."
+  },
+  {
+    "id": "C266",
+    "demo": "custom-source",
+    "check": "Export sidecar title/order then compare imported tree"
+  },
+  {
+    "id": "C267",
+    "demo": "custom-source",
+    "check": "Export/import content refs and code and compare semantics"
+  },
+  {
+    "id": "C268",
+    "demo": "custom-source",
+    "check": "Export plain local image; require unchanged source and no fetch"
+  },
+  {
+    "id": "C269",
+    "demo": "not-live",
+    "reason": "Corrupt asset rejection before export requires local files."
+  },
+  {
+    "id": "C270",
+    "demo": "not-live",
+    "reason": "Unrepresentable transformer/filter assessment is a local script check."
+  },
+  {
+    "id": "C271",
+    "demo": "custom-source",
+    "check": "Round-trip valid documents and reject non-portable values"
+  },
+  {
+    "id": "C272",
+    "demo": "custom-source",
+    "check": "Round-trip authored MDC and compare normalized semantic content"
+  },
+  {
+    "id": "C273",
+    "demo": "custom-source",
+    "check": "Round-trip page/data identities and reject traversal"
+  },
+  {
+    "id": "C274",
+    "demo": "custom-source",
+    "check": "Reject missing or wrong-collection references"
+  },
+  {
+    "id": "C275",
+    "demo": "custom-source",
+    "check": "Remap image references and reject missing asset bytes"
+  },
+  {
+    "id": "C276",
+    "demo": "custom-source",
+    "check": "Rebuild manifest and compare checksums; reject tampering"
+  },
+  {
+    "id": "C277",
+    "demo": "custom-source",
+    "check": "Compare differently serialized equal documents then changed content"
+  },
+  {
+    "id": "C278",
+    "demo": "custom-source",
+    "check": "Hash reordered JSON keys and incremental bytes against known digest"
+  },
+  {
+    "id": "C279",
+    "demo": "not-live",
+    "reason": "Portable directory read/write requires filesystem script checks."
+  },
+  {
+    "id": "C280",
+    "demo": "not-live",
+    "reason": "Planning budgets require bounded filesystem script fixtures."
+  },
+  {
+    "id": "C281",
+    "demo": "not-live",
+    "reason": "Symlink and path safety require local filesystem fixtures."
+  },
+  {
+    "id": "C282",
+    "demo": "not-live",
+    "reason": "Manifest rebuild requires a local directory script."
+  },
+  {
+    "id": "C283",
+    "demo": "not-live",
+    "reason": "Provider conformance suite is a test-runner claim."
+  },
+  {
+    "id": "C284",
+    "demo": "not-live",
+    "reason": "In-memory fixtures are test-helper behavior."
+  },
+  {
+    "id": "C285",
+    "demo": "not-live",
+    "reason": "Binder conformance suite is a test-runner claim."
+  },
+  {
+    "id": "C286",
+    "demo": "not-live",
+    "reason": "Codec/directory conformance suites run as scripts."
+  },
+  {
+    "id": "C287",
+    "demo": "custom-source",
+    "check": "Inspect deployed query/page cache-control and cache tags"
+  },
+  {
+    "id": "C288",
+    "demo": "custom-source",
+    "check": "Instrument adapter apply and verify merged response hints"
+  },
+  {
+    "id": "C289",
+    "demo": "blog",
+    "check": "Compare revalidation route absent/present with token"
+  },
+  {
+    "id": "C290",
+    "demo": "blog",
+    "check": "Call header-only adapter revalidation and require 501"
+  },
+  {
+    "id": "C291",
+    "demo": "blog",
+    "check": "Send valid, tampered and expired signature; only valid purges"
+  },
+  {
+    "id": "C292",
+    "demo": "blog",
+    "check": "Submit 32KiB+ body, 201 entries and 1001-character key; require rejection"
+  },
+  {
+    "id": "C293",
+    "demo": "not-live",
+    "reason": "Unsigned token-only workflow is explicitly local."
+  },
+  {
+    "id": "C294",
+    "demo": "custom-source",
+    "check": "Inspect literal Cache-Control, ETag and Last-Modified"
+  },
+  {
+    "id": "C295",
+    "demo": "custom-source",
+    "check": "Issue isolated requests with hints then preview and inspect false/private behavior"
+  },
+  {
+    "id": "C296",
+    "demo": "not-live",
+    "reason": "Deleting/rebuilding derived caches requires local build verification."
+  },
+  {
+    "id": "C297",
+    "demo": "scale",
+    "check": "Deploy representative 2000-document corpus and record build/query/search timings"
+  },
+  {
+    "id": "C298",
+    "demo": "not-live",
+    "reason": "Content edit HMR requires a development server."
+  },
+  {
+    "id": "C299",
+    "demo": "not-live",
+    "reason": "Config HMR and generated types require a development server."
+  },
+  {
+    "id": "C300",
+    "demo": "not-live",
+    "reason": "watch:false requires development edit checks."
+  },
+  {
+    "id": "C301",
+    "demo": "custom-source",
+    "check": "Read existing and null site-data keys in deployed app"
+  },
+  {
+    "id": "C302",
+    "demo": "docs-site",
+    "check": "Show extracted TOC and follow nested/repeated heading anchors"
+  },
+  {
+    "id": "C303",
+    "demo": "multilingual",
+    "check": "Compare path/slug/prefix settings; inherited-policy-only handle must fail"
+  },
+  {
+    "id": "C304",
+    "demo": "not-live",
+    "reason": "Filesystem preview authorization is development-only."
+  },
+  {
+    "id": "C305",
+    "demo": "blog",
+    "check": "Inspect preview cache headers and require production overlay rejection"
+  },
+  {
+    "id": "C306",
+    "demo": "not-live",
+    "reason": "Validation reports/failure policy are build-time checks."
+  },
+  {
+    "id": "C307",
+    "demo": "not-live",
+    "reason": "Doctor diagnostics and exit codes are CLI behavior."
+  },
+  {
+    "id": "C308",
+    "demo": "not-live",
+    "reason": "Doctor i18n is CLI behavior."
+  },
+  {
+    "id": "C309",
+    "demo": "not-live",
+    "reason": "Validate command is CLI behavior."
+  },
+  {
+    "id": "C310",
+    "demo": "not-live",
+    "reason": "Portable assess command is CLI behavior."
+  },
+  {
+    "id": "C311",
+    "demo": "not-live",
+    "reason": "Portable export command is CLI behavior."
+  },
+  {
+    "id": "C312",
+    "demo": "blog",
+    "check": "Build custom transformed content and inspect derived field in query/navigation/search"
+  },
+  {
+    "id": "C313",
+    "demo": "blog",
+    "check": "Query YAML fixture and verify normalized body and schema fields"
+  },
+  {
+    "id": "C314",
+    "demo": "blog",
+    "check": "Query JSON fixture and verify normalized body and schema fields"
+  },
+  {
+    "id": "C315",
+    "demo": "blog",
+    "check": "Query CSV fixture and verify normalized body and schema fields"
+  },
+  {
+    "id": "C316",
+    "demo": "blog",
+    "check": "Query JSON5 fixture and verify normalized body and schema fields"
+  },
+  {
+    "id": "C317",
+    "demo": "not-live",
+    "reason": "Runtime floor matrix needs multiple Node installations; one Node 24 deployment cannot prove it."
+  },
+  {
+    "id": "C318",
+    "demo": "not-live",
+    "reason": "Nuxt compatibility range needs floor/maintained build matrix."
+  },
+  {
+    "id": "C319",
+    "demo": "not-live",
+    "reason": "Vue compatibility floor requires a separate packed-consumer version matrix."
+  },
+  {
+    "id": "C320",
+    "demo": "not-live",
+    "reason": "ESM/CommonJS compatibility requires module-loader probes."
+  },
+  {
+    "id": "C321",
+    "demo": "not-live",
+    "reason": "Windows portability requires a Windows build host."
+  },
+  {
+    "id": "C322",
+    "demo": "not-live",
+    "reason": "Semver promise needs comparison across releases."
+  },
+  {
+    "id": "C323",
+    "demo": "not-live",
+    "reason": "External skill default installation requires disposable CLI consumer."
+  },
+  {
+    "id": "C324",
+    "demo": "not-live",
+    "reason": "External skill migration requires disposable CLI consumer."
+  },
+  {
+    "id": "C325",
+    "demo": "custom-source",
+    "check": "Lower filter/path fixture; reject route/ref selectors without application policy"
+  },
+  {
+    "id": "C326",
+    "demo": "custom-source",
+    "check": "Lower navigation with and without collection and verify validation"
+  },
+  {
+    "id": "C327",
+    "demo": "custom-source",
+    "check": "Run conformance against ignored first/sort/logical/count behavior"
+  },
+  {
+    "id": "C328",
+    "demo": "custom-source",
+    "check": "Return mismatched paging envelope and require boundary error"
+  },
+  {
+    "id": "C329",
+    "demo": "custom-source",
+    "check": "Probe translated mounts with missing first candidate and verify next match"
+  },
+  {
+    "id": "C330",
+    "demo": "custom-source",
+    "check": "Exercise authorization on page/list/count/route/search using same context"
+  },
+  {
+    "id": "C331",
+    "demo": "docs-site",
+    "check": "Compare dev and production page/list/nav/search/sitemap/agent outputs"
+  },
+  {
+    "id": "C332",
+    "demo": "docs-site",
+    "check": "Verify _partial body available to build tooling but absent from public reads"
+  },
+  {
+    "id": "C333",
+    "demo": "docs-site",
+    "check": "Try authored partial inclusion and verify no transcluded content"
+  },
+  {
+    "id": "C334",
+    "demo": "multilingual",
+    "check": "Render shortcut with static params/query in two locales and follow link"
+  },
+  {
+    "id": "C335",
+    "demo": "docs-site",
+    "check": "Inspect eligible HTML headers and compare disabled-linkHeaders/API routes"
+  },
+  {
+    "id": "C336",
+    "demo": "not-live",
+    "reason": "Optional missing-peer rejection requires separate build fixtures."
+  },
+  {
+    "id": "C337",
+    "demo": "docs-site",
+    "check": "Direct-load math page and verify styled markup before hydration"
+  },
+  {
+    "id": "C338",
+    "demo": "blog",
+    "check": "Parse semicolon CSV with json true/false and compare literal bodies"
+  },
+  {
+    "id": "C339",
+    "demo": "not-live",
+    "reason": "YAML parser disable/configure requires a build matrix."
+  },
+  {
+    "id": "C340",
+    "demo": "docs-site",
+    "check": "Configure collections/filterQuery and verify only eligible records searchable"
+  },
+  {
+    "id": "C341",
+    "demo": "not-live",
+    "reason": "Forbidden sitemap paths/origin require failing build fixtures."
+  },
+  {
+    "id": "C342",
+    "demo": "not-live",
+    "reason": "Sitemap image assertions require failing build fixtures."
+  },
+  {
+    "id": "C343",
+    "demo": "custom-source",
+    "check": "Compare helper outputs with rendered non-ASCII/repeated/custom headings"
+  },
+  {
+    "id": "C344",
+    "demo": "custom-source",
+    "check": "Inspect published constants and test first-invalid bounded media case"
+  },
+  {
+    "id": "C345",
+    "demo": "custom-source",
+    "check": "Inspect optional/default/reference nested schemas through exported helpers"
+  },
+  {
+    "id": "C346",
+    "demo": "custom-source",
+    "check": "Compare exported path/identity helpers to deployed filesystem route facts"
+  },
+  {
+    "id": "C347",
+    "demo": "custom-source",
+    "check": "Round-trip Unicode and separator-bearing identities; reject invalid encodings"
+  },
+  {
+    "id": "C348",
+    "demo": "custom-source",
+    "check": "Export V2 policy and verify manifest v2 with document record v1"
+  },
+  {
+    "id": "C349",
+    "demo": "docs-site",
+    "check": "Render repeated Japanese-only headings and explicit ID; compare IDs and TOC"
+  },
+  {
+    "id": "C350",
+    "demo": "docs-site",
+    "check": "Round-trip whitespace/native list attributes and show documented normalization"
+  },
+  {
+    "id": "C351",
+    "demo": "docs-site",
+    "check": "Render each helper with escaping and custom component registry in public demo"
+  },
+  {
+    "id": "C352",
+    "demo": "not-live",
+    "reason": "Migration requires disposable Nuxt Content v2/v3 consumers and CLI checks."
+  },
+  {
+    "id": "C353",
+    "demo": "docs-site",
+    "check": "Render same inline Markdown before/after hydration and reactive edit"
+  },
+  {
+    "id": "C354",
+    "demo": "docs-site",
+    "check": "Render table alignment/task checkbox/alert in inline renderer"
+  },
+  {
+    "id": "C355",
+    "demo": "docs-site",
+    "check": "Enable site plugins and verify inline profile stays unchanged"
+  },
+  {
+    "id": "C356",
+    "demo": "docs-site",
+    "check": "Try override for unauthorized tag and require safe rejection"
+  },
+  {
+    "id": "C357",
+    "demo": "docs-site",
+    "check": "Use unique comment text and search every public output for absence"
+  },
+  {
+    "id": "C358",
+    "demo": "docs-site",
+    "check": "Render fixture with all constructs in SSR and hydration"
+  },
+  {
+    "id": "C359",
+    "demo": "blog",
+    "check": "Inspect HTML payload/runtime config and require no server-only metadata"
+  },
+  {
+    "id": "C360",
+    "demo": "docs-site",
+    "check": "Set storeFields title only and require path/title/excerpt/collection"
+  },
+  {
+    "id": "C361",
+    "demo": "docs-site",
+    "check": "Put unique words in ignored tags and normal prose; require only prose hit"
+  },
+  {
+    "id": "C362",
+    "demo": "docs-site",
+    "check": "Toggle prefix behavior and custom apiBaseURL; inspect results and network"
+  },
+  {
+    "id": "C363",
+    "demo": "not-live",
+    "reason": "Symlink/racing-file safety requires local filesystem probes."
+  },
+  {
+    "id": "C364",
+    "demo": "not-live",
+    "reason": "Once-per-prepare artifact generation requires build lifecycle instrumentation."
+  },
+  {
+    "id": "C365",
+    "demo": "not-live",
+    "reason": "256 MiB filesystem planning budget requires local script instrumentation."
+  }
+]
