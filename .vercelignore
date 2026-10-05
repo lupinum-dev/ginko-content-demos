@@ -1,0 +1,7 @@
+results/
+**/node_modules/
+**/.nuxt/
+**/.output/
+**/.ginko/
+**/.vercel/
+.git/

@@ -78,7 +78,8 @@ viewport, failure, and evidence. Skipped/interrupted or unimplemented checks are
 blocked, assertion failures are fail, and only completed successful checks pass.
 Screenshots, HTTP responses, failure traces, build timing, client JS details, and
 Lighthouse JSON go under `results/evidence/`. Results are git-ignored local
-artifacts, never committed. A same-day rerun replaces the run JSON and Playwright
+artifacts, never committed. `.vercelignore` also excludes results and generated
+local build artifacts from CLI uploads. A same-day rerun replaces the run JSON and Playwright
 artifacts; retain a copy inside `results/evidence/` before rerunning if needed.
 
 The first claim record also stores measured budgets: cold mobile first-load
