@@ -433,9 +433,12 @@ corepack pnpm --filter @ginko-demo/scale generate
 # Sequential clean local builds: three per N/mode, inverted-pair reruns,
 # then two 2,000-document Node builds for the middleware comparison.
 node checks/scale-builds.mjs
+# Resume after an interruption without repeating saved attempts:
+SCALE_RESUME=1 node checks/scale-builds.mjs
 node checks/scale-local.mjs
 node checks/scale-escaping.mjs
 corepack pnpm check scale
+node checks/scale-search-diagnosis.mjs
 node checks/scale-report.mjs
 corepack pnpm check:map
 ```
