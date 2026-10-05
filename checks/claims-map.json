@@ -7,7 +7,7 @@
   {
     "id": "C002",
     "demo": "blog",
-    "check": "Use a custom base URL and inspect successful browser query requests"
+    "check": "C002 C091 C109 browser populated query has parity with server and one custom endpoint request"
   },
   {
     "id": "C003",
@@ -33,12 +33,12 @@
   {
     "id": "C007",
     "demo": "blog",
-    "check": "Query data records and confirm they have no public page or sitemap URL"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C008",
     "demo": "blog",
-    "check": "Query overlapping globs and confirm excluded documents are absent"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C009",
@@ -48,7 +48,7 @@
   {
     "id": "C010",
     "demo": "blog",
-    "check": "Load invalid content under strict false and inspect warning and original fields"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C011",
@@ -68,7 +68,7 @@
   {
     "id": "C014",
     "demo": "blog",
-    "check": "Resolve authored refs in Markdown and data records"
+    "check": "C014 constrained references from Markdown and YAML records; C014 K001 documented cross-collection reference prepares without a target"
   },
   {
     "id": "C015",
@@ -78,97 +78,97 @@
   {
     "id": "C016",
     "demo": "blog",
-    "check": "Compare accented, spaced and uppercase slugs to expected public URLs"
+    "check": "C016 URL segments normalize accents spaces and optional case"
   },
   {
     "id": "C017",
     "demo": "blog",
-    "check": "Build valid and invalid text values and inspect normalized output and contract metadata"
+    "check": "C017 valid and invalid title fields with metadata"
   },
   {
     "id": "C018",
     "demo": "blog",
-    "check": "Build valid and invalid textarea values and inspect normalized output and contract metadata"
+    "check": "C018 valid and invalid summary fields with metadata"
   },
   {
     "id": "C019",
     "demo": "blog",
-    "check": "Build valid and invalid richtext values and inspect normalized output and contract metadata"
+    "check": "C019 valid and invalid rich fields with metadata"
   },
   {
     "id": "C020",
     "demo": "blog",
-    "check": "Build valid and invalid slug values and inspect normalized output and contract metadata"
+    "check": "C020 valid and invalid slug fields with metadata"
   },
   {
     "id": "C021",
     "demo": "blog",
-    "check": "Build valid and invalid email values and inspect normalized output and contract metadata"
+    "check": "C021 valid and invalid email fields with metadata"
   },
   {
     "id": "C022",
     "demo": "blog",
-    "check": "Build valid and invalid url values and inspect normalized output and contract metadata"
+    "check": "C022 valid and invalid url fields with metadata"
   },
   {
     "id": "C023",
     "demo": "blog",
-    "check": "Build valid and invalid number values and inspect normalized output and contract metadata"
+    "check": "C023 valid and invalid rank fields with metadata"
   },
   {
     "id": "C024",
     "demo": "blog",
-    "check": "Build valid and invalid boolean values and inspect normalized output and contract metadata"
+    "check": "C024 valid and invalid featured fields with metadata"
   },
   {
     "id": "C025",
     "demo": "blog",
-    "check": "Build valid and invalid date values and inspect normalized output and contract metadata"
+    "check": "C025 valid and invalid date fields with metadata"
   },
   {
     "id": "C026",
     "demo": "blog",
-    "check": "Build valid and invalid datetime values and inspect normalized output and contract metadata"
+    "check": "C026 valid and invalid publishedAt fields with metadata"
   },
   {
     "id": "C027",
     "demo": "blog",
-    "check": "Build valid and invalid select values and inspect normalized output and contract metadata"
+    "check": "C027 valid and invalid status fields with metadata"
   },
   {
     "id": "C028",
     "demo": "blog",
-    "check": "Build valid and invalid json values and inspect normalized output and contract metadata"
+    "check": "C028 valid and invalid extra fields with metadata"
   },
   {
     "id": "C029",
     "demo": "blog",
-    "check": "Build valid and invalid icon values and inspect normalized output and contract metadata"
+    "check": "C029 valid and invalid icon fields with metadata"
   },
   {
     "id": "C030",
     "demo": "blog",
-    "check": "Build valid and invalid object values and inspect normalized output and contract metadata"
+    "check": "C030 valid and invalid details fields with metadata"
   },
   {
     "id": "C031",
     "demo": "blog",
-    "check": "Build valid and invalid array values and inspect normalized output and contract metadata"
+    "check": "C031 valid and invalid tags fields with metadata"
   },
   {
     "id": "C032",
     "demo": "blog",
-    "check": "Build valid and invalid image values and inspect normalized output and contract metadata"
+    "check": "C032 valid and invalid image fields with metadata"
   },
   {
     "id": "C033",
     "demo": "blog",
-    "check": "Build valid and invalid relation values and inspect normalized output and contract metadata"
+    "check": "C033 valid and invalid author fields with metadata"
   },
   {
     "id": "C034",
     "demo": "blog",
-    "check": "Build valid and invalid relations values and inspect normalized output and contract metadata"
+    "check": "C034 valid and invalid categories fields with metadata"
   },
   {
     "id": "C035",
@@ -476,12 +476,12 @@
   {
     "id": "C091",
     "demo": "blog",
-    "check": "Run equivalent client/server reads and compare normalized documents"
+    "check": "C002 C091 C109 browser populated query has parity with server and one custom endpoint request"
   },
   {
     "id": "C092",
     "demo": "blog",
-    "check": "Query each selector and reject mixed selectors"
+    "check": "C092 C094 route path and ref selectors, null miss, malformed selectors rejected"
   },
   {
     "id": "C093",
@@ -491,42 +491,42 @@
   {
     "id": "C094",
     "demo": "blog",
-    "check": "Query existing and missing targets and inspect null miss"
+    "check": "C092 C094 route path and ref selectors, null miss, malformed selectors rejected"
   },
   {
     "id": "C095",
     "demo": "blog",
-    "check": "Query matches and misses and require [] on miss"
+    "check": "C095 C096 bounded many skip and misses with ceiling rejection"
   },
   {
     "id": "C096",
     "demo": "blog",
-    "check": "Submit limits 101 and skip 10001 and require input errors"
+    "check": "C095 C096 bounded many skip and misses with ceiling rejection"
   },
   {
     "id": "C097",
     "demo": "blog",
-    "check": "Query duplicate primary sort values and verify secondary order"
+    "check": "C097 numeric ascending and descending ordered multi-field sort"
   },
   {
     "id": "C098",
     "demo": "blog",
-    "check": "Count over 100 matching documents and inspect request/response size"
+    "check": "C098 exact filtered count"
   },
   {
     "id": "C099",
     "demo": "blog",
-    "check": "Visit first, middle and last pages and check totals and previous/next"
+    "check": "C099 offset pages preserve exact totals and neighbors"
   },
   {
     "id": "C100",
     "demo": "blog",
-    "check": "Traverse two pages with endCursor and confirm no duplicates"
+    "check": "C100 cursor continuation visits all posts exactly once without totals"
   },
   {
     "id": "C101",
     "demo": "blog",
-    "check": "Send offset after and cursor page and require rejection"
+    "check": "C101 mixed pagination modes reject"
   },
   {
     "id": "C102",
@@ -536,12 +536,12 @@
   {
     "id": "C103",
     "demo": "blog",
-    "check": "Select an author and verify only referring posts returned"
+    "check": "C103 metadata and explicit via backlinks"
   },
   {
     "id": "C104",
     "demo": "blog",
-    "check": "Request backlinks with no relation metadata and require error"
+    "check": "C104 backlinks reject undeclared source fields"
   },
   {
     "id": "C105",
@@ -558,7 +558,7 @@
   {
     "id": "C107",
     "demo": "blog",
-    "check": "Query one missing scalar and mixed array refs and compare literal results"
+    "check": "C107 scalar array and missing references populate and survive select"
   },
   {
     "id": "C108",
@@ -568,7 +568,7 @@
   {
     "id": "C109",
     "demo": "blog",
-    "check": "Inspect network for a page with multiple populated refs"
+    "check": "C002 C091 C109 browser populated query has parity with server and one custom endpoint request"
   },
   {
     "id": "C110",
@@ -583,12 +583,12 @@
   {
     "id": "C112",
     "demo": "blog",
-    "check": "Use wrong target collection and require rejection"
+    "check": "C112 target mismatch and unsupported populate verbs reject"
   },
   {
     "id": "C113",
     "demo": "blog",
-    "check": "select title only and verify id, collection, canonicalKey, locale, route and resolution"
+    "check": "C113 authored select retains envelope and omits other authored fields"
   },
   {
     "id": "C114",
@@ -598,97 +598,97 @@
   {
     "id": "C115",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $eq queries against deployed source; compare exact IDs"
+    "check": "C115 discriminating $eq exact matches and nonmatches"
   },
   {
     "id": "C116",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $ne queries against deployed source; compare exact IDs"
+    "check": "C116 discriminating $ne exact matches and nonmatches"
   },
   {
     "id": "C117",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $gt queries against deployed source; compare exact IDs"
+    "check": "C117 discriminating $gt date exact matches and nonmatches"
   },
   {
     "id": "C118",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $gte queries against deployed source; compare exact IDs"
+    "check": "C118 discriminating $gte exact matches and nonmatches"
   },
   {
     "id": "C119",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $lt queries against deployed source; compare exact IDs"
+    "check": "C119 discriminating $lt date exact matches and nonmatches"
   },
   {
     "id": "C120",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $lte queries against deployed source; compare exact IDs"
+    "check": "C120 discriminating $lte exact matches and nonmatches"
   },
   {
     "id": "C121",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $in queries against deployed source; compare exact IDs"
+    "check": "C121 discriminating $in exact matches and nonmatches"
   },
   {
     "id": "C122",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $nin queries against deployed source; compare exact IDs"
+    "check": "C122 discriminating $nin exact matches and nonmatches"
   },
   {
     "id": "C123",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $contains queries against deployed source; compare exact IDs"
+    "check": "C123 discriminating $contains string exact matches and nonmatches"
   },
   {
     "id": "C124",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $containsAny queries against deployed source; compare exact IDs"
+    "check": "C124 discriminating $containsAny exact matches and nonmatches"
   },
   {
     "id": "C125",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $icontains queries against deployed source; compare exact IDs"
+    "check": "C125 discriminating $icontains exact matches and nonmatches"
   },
   {
     "id": "C126",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $exists queries against deployed source; compare exact IDs"
+    "check": "C126 discriminating $exists exact matches and nonmatches"
   },
   {
     "id": "C127",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $type queries against deployed source; compare exact IDs"
+    "check": "C127 discriminating $type exact matches and nonmatches"
   },
   {
     "id": "C128",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $prefix queries against deployed source; compare exact IDs"
+    "check": "C128 discriminating $prefix exact matches and nonmatches"
   },
   {
     "id": "C129",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $and queries against deployed source; compare exact IDs"
+    "check": "C129 discriminating $and exact matches and nonmatches"
   },
   {
     "id": "C130",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $or queries against deployed source; compare exact IDs"
+    "check": "C130 discriminating $or exact matches and nonmatches"
   },
   {
     "id": "C131",
     "demo": "blog",
-    "check": "Run discriminating matching and nonmatching $not queries against deployed source; compare exact IDs"
+    "check": "C131 discriminating $not exact matches and nonmatches"
   },
   {
     "id": "C132",
     "demo": "blog",
-    "check": "Compare direct equality and explicit $eq results"
+    "check": "C132 direct equality equals explicit eq"
   },
   {
     "id": "C133",
     "demo": "blog",
-    "check": "Send $regex/$options and SQL syntax and require validation errors"
+    "check": "C133 regex options and SQL grammar reject"
   },
   {
     "id": "C134",
@@ -799,7 +799,7 @@
   {
     "id": "C153",
     "demo": "blog",
-    "check": "Exercise slow, existing, missing and failing routes and display distinct statuses"
+    "check": "C153 existing content remains success after direct load and hydration; C153 missing content status reaches app-owned 404; C153 refresh errors remain distinct from not-found after browser card navigation"
   },
   {
     "id": "C154",
@@ -814,12 +814,12 @@
   {
     "id": "C156",
     "demo": "blog",
-    "check": "Compare request count with surround disabled and enabled"
+    "check": "C156 refresh reads page and optional surround with one additional request"
   },
   {
     "id": "C157",
     "demo": "blog",
-    "check": "Create content mount and matching catch-all; verify route then missing page-handler failure"
+    "check": "C157 SSR list and detail use sealed runtime content, data has no page, unhandled mount no Vue route; C157 isolated content mount without a Vue handler fails discovery with 404"
   },
   {
     "id": "C158",
@@ -1049,7 +1049,7 @@
   {
     "id": "C200",
     "demo": "blog",
-    "check": "Deploy isolated output without source files and load/query content"
+    "check": "C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K003 Vercel runtime delivery leaves no HTML files in platform static output"
   },
   {
     "id": "C201",
@@ -1094,7 +1094,7 @@
   {
     "id": "C208",
     "demo": "blog",
-    "check": "Inspect output then request HTML and Markdown successfully through Nitro"
+    "check": "C208 C212 runtime HTML and negotiated Markdown at same URL; C208 C200 local output has no prerendered HTML and retains generated query dependencies; C200 C208 K003 Vercel runtime delivery leaves no HTML files in platform static output"
   },
   {
     "id": "C209",
@@ -1116,12 +1116,12 @@
   {
     "id": "C212",
     "demo": "blog",
-    "check": "Compare HTML and Markdown Accept requests on same URL"
+    "check": "C208 C212 runtime HTML and negotiated Markdown at same URL"
   },
   {
     "id": "C213",
     "demo": "blog",
-    "check": "Request missing public, API and asset routes with Markdown Accept"
+    "check": "C213 Markdown missing page recovery preserves 404 and excludes API assets"
   },
   {
     "id": "C214",
@@ -1509,22 +1509,22 @@
   {
     "id": "C289",
     "demo": "blog",
-    "check": "Compare revalidation route absent/present with token"
+    "check": "C289 C290 C291 configured signed revalidation rejects unauthorized and header-only purges; C289 local no-token build omits the revalidation endpoint"
   },
   {
     "id": "C290",
     "demo": "blog",
-    "check": "Call header-only adapter revalidation and require 501"
+    "check": "C289 C290 C291 configured signed revalidation rejects unauthorized and header-only purges"
   },
   {
     "id": "C291",
     "demo": "blog",
-    "check": "Send valid, tampered and expired signature; only valid purges"
+    "check": "C289 C290 C291 configured signed revalidation rejects unauthorized and header-only purges"
   },
   {
     "id": "C292",
     "demo": "blog",
-    "check": "Submit 32KiB+ body, 201 entries and 1001-character key; require rejection"
+    "check": "C292 purge byte entries and entry length ceilings reject before adapter"
   },
   {
     "id": "C293",
@@ -1590,7 +1590,7 @@
   {
     "id": "C305",
     "demo": "blog",
-    "check": "Inspect preview cache headers and require production overlay rejection"
+    "check": "C305 production filesystem preview token cannot open overlay"
   },
   {
     "id": "C306",
@@ -1625,27 +1625,27 @@
   {
     "id": "C312",
     "demo": "blog",
-    "check": "Build custom transformed content and inspect derived field in query/navigation/search"
+    "check": "C312 transformer output is shared by query and navigation"
   },
   {
     "id": "C313",
     "demo": "blog",
-    "check": "Query YAML fixture and verify normalized body and schema fields"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C314",
     "demo": "blog",
-    "check": "Query JSON fixture and verify normalized body and schema fields"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C315",
     "demo": "blog",
-    "check": "Query CSV fixture and verify normalized body and schema fields"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C316",
     "demo": "blog",
-    "check": "Query JSON5 fixture and verify normalized body and schema fields"
+    "check": "C007 C008 C010 C313 C314 C315 C316 collection formats, exclusion and non-strict originals"
   },
   {
     "id": "C317",
@@ -1758,7 +1758,7 @@
   {
     "id": "C338",
     "demo": "blog",
-    "check": "Parse semicolon CSV with json true/false and compare literal bodies"
+    "check": "C338 semicolon CSV object output in production and row-array output in isolated local build"
   },
   {
     "id": "C339",
@@ -1871,7 +1871,7 @@
   {
     "id": "C359",
     "demo": "blog",
-    "check": "Inspect HTML payload/runtime config and require no server-only metadata"
+    "check": "C359 public runtime config excludes schemas sources cache modules and secrets"
   },
   {
     "id": "C360",
