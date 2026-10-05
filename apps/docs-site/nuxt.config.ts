@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     ignores: ['ignored\\.md$'],
     sitemap: { include: ['docs'], exclude: ['internal'] },
     markdown: {
-      plugins: ['summary', 'breaks', 'emoji', 'footnotes', 'shiki', 'math', 'mermaid', 'punctuation', 'security', ['toc', { depth: 2, searchDepth: 4 }]],
+      plugins: ['summary', 'breaks', 'emoji', 'footnotes', 'shiki', 'math', 'mermaid', 'punctuation', ['toc', { depth: 2, searchDepth: 4 }]],
       tags: { p: 'DocsParagraph' },
       anchorLinks: { depth: 3, exclude: [1] },
       image: 'auto'

@@ -110,12 +110,12 @@ does not count them as unimplemented 2a checks.
 | Assignment | Claims |
 | --- | ---: |
 | quickstart | 4 |
-| docs-site | 82 |
+| docs-site | 81 |
 | blog | 78 |
 | multilingual | 32 |
 | custom-source | 91 |
 | scale | 2 |
-| not-live | 76 |
+| not-live | 77 |
 | **Total** | **365** |
 
 The quickstart records C001 (module/two routes), C151 (SSR payload reuse), C152
@@ -161,7 +161,7 @@ or sitemap configuration. `content.config.ts` defines the docs, internal-page,
 and data collections. Agent output is explicitly disabled and search stays off
 until slice 2b.
 
-The ordinary docs pages show Markdown, relative Markdown file links, colon and
+The ordinary docs pages show Markdown, final public-path Markdown links, colon and
 angle MDC syntax, inline and nested components, named slots, typed props, images,
 code highlighting, repeated headings and TOC. `/inspect` shows tree helpers,
 filtered navigation, surround boundaries, excerpt rendering, wrapper attributes,
@@ -183,27 +183,35 @@ only that demo's timing and does not reuse another demo's build time. Browser
 artifacts use per-demo folders, so checking quickstart does not overwrite the
 docs-site screenshots.
 
-`X002 relative Markdown file links reach the intended page` covers same-folder
-and cross-section authored file links. The guide recommends final public paths;
-X002 is a visitor/author expectation, not an invented library claim. Deferred
-non-live fixture requirements are explained per ID in `checks/claims-map.json`.
-Partial claim coverage (such as search exposure of `navigation: false`, and
-search/agent comment and draft exclusion) still needs slice 2b.
+`X002 relative Markdown file links reach the intended page` is now exercised by
+K001 in the build-only known-failure fixtures. Production checks click final
+absolute `/docs/...` Markdown paths, as the routing guide documents. Partial
+claim coverage (search and agent exclusion) still needs slice 2b.
 
-### Current generation blocker
+### Known-failure isolation
 
-The vendor beta.10 fixture remains unmodified. Relative link ingestion changes
-`./3.first-note.md` into bare `first-note`; the renderer rejects that as an unsafe
-URL. The enabled `security` plugin removes the typed `enabled=false` component
-prop; rendering then rejects the required missing prop. `nuxt generate` exits 1
-on these pages locally and on Vercel. No failure suppression, HTML copy, client-only
-wrapper, link rewrite, or library patch is used. The project exists but has no
-successful production deployment; the configured alias is not a live demo.
-Committed results mark production claims blocked and keep local checks separate.
-The check runner still executes both viewport projects against the production
-URL. When Vercel returns `DEPLOYMENT_NOT_FOUND`, the reporter preserves the
-actual assertion errors and marks claims blocked by infrastructure. It does not
-report those 404s as library failures or measure the Vercel error page as the demo.
+At the maintainer's direction, the two generation-blocking patterns live in
+`fixtures/known-failures/`, not the production app. These fixtures are never
+deployed and do not suppress errors. Docs-site keeps the component examples
+with the security plugin disabled; the security combination remains K002.
+
+```sh
+corepack pnpm check:known-failures
+```
+
+- K001 (C198, X002; audit E-A004): same-folder `./x.md` becomes an unsafe bare
+  URL, and `../other/y.md` loses the `/docs` mount and prerenders a 404.
+- K002 (C057, C062): the security plugin removes the required false boolean
+  prop and rendering rejects the missing prop.
+
+Each app uses the canonical vendor tarball. `use-ginko` updates fixtures and
+production apps together. The runner builds every fixture and writes committed
+`results/<date>-known-failures.json` plus ignored full logs. A successful build
+records `pass`; the expected exact diagnostics record `fail`; a different error
+records `blocked` so infrastructure or a fixture bug cannot masquerade as the
+known library failure. The command exits nonzero while any fixture fails.
+Production results remain separate: a passing isolated C062/C198 production
+check does not resolve its corresponding known-failure finding.
 
 Project `ginko-demo-docs-site`, team `Lupinum OG` (`lupinum`), ID
 `prj_rlMxOruQimGq6aWjBOYzZYuVER1F`, uses the Other preset, Node 24, root

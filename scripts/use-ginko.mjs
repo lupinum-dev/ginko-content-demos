@@ -18,14 +18,17 @@ if (tarball) {
   throw new Error('Provide an exact npm version or a repository-local .tgz path.')
 }
 const manifests = []
-for (const app of await readdir(resolve(root, 'apps'), { withFileTypes: true })) {
-  if (!app.isDirectory()) continue
-  const path = resolve(root, 'apps', app.name, 'package.json')
-  const manifest = JSON.parse(await readFile(path, 'utf8'))
-  const sections = ['dependencies', 'devDependencies', 'optionalDependencies'].filter(section => manifest[section]?.['@lupinum/ginko-content'])
-  if (sections.length !== 1) throw new Error(`${app.name} must declare exactly one Ginko dependency`)
-  manifest[sections[0]]['@lupinum/ginko-content'] = tarball ? `file:${relative(dirname(path), absolute).split('\\').join('/')}` : source
-  manifests.push([path, manifest])
+const directories = ['apps', 'fixtures/known-failures']
+for (const directory of directories) {
+  for (const app of await readdir(resolve(root, directory), { withFileTypes: true })) {
+    if (!app.isDirectory()) continue
+    const path = resolve(root, directory, app.name, 'package.json')
+    const manifest = JSON.parse(await readFile(path, 'utf8'))
+    const sections = ['dependencies', 'devDependencies', 'optionalDependencies'].filter(section => manifest[section]?.['@lupinum/ginko-content'])
+    if (sections.length !== 1) throw new Error(`${app.name} must declare exactly one Ginko dependency`)
+    manifest[sections[0]]['@lupinum/ginko-content'] = tarball ? `file:${relative(dirname(path), absolute).split('\\').join('/')}` : source
+    manifests.push([path, manifest])
+  }
 }
 await writeFile(configPath, JSON.stringify({ source: tarball ? relative(root, absolute).split('\\').join('/') : source }, null, 2) + '\n')
 for (const [path, manifest] of manifests) await writeFile(path, JSON.stringify(manifest, null, 2) + '\n')

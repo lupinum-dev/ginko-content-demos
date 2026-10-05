@@ -12,8 +12,9 @@
     "id": "X002",
     "check": "X002 relative Markdown file links reach the intended page",
     "demos": [
-      "docs-site"
+      "known-failures"
     ],
-    "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages."
+    "rationale": "A docs author expects ./page.md and ../section/page.md links to reach published pages.",
+    "fixture": "K001"
   }
 ]

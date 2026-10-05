@@ -1,5 +1,6 @@
 packages:
   - 'apps/*'
   - 'checks'
+  - 'fixtures/known-failures/*'
 allowBuilds:
   esbuild: true

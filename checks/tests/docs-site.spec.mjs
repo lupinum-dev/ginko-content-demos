@@ -88,11 +88,6 @@ test('C056 punctuation converts straight quotes and ellipsis', async ({ page }, 
   await expect(page.getByTestId('document')).toContainText('“quoted” … text')
 })
 
-test('C057 security plugin retains harmless authored component props', async ({ page }, info) => {
-  await open(page, '/docs/guides/components', info)
-  await expect(page.getByTestId('metrics')).toHaveAttribute('data-enabled', 'false')
-})
-
 test('C058 C064 excerpt renders only the boundary prefix', async ({ page }, info) => {
   await open(page, '/inspect', info)
   await expect(page.getByTestId('excerpt')).toContainText('Keep a short record')
@@ -290,7 +285,7 @@ test('X001 in-content links navigate client-side', async ({ page }, info) => {
   expect(await page.evaluate(()=>window.__demoNavigationMarker)).toBe('same-document')
 })
 
-test('X002 relative Markdown file links reach the intended page', async ({ page }, info) => {
+test('absolute Markdown links reach the intended page', async ({ page }, info) => {
   await open(page,'/docs/start/installation',info)
   await page.getByTestId('document').getByRole('link',{name:'First note',exact:true}).click()
   await expect(page).toHaveURL(/\/docs\/start\/first-note$/)

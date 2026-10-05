@@ -292,9 +292,10 @@
   },
   {
     "id": "C057",
-    "demo": "docs-site",
-    "check": "C057 security plugin retains harmless authored component props",
-    "slice": "2a"
+    "demo": "not-live",
+    "check": "K002 security plugin required boolean prop",
+    "slice": "2a",
+    "reason": "Build-only known-failure fixture K002 isolates security plugin rejection of a required false boolean; pnpm check:known-failures records the exact diagnostic."
   },
   {
     "id": "C058",

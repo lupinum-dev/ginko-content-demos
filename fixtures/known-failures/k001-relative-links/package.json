@@ -1,0 +1,21 @@
+{
+  "name": "@ginko-fixture/k001-relative-links",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt generate",
+    "dev": "nuxt dev",
+    "prepare": "nuxt prepare",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@lupinum/ginko-content": "file:../../../vendor/lupinum-ginko-content-1.0.0-beta.10-a3e8ef1.tgz",
+    "nuxt": "4.5.2",
+    "vue": "3.5.40",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vue-tsc": "3.2.6"
+  }
+}
