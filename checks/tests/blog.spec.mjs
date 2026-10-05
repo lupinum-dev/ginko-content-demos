@@ -320,3 +320,12 @@ test('C153 refresh errors remain distinct from not-found after browser card navi
  await page.route('**/api/blog-content/**',r=>r.fulfill({status:503,contentType:'application/json',body:'{"message":"Test transport failure"}'}))
  await page.getByTestId('refresh').click();await expect(page.getByTestId('status')).toHaveText('error')
 })
+
+test('C157 list and inspector fit viewport without document overflow', async ({ page }) => {
+ for (const path of ['/', '/inspect']) {
+  expect((await page.goto(path)).status()).toBe(200)
+  await page.waitForLoadState('networkidle')
+  const widths = await page.evaluate(() => ({ document: document.documentElement.scrollWidth, viewport: innerWidth }))
+  expect(widths.document).toBeLessThanOrEqual(widths.viewport)
+ }
+})
