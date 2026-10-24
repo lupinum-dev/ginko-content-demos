@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **This repository is retired.** These demos check the old `@lupinum/ginko-content` 1.0.0-beta line, which gets no more fixes. Current Ginko, with its own demo sites and templates, is in [lupinum-dev/ginko](https://github.com/lupinum-dev/ginko). This repository will be archived.
+
 # Ginko Content demos
 
 Production demos and claim checks for `@lupinum/ginko-content` before 1.0.
